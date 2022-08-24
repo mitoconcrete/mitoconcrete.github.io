@@ -1,6 +1,6 @@
 module.exports = {
   title: "mitoconcrete",
-  description: "안녕하세요. 3년차 프론트엔드 개발자 mitoconcrete 입니다.",
+  description: "어제보다 조금 더 성장하기 위해 기록합니다.",
   author: "mitoconcrete",
   siteUrl: "https://mitoconcrete.github.io",
   links: {
