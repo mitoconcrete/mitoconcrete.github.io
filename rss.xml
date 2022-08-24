@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 24 Aug 2022 13:58:38 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-08-24 Today I Learn]]></title><description><![CDATA[1. form 을 통한 데이터 전송 시 http contents type aplication/x-www-form-urlencoded : string을 인코딩해서 전달해야 하기 때문에 urlencoded 라는 타입을 명시하여 사용한다. multipart…]]></description><link>https://mitoconcrete.github.io/22_08_24/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_08_24/</guid><pubDate>Wed, 24 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;1. form 을 통한 데이터 전송 시 http contents type&lt;/h3&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 24 Aug 2022 15:26:13 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-08-24 Today I Learn]]></title><description><![CDATA[1. form 을 통한 데이터 전송 시 http contents type aplication/x-www-form-urlencoded : string을 인코딩해서 전달해야 하기 때문에 urlencoded 라는 타입을 명시하여 사용한다. multipart…]]></description><link>https://mitoconcrete.github.io/22_08_24/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_08_24/</guid><pubDate>Wed, 24 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;1. form 을 통한 데이터 전송 시 http contents type&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;aplication/x-www-form-urlencoded&lt;/strong&gt; : string을 인코딩해서 전달해야 하기 때문에 urlencoded 라는 타입을 명시하여 사용한다.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;multipart/form-data&lt;/strong&gt; : 이미지 전송 시, 바이너리 파일로 여러 파트를 끊어서 보내야 할 경우 사용한다.&lt;/li&gt;
@@ -44,4 +44,7 @@ POST /car/{id}/stop&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;POST : 리소스의 생성을 요청하면, 서버에서 생성정보를 보내줌&lt;/li&gt;
 &lt;li&gt;PUT : 클라이언트에서 업데이트 할 리소스를 정해서 보내줌. 이 때, 클라이언트 내에 스토어로 리소스를 따로 관리해줘야하는 전제조건이 있다.&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item></channel></rss>
+&lt;/ul&gt;
+&lt;h3&gt;11. 배열은 연속되는 순서로 메모리를 차지한다. 인덱스 값은 연속되지만, 주소값은 반드시 연속되어 증가하지 않는다.&lt;/h3&gt;
+&lt;h3&gt;12. 자바스크립트 배열은 해시맵과 같아서, 논리값 할당이 가능하다. 단, 배열의 실제길이에 영향을 주지는 않는다.(사용권장X)&lt;/h3&gt;
+&lt;h3&gt;13. 연결리스트는 메모리를 순서대로 차지하지 않는다.&lt;/h3&gt;</content:encoded></item></channel></rss>
