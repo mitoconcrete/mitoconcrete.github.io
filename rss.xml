@@ -1,4 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 25 Aug 2022 18:28:24 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-08-25 Today I Learn]]></title><description><![CDATA[1. Javascript 구조분해할당을 통해 Swap을 구현 할 수 있다. ES6 문법이므로 이하 지원브라우저에서는 사용할 수 없음. 2. Javascript shift() 를 이용한 큐 구현은 효율적이지 못하다. shift…]]></description><link>https://mitoconcrete.github.io/22_08_25/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_08_25/</guid><pubDate>Thu, 25 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;1. [Javascript] 구조분해할당을 통해 Swap을 구현 할 수 있다.&lt;/h3&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 28 Aug 2022 18:29:12 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-08-28 Today I Learn]]></title><description><![CDATA[해시 테이블…]]></description><link>https://mitoconcrete.github.io/22_08_28/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_08_28/</guid><pubDate>Sun, 28 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;해시 테이블&lt;/h2&gt;
+&lt;h3&gt;1. 개념&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;해시 - 고기와 감자를 잘게다져 요리한것. 키 값을 잘게 다져 특정 인덱스로 변경
+&lt;br/&gt;-&gt; 키와 값을 받아 &lt;strong&gt;키를 해싱(잘게 쪼개어)&lt;/strong&gt;하여 도출된 인덱스에 값을 저장하는 구조&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;해시테이블이란?&lt;/strong&gt;&lt;br/&gt;  입력받은 값을 특정범위내의 숫자로 변경하는 함수&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2. 해시충돌&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;해시함수를 거친 값이 동일하다면, 데이터가 삽입되는 위치가 중복되는 현상&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4&gt;2-1. 해시충돌해결방법 1 : 선형탐사법&lt;/h4&gt;
+&lt;p&gt;충돌이 발생하면 다음인덱스에 데이터 저장. 충돌이 발생하면 다른곳에 저장.&lt;/p&gt;
+&lt;h4&gt;2-2. 해시충돌해결방법 2 : 제곱탐사법&lt;/h4&gt;
+&lt;p&gt;충돌이 발생한 지점의 제곱만큼 옆으로 이동하여 데이터 저장 &lt;/p&gt;
+&lt;h4&gt;2-3. 해시충돌해결방법 3 : 이중 해싱&lt;/h4&gt;
+&lt;p&gt;A함수를 이용해 충돌이 발생하면 B함수를 통해 해싱하는것&lt;/p&gt;
+&lt;h4&gt;2-4. 해시충돌해결방법 4 : 분리 연결&lt;/h4&gt;
+&lt;p&gt;충돌이 발생하면, 연결리스트로직을 이용해 메모리에 저장. 한 메모리 내에 차지하는 데이터가 무한정 늘어날수 있음.&lt;/p&gt;
+&lt;h3&gt;3.자바스크립트에서 해시테이블을 사용하는 방법&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;배열&lt;/li&gt;
+&lt;li&gt;객체&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map,%22map_link%22&quot;&gt;Map&lt;/a&gt; :&lt;/strong&gt; 키와 값이 다르게 저장. 키로 여러가지 타입을 저장할 수 있음.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Set,&quot; title=&quot;set_link&quot;&gt;Set&lt;/a&gt; :&lt;/strong&gt; 키와 값이 동일하게 저장. 중복된 내용 제거&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[✏️ 2022-08-25 Today I Learn]]></title><description><![CDATA[1. Javascript 구조분해할당을 통해 Swap을 구현 할 수 있다. ES6 문법이므로 이하 지원브라우저에서는 사용할 수 없음. 2. Javascript shift() 를 이용한 큐 구현은 효율적이지 못하다. shift…]]></description><link>https://mitoconcrete.github.io/22_08_25/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_08_25/</guid><pubDate>Thu, 25 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;1. [Javascript] 구조분해할당을 통해 Swap을 구현 할 수 있다.&lt;/h3&gt;
 &lt;p&gt;ES6 문법이므로 이하 지원브라우저에서는 사용할 수 없음.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;
 
