@@ -1,7 +1,107 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 29 Aug 2022 17:03:40 GMT</lastBuildDate><item><title><![CDATA[이벤트 위임]]></title><link>https://mitoconcrete.github.io/Event_delegation/</link><guid isPermaLink="false">https://mitoconcrete.github.io/Event_delegation/</guid><pubDate>Tue, 30 Aug 2022 00:00:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[✏️ 2022-08-29 Today I Learn]]></title><description><![CDATA[1. 이벤트 실행 우선순위 인라인 이벤트실행 -> addEventListener 이벤트 실행
-인라인 이벤트는 event 객체가 parameter로 넘겨지지 않습니다.]]></description><link>https://mitoconcrete.github.io/22_08_29/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_08_29/</guid><pubDate>Mon, 29 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. 이벤트 실행 우선순위&lt;/h2&gt;
-&lt;p&gt;인라인 이벤트실행 -&gt; addEventListener 이벤트 실행
-인라인 이벤트는 event 객체가 parameter로 넘겨지지 않습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[이벤트 버블링/캡쳐링]]></title><description><![CDATA[1. 버블링 정의 한 요소에 이벤트가 발생하면, 이 요소에 할당된 핸들러가 동작하고, 이어서 부모 요소의 핸들러가 동작합니다. 가장 최상단의 조상 요소를 만날 때까지 이 과정이 반복되면서 요소 각각에 할당된 핸들러가 동작하는 현상.…]]></description><link>https://mitoconcrete.github.io/Bubbling_Capturing/</link><guid isPermaLink="false">https://mitoconcrete.github.io/Bubbling_Capturing/</guid><pubDate>Mon, 29 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. 버블링 정의&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 30 Aug 2022 17:35:03 GMT</lastBuildDate><item><title><![CDATA[프로토타입에 관하여]]></title><description><![CDATA[prototype 원형을 의미합니다.
+원형의 속성을 조회하고 싶다면 아래와 같이 조회하면 된다. 하지만 new 키워드를 통해서 만든 복제품 에게는 원형의 속성을 조회할 수 없다.
+예를 들어 아래의 코드에서는 prototype 이 undefined…]]></description><link>https://mitoconcrete.github.io/JS_프로토타입/</link><guid isPermaLink="false">https://mitoconcrete.github.io/JS_프로토타입/</guid><pubDate>Tue, 30 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;prototype&lt;/h2&gt;
+&lt;p&gt;원형을 의미합니다.
+원형의 속성을 조회하고 싶다면 아래와 같이 조회하면 된다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token class-name&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;prototype &lt;span class=&quot;token comment&quot;&gt;// {...}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;하지만 new 키워드를 통해서 만든 &lt;strong&gt;복제품&lt;/strong&gt; 에게는 원형의 속성을 조회할 수 없다.
+예를 들어 아래의 코드에서는 prototype 이 undefined 로 동작한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; obj &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+obj&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;prototype &lt;span class=&quot;token comment&quot;&gt;// undefined&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;[[Prototype]]&lt;/h2&gt;
+&lt;p&gt;원형의 속성의 주소를 저장하고 있는 내부 속성인 &lt;code class=&quot;language-text&quot;&gt;[[Prototype]]&lt;/code&gt; 을 이용하여, 자식들에게 할당한다.
+조회는 &lt;code class=&quot;language-text&quot;&gt;__proto__&lt;/code&gt; 혹은 &lt;code class=&quot;language-text&quot;&gt;getPrototypeOf()&lt;/code&gt;을 이용하여 접근가능하다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; Foo &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token literal-property property&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;foo&apos;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; Bar &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token literal-property property&quot;&gt;__proto__&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; Foo
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; Coo &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Object&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;create&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Bar&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+Bar&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name &lt;span class=&quot;token comment&quot;&gt;// 1. foo&lt;/span&gt;
+Coo&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name &lt;span class=&quot;token comment&quot;&gt;// 2. foo&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Bar와 Coo에는 직접적인 name이라는 프로퍼티가 할당되어 있지않다. 하지만, 어떻게 name이라는 속성에 접근할 수 있었을까?
+name을 조회하기 위해서 자바스크립트 엔진은 현재 인스턴스에 name이란게 없다면, 내부속성인 &lt;code class=&quot;language-text&quot;&gt;[[Prototype]]&lt;/code&gt; 을 순차적으로 조회하며 name이라는 속성이 있는지 조회한다.&lt;/p&gt;
+&lt;p&gt;아래는 Bar.name 시 foo가 출력되는 순서이다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;Bar.name -&gt; 없음&lt;/li&gt;
+&lt;li&gt;Bar.&lt;code class=&quot;language-text&quot;&gt;[[Prototype]]&lt;/code&gt;.name (=Foo.name) -&gt; &lt;strong&gt;&lt;em&gt;있음!&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;foo 출력&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;아래는 Coo.name 시 foo가 출력되는 순서이다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;Coo.name -&gt; 없음&lt;/li&gt;
+&lt;li&gt;Coo.&lt;code class=&quot;language-text&quot;&gt;[[Prototype]]&lt;/code&gt;.name (=Bar.name) -&gt; 없음&lt;/li&gt;
+&lt;li&gt;Coo.&lt;code class=&quot;language-text&quot;&gt;[[Prototype]]&lt;/code&gt;.&lt;code class=&quot;language-text&quot;&gt;[[Prototype]]&lt;/code&gt;.name (=Foo.name) -&gt; &lt;strong&gt;&lt;em&gt;있음!&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;foo 출력&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;실제로 &lt;code class=&quot;language-text&quot;&gt;[[Prototype]]&lt;/code&gt; 이 쓰이진 않고 위에서 언급한 것 처럼 &lt;code class=&quot;language-text&quot;&gt;__proto__&lt;/code&gt; 혹은 &lt;code class=&quot;language-text&quot;&gt;getPrototypeOf()&lt;/code&gt;를 이용해 조회할 수 있다.&lt;/p&gt;
+&lt;p&gt;그렇다면 아래의 상황에서는 어떻게 동작할까? &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; Foo &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token literal-property property&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;foo&apos;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; Bar &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token literal-property property&quot;&gt;__proto__&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; Foo
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; Coo &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Object&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;create&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Bar&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+Bar&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name &lt;span class=&quot;token comment&quot;&gt;// 1. foo&lt;/span&gt;
+
+Coo&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;coo&apos;&lt;/span&gt; 
+
+Foo&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name &lt;span class=&quot;token comment&quot;&gt;// 2. ?&lt;/span&gt;
+Bar&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name &lt;span class=&quot;token comment&quot;&gt;// 3. ? &lt;/span&gt;
+Coo&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name &lt;span class=&quot;token comment&quot;&gt;// 4. ? &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;정답은 &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;foo&lt;/li&gt;
+&lt;li&gt;foo &lt;/li&gt;
+&lt;li&gt;coo
+이다. &lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;2, 3의 동작은 위와 같지만, 4의 동작이 조금 달라진다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;Coo.name -&gt; 있음&lt;/li&gt;
+&lt;li&gt;coo 출력&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;새롭게 name을 자식에 할당함으로서, &lt;code class=&quot;language-text&quot;&gt;[[Prototype]]&lt;/code&gt;을 조회하지 않고, 곧바로 name을 가져올 수 있었다.&lt;/p&gt;
+&lt;h2&gt;프로토타입 체인&lt;/h2&gt;
+&lt;p&gt;위의 과정에서 아래와 같은 과정을 거쳤다.
+Coo.&lt;code class=&quot;language-text&quot;&gt;[[Prototype]]&lt;/code&gt;.name (=Bar.name)
+Coo.&lt;code class=&quot;language-text&quot;&gt;[[Prototype]]&lt;/code&gt;.&lt;code class=&quot;language-text&quot;&gt;[[Prototype]]&lt;/code&gt;.name (=Foo.name)&lt;/p&gt;
+&lt;p&gt;이 처럼 없는 속성을 계속 연결된 &lt;code class=&quot;language-text&quot;&gt;[[Prototype]]&lt;/code&gt;주소를 통해 찾아내려가는 현상이 마치 체인처럼 이어졌다고하여, &lt;strong&gt;프로토타입 체인&lt;/strong&gt; 이라고 명명한다.&lt;/p&gt;
+&lt;h2&gt;constructor&lt;/h2&gt;
+&lt;p&gt;constructor는 new 키워드를 이용하여 생성된 인스턴스가 자신을 낳은 주체가 무엇인지 표현하기 위해 사용되는 것이다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; array &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Array&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+array&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;constructor &lt;span class=&quot;token comment&quot;&gt;// function Array&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Foo&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; foo &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Foo&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+foo&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;constructor &lt;span class=&quot;token comment&quot;&gt;// function Foo&lt;/span&gt;
+
+&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;참고&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://tecoble.techcourse.co.kr/post/2021-06-14-prototype/&quot;&gt;https://tecoble.techcourse.co.kr/post/2021-06-14-prototype/&lt;/a&gt;
+&lt;a href=&quot;https://ko.javascript.info/function-prototype&quot;&gt;https://ko.javascript.info/function-prototype&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[✏️ 2022-08-30 Today I Learn]]></title><description><![CDATA[1. 라운드 로빈 스케쥴링 시분할 시스템을 위해 설계된 선점형 스케줄링의 하나로서, 프로세스들 간에 우선순위를 두지 않고 순서대로 시간단위로 CPU…]]></description><link>https://mitoconcrete.github.io/22_08_30/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_08_30/</guid><pubDate>Tue, 30 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. 라운드 로빈 스케쥴링&lt;/h2&gt;
+&lt;p&gt;시분할 시스템을 위해 설계된 선점형 스케줄링의 하나로서, 프로세스들 간에 우선순위를 두지 않고 순서대로 시간단위로 CPU를 할당하는 스케쥴링 방식입니다.
+추후 학습할 자바스크립트 이벤트 루프의 동작방식이 라운드 로빈 스케쥴링 방식입니다.&lt;/p&gt;
+&lt;h2&gt;2. 자바스크립트 프로토타입&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;/JS_프로토타입&quot;&gt;프로토타입 학습 링크&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[이벤트 버블링/캡쳐링]]></title><description><![CDATA[1. 버블링 정의 한 요소에 이벤트가 발생하면, 이 요소에 할당된 핸들러가 동작하고, 이어서 부모 요소의 핸들러가 동작합니다. 가장 최상단의 조상 요소를 만날 때까지 이 과정이 반복되면서 요소 각각에 할당된 핸들러가 동작하는 현상.…]]></description><link>https://mitoconcrete.github.io/JS_버블링과캡쳐링/</link><guid isPermaLink="false">https://mitoconcrete.github.io/JS_버블링과캡쳐링/</guid><pubDate>Mon, 29 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. 버블링 정의&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;한 요소에 이벤트가 발생하면, 이 요소에 할당된 핸들러가 동작하고, 이어서 부모 요소의 핸들러가 동작합니다. 가장 최상단의 조상 요소를 만날 때까지 이 과정이 반복되면서 요소 각각에 할당된 핸들러가 동작하는 현상.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -78,7 +178,12 @@ el&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://ko.javascript.info/bubbling-and-capturing&quot;&gt;https://ko.javascript.info/bubbling-and-capturing&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://joshua1988.github.io/web-development/javascript/event-propagation-delegation/&quot;&gt;https://joshua1988.github.io/web-development/javascript/event-propagation-delegation/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[✏️ 2022-08-28 Today I Learn]]></title><description><![CDATA[해시 테이블…]]></description><link>https://mitoconcrete.github.io/22_08_28/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_08_28/</guid><pubDate>Sun, 28 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;해시 테이블&lt;/h2&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[✏️ 2022-08-29 Today I Learn]]></title><description><![CDATA[1. 이벤트 실행 우선순위 인라인 이벤트실행 -> addEventListener 이벤트 실행
+인라인 이벤트는 event 객체가 parameter로 넘겨지지 않습니다. 2. 버블링과 캡쳐링 버블링과 캡쳐링에 대하여]]></description><link>https://mitoconcrete.github.io/22_08_29/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_08_29/</guid><pubDate>Mon, 29 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. 이벤트 실행 우선순위&lt;/h2&gt;
+&lt;p&gt;인라인 이벤트실행 -&gt; addEventListener 이벤트 실행
+인라인 이벤트는 event 객체가 parameter로 넘겨지지 않습니다.&lt;/p&gt;
+&lt;h2&gt;2. 버블링과 캡쳐링&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&apos;/JS_버블링과캡쳐링&apos;&gt;버블링과 캡쳐링에 대하여&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[✏️ 2022-08-28 Today I Learn]]></title><description><![CDATA[해시 테이블…]]></description><link>https://mitoconcrete.github.io/22_08_28/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_08_28/</guid><pubDate>Sun, 28 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;해시 테이블&lt;/h2&gt;
 &lt;h3&gt;1. 개념&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;해시 - 고기와 감자를 잘게다져 요리한것. 키 값을 잘게 다져 특정 인덱스로 변경
