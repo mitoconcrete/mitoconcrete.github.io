@@ -1,4 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 02 Sep 2022 19:00:02 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-09-02 Today I Learn]]></title><description><![CDATA[1. Javascript 실행컨텍스트 추후 추가예정 2. Javascript 스코프 체인 추후 추가예정 3. CS HTTP 상태코드 HTTP 상태코드 포스팅]]></description><link>https://mitoconcrete.github.io/22_09_02/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_09_02/</guid><pubDate>Fri, 02 Sep 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. [Javascript] 실행컨텍스트&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 31 Oct 2022 12:34:29 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-10-31 Today I Learn]]></title><description><![CDATA[1. git git 구조의 이해 git 구조는 디렉토리 + 스테이징 + 저장소의 3가지로 구성되어 버전을 관리한다. 디렉토리 버전을 관리할 코드가 위치한 경로. 즉, .git…]]></description><link>https://mitoconcrete.github.io/22_10_31/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_10_31/</guid><pubDate>Mon, 31 Oct 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. [git] git 구조의 이해&lt;/h2&gt;
+&lt;p&gt;git 구조는 디렉토리 + 스테이징 + 저장소의 3가지로 구성되어 버전을 관리한다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;디렉토리&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;버전을 관리할 코드가 위치한 경로. 즉, .git파일이 위치하는 파일 자체를 의미한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;스테이징&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;디렉토리에서 감지된 변화가 저장되는 임시 저장소. (git add 커멘드를 이용하여 디렉토리 -&gt; 스테이징으로 변화를 저장한다.)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;저장소&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;스테이징에서 commit한 변화를 하나로 묶어 버전으로 저장소에 저장한다.
+저장소에 저장된 코드는 github과 같은 코드저장소에 &lt;code class=&quot;language-text&quot;&gt;push&lt;/code&gt; 하여 사용한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;2. [git] git pull VS git fetch&lt;/h2&gt;
+&lt;p&gt;git fetch와 pull은 원격저장소의 코드의 변화를 감지하는 기능이 있다는데에서 공통점을 가지고 있다.&lt;br&gt;
+차이점은, fetch는 원격저장소의 변화가 있어도 로컬의 코드에 덮어쓰지 않고, pull은 원격저장소의 변화를 코드에 덮어씌운다.&lt;/p&gt;
+&lt;h2&gt;3. [회고] 221031 회고 : 같이 일하고 싶은 개발자&lt;/h2&gt;
+&lt;p&gt;오늘 처음 내일배움캠프를 참여하여, 팀프로젝트를 진행했다.&lt;br&gt;
+미니프로젝트의 주제는 사전캠프를 통해 배운 것들을 이용해, 팀 소개 페이지를 만드는 것이었다.&lt;br&gt;
+팀 협업을 너무 오랜만에 해서 좋았지만 두려움도 있었다.&lt;br&gt;
+그래서 그런지, 과거의 좋지않은 습관이 나왔다. 주변을 돌아보지 않고 나도모르게 API 문서를 와다다다 작성하고 있었다.&lt;br&gt;
+결과적으로 초기 API는 5개가 나왔다. 이후에 매니저님께 문서 피드백 받았는데, 기한을 맞출 수 있는지 우려하셨고 모두의 속도에 맞출 수 있는 대안을 제시해주셨다. 매니저님의 피드백을 듣고, 팀원들의 얼굴을 보았다. 지쳐보이는 기색이 역력했다.&lt;br&gt;
+죄송하다고 말씀드리고, API를 기초적인 기능만 빼고 모두 수정하여, 2개만 남겼다.&lt;/p&gt;
+&lt;h2&gt;4. [회고] 내일 다짐&lt;/h2&gt;
+&lt;p&gt;과거의 쓸데없는 경험은 버리자. 겸손하자.&lt;br&gt;
+나는 팀 협업경험이 부족했다.&lt;br&gt;
+그렇기에 팀과 함께 소통하는 개발자로 성장하고 싶었고, 따라서, PBL(Project Based Learn)방식으로 교육을 진행하는 내일배움캠프에 합류했다.&lt;br&gt;
+팀원들의 속도에 맞출 수 있는 개발자로 성장하자.&lt;br&gt;
+&apos;제가 예전에 해봤어요.&apos; 라는 설득력없는 근거(라고 쓰고 고집이라고 읽는다)보다, 모두가 납득할 수 있는 근거로 모두를 설득할 수 있는 개발자가 되자. 남을 기분좋게 만드는 사람이 되자.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[✏️ 2022-09-02 Today I Learn]]></title><description><![CDATA[1. Javascript 실행컨텍스트 추후 추가예정 2. Javascript 스코프 체인 추후 추가예정 3. CS HTTP 상태코드 HTTP 상태코드 포스팅]]></description><link>https://mitoconcrete.github.io/22_09_02/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_09_02/</guid><pubDate>Fri, 02 Sep 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. [Javascript] 실행컨텍스트&lt;/h2&gt;
 &lt;p&gt;추후 추가예정&lt;/p&gt;
 &lt;h2&gt;2. [Javascript] 스코프 체인&lt;/h2&gt;
 &lt;p&gt;추후 추가예정&lt;/p&gt;
@@ -78,7 +116,11 @@ PRG를 사용하면, 리다이렉트 후 보여진 화면에서 GET만  호출�
 &lt;p&gt;서버가 일시적인 과부하 또는 예정된 작업을 요청을 처리할 수 없음. Retry-After 헤더로 얼마 뒤에 복구 되는지 보낼 수 있음. &lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2&gt;!중요!&lt;/h2&gt;
-&lt;p&gt;500에러는 정말 서버에 문제가 있을 때 내는 것이기 때문에, 비즈니스 로직 상 발생한 문제에 대해서 500보단 2xx, 4xx대 코드로 해결해야함.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[프로토타입에 관하여]]></title><description><![CDATA[prototype 원형을 의미합니다.
+&lt;p&gt;500에러는 정말 서버에 문제가 있을 때 내는 것이기 때문에, 비즈니스 로직 상 발생한 문제에 대해서 500보단 2xx, 4xx대 코드로 해결해야함.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[✏️ 2022-08-30 Today I Learn]]></title><description><![CDATA[1. 라운드 로빈 스케쥴링 시분할 시스템을 위해 설계된 선점형 스케줄링의 하나로서, 프로세스들 간에 우선순위를 두지 않고 순서대로 시간단위로 CPU…]]></description><link>https://mitoconcrete.github.io/22_08_30/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_08_30/</guid><pubDate>Tue, 30 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. 라운드 로빈 스케쥴링&lt;/h2&gt;
+&lt;p&gt;시분할 시스템을 위해 설계된 선점형 스케줄링의 하나로서, 프로세스들 간에 우선순위를 두지 않고 순서대로 시간단위로 CPU를 할당하는 스케쥴링 방식입니다.
+추후 학습할 자바스크립트 이벤트 루프의 동작방식이 라운드 로빈 스케쥴링 방식입니다.&lt;/p&gt;
+&lt;h2&gt;2. 자바스크립트 프로토타입&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;/JS_프로토타입&quot;&gt;프로토타입 학습 링크&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[프로토타입에 관하여]]></title><description><![CDATA[prototype 원형을 의미합니다.
 원형의 속성을 조회하고 싶다면 아래와 같이 조회하면 된다. 하지만 new 키워드를 통해서 만든 복제품 에게는 원형의 속성을 조회할 수 없다.
 예를 들어 아래의 코드에서는 prototype 이 undefined…]]></description><link>https://mitoconcrete.github.io/JS_프로토타입/</link><guid isPermaLink="false">https://mitoconcrete.github.io/JS_프로토타입/</guid><pubDate>Tue, 30 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;prototype&lt;/h2&gt;
 &lt;p&gt;원형을 의미합니다.
@@ -177,11 +219,12 @@ foo&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;constructor &lt
 &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3&gt;참고&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&quot;https://tecoble.techcourse.co.kr/post/2021-06-14-prototype/&quot;&gt;https://tecoble.techcourse.co.kr/post/2021-06-14-prototype/&lt;/a&gt;
-&lt;a href=&quot;https://ko.javascript.info/function-prototype&quot;&gt;https://ko.javascript.info/function-prototype&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[✏️ 2022-08-30 Today I Learn]]></title><description><![CDATA[1. 라운드 로빈 스케쥴링 시분할 시스템을 위해 설계된 선점형 스케줄링의 하나로서, 프로세스들 간에 우선순위를 두지 않고 순서대로 시간단위로 CPU…]]></description><link>https://mitoconcrete.github.io/22_08_30/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_08_30/</guid><pubDate>Tue, 30 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. 라운드 로빈 스케쥴링&lt;/h2&gt;
-&lt;p&gt;시분할 시스템을 위해 설계된 선점형 스케줄링의 하나로서, 프로세스들 간에 우선순위를 두지 않고 순서대로 시간단위로 CPU를 할당하는 스케쥴링 방식입니다.
-추후 학습할 자바스크립트 이벤트 루프의 동작방식이 라운드 로빈 스케쥴링 방식입니다.&lt;/p&gt;
-&lt;h2&gt;2. 자바스크립트 프로토타입&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;/JS_프로토타입&quot;&gt;프로토타입 학습 링크&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[이벤트 버블링/캡쳐링]]></title><description><![CDATA[1. 버블링 정의 한 요소에 이벤트가 발생하면, 이 요소에 할당된 핸들러가 동작하고, 이어서 부모 요소의 핸들러가 동작합니다. 가장 최상단의 조상 요소를 만날 때까지 이 과정이 반복되면서 요소 각각에 할당된 핸들러가 동작하는 현상.…]]></description><link>https://mitoconcrete.github.io/JS_버블링과캡쳐링/</link><guid isPermaLink="false">https://mitoconcrete.github.io/JS_버블링과캡쳐링/</guid><pubDate>Mon, 29 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. 버블링 정의&lt;/h2&gt;
+&lt;a href=&quot;https://ko.javascript.info/function-prototype&quot;&gt;https://ko.javascript.info/function-prototype&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[✏️ 2022-08-29 Today I Learn]]></title><description><![CDATA[1. 이벤트 실행 우선순위 인라인 이벤트실행 -> addEventListener 이벤트 실행
+인라인 이벤트는 event 객체가 parameter로 넘겨지지 않습니다. 2. 버블링과 캡쳐링 버블링과 캡쳐링에 대하여]]></description><link>https://mitoconcrete.github.io/22_08_29/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_08_29/</guid><pubDate>Mon, 29 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. 이벤트 실행 우선순위&lt;/h2&gt;
+&lt;p&gt;인라인 이벤트실행 -&gt; addEventListener 이벤트 실행
+인라인 이벤트는 event 객체가 parameter로 넘겨지지 않습니다.&lt;/p&gt;
+&lt;h2&gt;2. 버블링과 캡쳐링&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&apos;/JS_버블링과캡쳐링&apos;&gt;버블링과 캡쳐링에 대하여&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[이벤트 버블링/캡쳐링]]></title><description><![CDATA[1. 버블링 정의 한 요소에 이벤트가 발생하면, 이 요소에 할당된 핸들러가 동작하고, 이어서 부모 요소의 핸들러가 동작합니다. 가장 최상단의 조상 요소를 만날 때까지 이 과정이 반복되면서 요소 각각에 할당된 핸들러가 동작하는 현상.…]]></description><link>https://mitoconcrete.github.io/JS_버블링과캡쳐링/</link><guid isPermaLink="false">https://mitoconcrete.github.io/JS_버블링과캡쳐링/</guid><pubDate>Mon, 29 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. 버블링 정의&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;한 요소에 이벤트가 발생하면, 이 요소에 할당된 핸들러가 동작하고, 이어서 부모 요소의 핸들러가 동작합니다. 가장 최상단의 조상 요소를 만날 때까지 이 과정이 반복되면서 요소 각각에 할당된 핸들러가 동작하는 현상.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -258,12 +301,7 @@ el&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://ko.javascript.info/bubbling-and-capturing&quot;&gt;https://ko.javascript.info/bubbling-and-capturing&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://joshua1988.github.io/web-development/javascript/event-propagation-delegation/&quot;&gt;https://joshua1988.github.io/web-development/javascript/event-propagation-delegation/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[✏️ 2022-08-29 Today I Learn]]></title><description><![CDATA[1. 이벤트 실행 우선순위 인라인 이벤트실행 -> addEventListener 이벤트 실행
-인라인 이벤트는 event 객체가 parameter로 넘겨지지 않습니다. 2. 버블링과 캡쳐링 버블링과 캡쳐링에 대하여]]></description><link>https://mitoconcrete.github.io/22_08_29/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_08_29/</guid><pubDate>Mon, 29 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. 이벤트 실행 우선순위&lt;/h2&gt;
-&lt;p&gt;인라인 이벤트실행 -&gt; addEventListener 이벤트 실행
-인라인 이벤트는 event 객체가 parameter로 넘겨지지 않습니다.&lt;/p&gt;
-&lt;h2&gt;2. 버블링과 캡쳐링&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&apos;/JS_버블링과캡쳐링&apos;&gt;버블링과 캡쳐링에 대하여&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[✏️ 2022-08-28 Today I Learn]]></title><description><![CDATA[해시 테이블…]]></description><link>https://mitoconcrete.github.io/22_08_28/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_08_28/</guid><pubDate>Sun, 28 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;해시 테이블&lt;/h2&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[✏️ 2022-08-28 Today I Learn]]></title><description><![CDATA[해시 테이블…]]></description><link>https://mitoconcrete.github.io/22_08_28/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_08_28/</guid><pubDate>Sun, 28 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;해시 테이블&lt;/h2&gt;
 &lt;h3&gt;1. 개념&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;해시 - 고기와 감자를 잘게다져 요리한것. 키 값을 잘게 다져 특정 인덱스로 변경
