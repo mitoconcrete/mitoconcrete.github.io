@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 31 Oct 2022 12:36:13 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-10-31 Today I Learn]]></title><description><![CDATA[1. git git 구조의 이해 git 구조는 디렉토리 + 스테이징 + 저장소의 3가지로 구성되어 버전을 관리한다. 디렉토리 버전을 관리할 코드가 위치한 경로. 즉, .git…]]></description><link>https://mitoconcrete.github.io/22_10_31/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_10_31/</guid><pubDate>Mon, 31 Oct 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. [git] git 구조의 이해&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 31 Oct 2022 12:41:50 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-10-31 Today I Learn]]></title><description><![CDATA[1. git git 구조의 이해 git 구조는 디렉토리 + 스테이징 + 저장소의 3가지로 구성되어 버전을 관리한다. 디렉토리 버전을 관리할 코드가 위치한 경로. 즉, .git…]]></description><link>https://mitoconcrete.github.io/22_10_31/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_10_31/</guid><pubDate>Mon, 31 Oct 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. [git] git 구조의 이해&lt;/h2&gt;
 &lt;p&gt;git 구조는 디렉토리 + 스테이징 + 저장소의 3가지로 구성되어 버전을 관리한다.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -24,13 +24,14 @@
 &lt;h2&gt;2. [git] git pull VS git fetch&lt;/h2&gt;
 &lt;p&gt;git fetch와 pull은 원격저장소의 코드의 변화를 감지하는 기능이 있다는데에서 공통점을 가지고 있다.&lt;br&gt;
 차이점은, fetch는 원격저장소의 변화가 있어도 로컬의 코드에 덮어쓰지 않고, pull은 원격저장소의 변화를 코드에 덮어씌운다.&lt;/p&gt;
-&lt;h2&gt;3. [회고] 221031 회고 : 같이 일하고 싶은 개발자&lt;/h2&gt;
+&lt;h2&gt;3. [회고] 221031 회고 : 같이 일하고 싶은 개발자가 아니었다.&lt;/h2&gt;
 &lt;p&gt;오늘 처음 내일배움캠프를 참여하여, 팀프로젝트를 진행했다.&lt;br&gt;
 미니프로젝트의 주제는 사전캠프를 통해 배운 것들을 이용해, 팀 소개 페이지를 만드는 것이었다.&lt;br&gt;
 팀 협업을 너무 오랜만에 해서 좋았지만 두려움도 있었다.&lt;br&gt;
 그래서 그런지, 과거의 좋지않은 습관이 나왔다. 주변을 돌아보지 않고 나도모르게 API 문서를 와다다다 작성하고 있었다.&lt;br&gt;
 결과적으로 초기 API는 5개가 나왔다. 이후에 매니저님께 문서 피드백 받았는데, 기한을 맞출 수 있는지 우려하셨고 모두의 속도에 맞출 수 있는 대안을 제시해주셨다. 매니저님의 피드백을 듣고, 팀원들의 얼굴을 보았다. 지쳐보이는 기색이 역력했다.&lt;br&gt;
-죄송하다고 말씀드리고, API를 기초적인 기능만 빼고 모두 수정하여, 2개만 남겼다.&lt;/p&gt;
+죄송하다고 말씀드리고, API를 기초적인 기능만 빼고 모두 수정하여, 2개만 남겼다.
+과연, 나는 오늘 팀원들에게 편안함을 줄 수 있는 동료였는가? 라고 평가를 해보았을 때, 전혀 아니라고 생각했다.&lt;/p&gt;
 &lt;h2&gt;4. [회고] 내일 다짐&lt;/h2&gt;
 &lt;p&gt;과거의 쓸데없는 경험은 버리자. 겸손하자.&lt;br&gt;
 나는 팀 협업경험이 부족했다.&lt;br&gt;
