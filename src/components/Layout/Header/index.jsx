@@ -113,7 +113,7 @@ const Header = ({ toggleTheme }) => {
   const [scrollY, setScrollY] = useState()
   const [hidden, setHidden] = useState(false)
   const ChannelTalkWidjet = () => {
-    return (
+    return typeof window !== "undefined" ? (
       <script>
         {(function () {
           var w = window
@@ -158,6 +158,8 @@ const Header = ({ toggleTheme }) => {
           pluginKey: "ae9ab0cc-d51c-4fd4-988d-12110708d710",
         })}
       </script>
+    ) : (
+      ""
     )
   }
 
