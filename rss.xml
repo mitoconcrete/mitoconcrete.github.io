@@ -1,4 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 31 Oct 2022 14:31:04 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-10-31 Today I Learn]]></title><description><![CDATA[1. git git 구조의 이해 git 구조는 디렉토리 + 스테이징 + 저장소의 3가지로 구성되어 버전을 관리한다. 디렉토리 버전을 관리할 코드가 위치한 경로. 즉, .git…]]></description><link>https://mitoconcrete.github.io/22_10_31/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_10_31/</guid><pubDate>Mon, 31 Oct 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. [git] git 구조의 이해&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 01 Nov 2022 18:54:19 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-11-01 Today I Learn]]></title><description><![CDATA[1. 회고 221101 회고 개인페이지 제작 팀원들 문제 해결 튜터님과 상담 1) 오늘은 모든 팀원이 개인페이지 개발에 집중하기로 한 날이다. 어젯밤동안 구상한 UI를 Figma를 이용해 구현해보면서 개인페이지에 대한 틀을 잡았다.
+Figma…]]></description><link>https://mitoconcrete.github.io/22_11_01/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_11_01/</guid><pubDate>Tue, 01 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. [회고] 221101 회고&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;개인페이지 제작&lt;/li&gt;
+&lt;li&gt;팀원들 문제 해결&lt;/li&gt;
+&lt;li&gt;튜터님과 상담&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;1)&lt;/strong&gt;&lt;br&gt;
+오늘은 모든 팀원이 개인페이지 개발에 집중하기로 한 날이다. 어젯밤동안 구상한 UI를 Figma를 이용해 구현해보면서 개인페이지에 대한 틀을 잡았다.
+&lt;img src=&quot;/image/221101_01.png&quot; alt=&quot;Figma 구상&quot;&gt;
+WIX의 템플릿에서 영감을 받았다.
+&lt;img src=&quot;/image/221101_02.png&quot; alt=&quot;레퍼런스 템플릿&quot;&gt;
+모바일은 따로 구상을 한게 아니라, 계속 CSS를 수정하면서 이쁜모양을 찾아보고 최종적으로 디자인을 결정하였다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2)&lt;/strong&gt;&lt;br&gt;
+모든 개발을 마치고, 팀원들이 겪는 어려움을 해결해드렸다.&lt;br&gt;
+어려움을 해결해드리는 과정에서 가장 신경썼던 점은, 스스로 문제를 해결하는 즐거움을 팀원들에게 뺏지 않는 것이었다.&lt;br&gt;
+한 발자국만 더 가면 문제가 해결되는 경우가 많았기 때문에, 만약 내가 정확한 문제를 짚어 문제를 해결하면 해결하는 속도는 빨라지겠지만, 당사자입장에서는 당장은 좋아도 &apos;아 조금만 더 생각해볼걸&apos;이라는 후회가 남는 경우가 많을 거라고 생각했다.(실제로도 내가 겪음)&lt;br&gt;
+따라서, 팀원분들이 겪고계신 문제를 공유해주시면, 우선은 화면을 보면서 정확한 원인을 파악하고 문제가 발생하는 순서를 같이 정렬해보며, 이 문제가 왜 발생했는지 고민해보실 수 있도록 유도했다. 보통은 이 과정 중에 &apos;아!&apos; 하시면서, 문제를 해결하시는 경우가 많았다.&lt;br&gt;
+대부분 실패를 두려워하시고, 자신감이 없는 모습을 보이셔서 안타까웠는데, 그럴때마다 &apos;잘하고계십니다! 문제가 있으면 에러를 보여줄거에요. 생각하신 코드를 한번 적어보세요!&apos; 라고 말씀드렸다.&lt;br&gt;
+팀원분들께 &apos;생각의 주도권을 뺏지 않았는지&apos;, &apos;설명해드리는 과정에서 속도가 적절했는지&apos; 등등의 피드백을 요청드렸고, 다행이도 긍정적인 피드백을 주셨다.&lt;br&gt;
+다만, 지금까지는 내가 겪어봤고 아는 문제였기에 이런 스탠스를 지닐 수 있었지, 내가 모르는 문제들에 대해서도 일목요연하게 문제를 해결 할 수 있을지는 의문이긴하다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3)&lt;/strong&gt;&lt;br&gt;
+튜터님과 저녁에 상담을 진행했다. 내 경험들을 들으시고, 내가 현시점에 겪고 있는 고민들을 정확히 짚어주셨다.
+&apos;어느 깊이까지 피드백을 드리면 좋을지&apos;, &apos;피드백으로 팀원들의 생각을 방해하는게 아닐지&apos; 또 이후에, 기술적인 고민에 대해서 솔직하게 공유드렸다.&lt;br&gt;
+나는 어떤 기술을 습득해서 기획대로 만드는 것에는 자신있는데, 이 기술이 어떤원리로 동작하고 왜 사용하는지에 대해서는 잘 말하지 못한다.
+따라서, 이 고민을 공유드렸고, 튜터님께서는 백엔드에서는 문제가 발생했을 때 크리티컬한 문제가 발생하고, 그 원인을 정확하게 진단하기 위해서는 어떤원리로 동작하는지 이해하고 공부해야한다고 답변을 주셨다.&lt;br&gt;
+또한, 알고리즘에 대해 자세히 알지 못한다고 말씀드리니 &apos;그건 지금부터 하시면 됩니다!&apos;라고 유쾌하게 말씀주셨다.
+퇴사이후 지난 시간동안 했던 스택선택과 커리어적 고민들을 털어놓으니 후련했다.&lt;br&gt;
+자바강의를 미리들으며 공부해보는 것을 추천받았는데, 내일부터 한번 들어보려고 한다.&lt;/p&gt;
+&lt;h2&gt;2. [회고] 내일 다짐&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;상대방의 성취감을 뺏지않으려고 노력하기&lt;/li&gt;
+&lt;li&gt;상대방의 말을 듣기&lt;/li&gt;
+&lt;li&gt;말하고자하는 것에 대해 명확히하고, 정리가 된 후 입밖으로 말하기&lt;/li&gt;
+&lt;li&gt;서로 모르는 문제에 대해, 문제를 해결해 나가는 과정을 의식하고 기록하기&lt;/li&gt;
+&lt;li&gt;개인 공부 시작 (자바 + 알고리즘)&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[✏️ 2022-10-31 Today I Learn]]></title><description><![CDATA[1. git git 구조의 이해 git 구조는 디렉토리 + 스테이징 + 저장소의 3가지로 구성되어 버전을 관리한다. 디렉토리 버전을 관리할 코드가 위치한 경로. 즉, .git…]]></description><link>https://mitoconcrete.github.io/22_10_31/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_10_31/</guid><pubDate>Mon, 31 Oct 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. [git] git 구조의 이해&lt;/h2&gt;
 &lt;p&gt;git 구조는 디렉토리 + 스테이징 + 저장소의 3가지로 구성되어 버전을 관리한다.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
