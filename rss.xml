@@ -1,16 +1,76 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 01 Nov 2022 18:54:19 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-11-01 Today I Learn]]></title><description><![CDATA[1. 회고 221101 회고 개인페이지 제작 팀원들 문제 해결 튜터님과 상담 1) 오늘은 모든 팀원이 개인페이지 개발에 집중하기로 한 날이다. 어젯밤동안 구상한 UI를 Figma를 이용해 구현해보면서 개인페이지에 대한 틀을 잡았다.
-Figma…]]></description><link>https://mitoconcrete.github.io/22_11_01/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_11_01/</guid><pubDate>Tue, 01 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. [회고] 221101 회고&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 02 Nov 2022 14:53:06 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-11-02 Today I Learn]]></title><description><![CDATA[1. JSON과 XML XML(eXtensible Markup Language) 마크업 언어로서, 데이터를 정의할 때 쓰인다. 해당 문서의 요소는 데이터로서, 유저는 작성된 데이터를 저장하여 다른곳에 전송한다. HTML…]]></description><link>https://mitoconcrete.github.io/22_11_02/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_11_02/</guid><pubDate>Wed, 02 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. JSON과 XML&lt;/h2&gt;
+&lt;h3&gt;XML(eXtensible Markup Language)&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;xml&quot;&gt;&lt;pre class=&quot;language-xml&quot;&gt;&lt;code class=&quot;language-xml&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;xml&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&apos;&lt;/span&gt;1.0&lt;span class=&quot;token punctuation&quot;&gt;&apos;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;toy&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;robot&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;toy&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;fruit&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;apple&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;fruit&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;xml&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;마크업 언어로서, 데이터를 정의할 때 쓰인다.&lt;/li&gt;
+&lt;li&gt;해당 문서의 요소는 데이터로서, 유저는 작성된 데이터를 저장하여 다른곳에 전송한다.&lt;/li&gt;
+&lt;li&gt;HTML과 유사한 방식으로 데이터에 해당되는 태그를 열고 닫음으로서, 데이터를 정의한다.&lt;/li&gt;
+&lt;li&gt;XML에는 데이터설명,버전을 적을 수 있어, 이를 이용해 데이터의 무결성을 보장한다.&lt;/li&gt;
+&lt;li&gt;따라서, 은행,정부문서와 같은 데이터의 무결성이 중요한 곳에서 XML을 주로 사용한다.&lt;/li&gt;
+&lt;li&gt;문서를 파싱하여, 가공가능 한 데이터로 만드는 것에 시간이 필요하다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;JSON(JavaScript Object Notion)&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token string-property property&quot;&gt;&quot;toy&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;robot&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string-property property&quot;&gt;&quot;fruit&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;apple&quot;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;key : value 쌍으로 이루어진, 데이터 형태&lt;/li&gt;
+&lt;li&gt;JSON은 자바스크립트 함수인 eval()로 파싱되어 해석된다.&lt;/li&gt;
+&lt;li&gt;문자열을 전송받은 후 곧바로 문자열을 파싱하므로 XML에 비하여 가공속도가 빠르다.&lt;/li&gt;
+&lt;li&gt;따라서, 빨리 읽고 쓸 수 있다는 장점이 있다.&lt;/li&gt;
+&lt;li&gt;하지만, 데이터의 버전이나, 설명같은 부가설명을 할 수 없기 때문에 무결성을 보장 할 수 없다.&lt;/li&gt;
+&lt;li&gt;따라서, 무결성 보장을 위한 검증을 추가적으로 신경써줘야한다.&lt;/li&gt;
+&lt;li&gt;JSON은 XML과 다르게, 배열사용이 가능하다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;2. [회고] 221102 회고&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;팀 프로젝트 진행&lt;/li&gt;
+&lt;li&gt;팀원들 문제 해결1 : git flow&lt;/li&gt;
+&lt;li&gt;팀원들 문제 해결2 : 업무 할당&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;1)&lt;/strong&gt;&lt;br&gt;
+개인 게시판 마크업이 끝나고, 팀원들의 모든 HTML파일을 모았다. 팀원명을 클릭했을 때, 클릭한 팀원의 페이지로 이동하는 로직을 작성해야했다.
+팀원들이 5명인데, 기존에는 팀원들 5명에대한 html을 rendering하는 함수를 일일히 작성해야하는지 고민했다.&lt;/p&gt;
+&lt;p&gt;같은 기능이 반복될 것 같아서, 지속적으로 고민하다 갑자기 문득떠오른게 parameter를 이용해 동적으로 html파일을 rendering하는 방법이었다!
+혹시 되나 싶어 적용해보니, 동작하길래 곧바로 아래의 api를 작성하여 적용하였다. 이제 우리 팀페이지는 하나의 함수에서 동적으로 선택되어 보여질 수 있다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token decorator annotation punctuation&quot;&gt;@app&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;route&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;/members&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; methods&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;GET&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;members&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    parameter_dict &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; request&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;args&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;to_dict&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; parameter_dict&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;name&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; render_template&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string-interpolation&quot;&gt;&lt;span class=&quot;token string&quot;&gt;f&apos;members/&lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;name&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;.html&apos;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;2)&lt;/strong&gt;&lt;br&gt;
+나의 욕심으로 이번 프로젝트에서 팀원들이 git을 사용하도록 제안하였다. 아침에 &lt;em&gt;진실의 방&lt;/em&gt;에서 git을 사용하는 모습을 간단히 시연해드렸는데, 처음에 3분만 계셨는데 시연이 모두 끝나고 돌아보니깐 팀원들이 모두 시연을 보러와주셔서 좋았다.(옹기종기 모여있는 모습이 귀여웠다)
+public repo에 권한이 준다면, PR을 하지않고 push/pull 다 할 수 있을 줄 알았는데, 내 착각이었다. 역시나 권한문제가 발생하였고, 내 repo를 fork해서 PR을 날려야 하는 상황이 되었다.&lt;/p&gt;
+&lt;p&gt;죄송하다고 말씀드리고 모든 팀원들의 repo를 연결해드리는 것을 도와드렸다. 원래는 직접적인 커멘드를 말씀드리지 않았는데, clone한 repo의 기존주소를 fork한 repo의 주소로 변경하는 것을 직접 커멘드를 입력하면서 해결해드렸다. 몇 분들은 아직 아리까리하시다고 피드백 주셨지만, 금새 적응하여 코드를 업데이트 하시고, PR을 날려 master repo에 코드를 적용하셨다. 또한, 재미있어하는 모습을 보여주셔서 내가 다 뿌듯했다.&lt;/p&gt;
+&lt;p&gt;git문제를 해결해드리면서, 가장 신경을 썻던 것은 &apos;내가 문제를 직접적으로 해결해드리지 않는것&apos;과 &apos;정답을 말하지 않는 것&apos;이었다. 가이드가 끝나고 난 뒤, 혹시 의사를 결정하는데 있어서 내 의견이 많이 방해가 되었는지, 문제를 해결하고 난 뒤 온전히 본인 것이라는 기분이 들지 않는지, 흐름은 이해되셨는지 체크했다. 다행이도, 긍정적인 반응들을 보내주셔서 감사했다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/image/221102_01.jpg&quot; alt=&quot;팀원들이 커밋을 보낸순간&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3)&lt;/strong&gt;&lt;br&gt;
+팀원들이 모두 집중 할 수 있는 프로젝트가 되었으면 해서 끊임없이 어떻게 업무를 분배하면 좋을지 고민했다. 메인페이지 + 개인페이지의 구성으로 이루어진 프로젝트 특성상 개인페이지의 작업을 모두 마친 현상태에서, 메인페이지로 오버헤드가 몰릴 것이 당연한 상황이었다.
+따라서, 메인페이지에 업무가 모이지 않도록 다른 곳으로 업무를 분산시키는 것이 좋겠다는 생각을 했고, 모든 페이지를 모아서 작업을 할 때, 필요한 작업들을 추려서 팀원숫자만큼 나누어보았다.&lt;br&gt;
+어쩌다보니, 프로젝트 리드(?) 같은 역할을 수행하게 되었는데 팀장과 역할이 겹치는 부분이 많아서 불편해 하실 수 있겠다는 생각이 들어 내가 하는 고민들을 공유하는게 낫겠다는 판단이 들어 팀장님께 내가하고 있는 고민들을 공유드리기 위해 미팅을 요청드렸다.&lt;br&gt;
+오히려 내 고민을 이해해주시고, 오히려 생각못한 상황들을 대신 생각해줘서 고마웠다 라는 말씀을 해주셔서 너무 감사했다. 모두가 끊임없이 작업 할 수 있는 환경을 위해 남은 팀원들에게 git branch 를 생성하는 방법을 전달해주었고, 팀원들이 작업을 시작했다.&lt;br&gt;
+나는 남은 Due까지 모두가 지치지 않고, 프로젝트를 끝 마칠 수 있도록 돕고싶고, 도울것이다. 팀원들의 성장을 막는 행동은 지속적으로 신경써서 하지 않으려고 한다.&lt;/p&gt;
+&lt;h2&gt;3. [회고] 내일 다짐&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;팀원의 생각흐름에 관여하지 않기, 흐르는 대로 함께가고, 그곳에서 최선의 방법을 찾아서 제시해주기.&lt;/li&gt;
+&lt;li&gt;상대방의 성취감을 뺏지않으려고 노력하기&lt;/li&gt;
+&lt;li&gt;자바 기본 문법 3단원까지 공부하기&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[✏️ 2022-11-01 Today I Learn]]></title><description><![CDATA[1. 회고 221101 회고 개인페이지 제작 팀원들 문제 해결 튜터님과 상담 1) 오늘은 모든 팀원이 개인페이지 개발에 집중하기로 한 날이다. 어젯밤동안 구상한 UI를 Figma를 이용해 구현해보면서 개인페이지에 대한 틀을 잡았다. Figma…]]></description><link>https://mitoconcrete.github.io/22_11_01/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_11_01/</guid><pubDate>Tue, 01 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. [회고] 221101 회고&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;개인페이지 제작&lt;/li&gt;
 &lt;li&gt;팀원들 문제 해결&lt;/li&gt;
 &lt;li&gt;튜터님과 상담&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;1)&lt;/strong&gt;&lt;br&gt;
-오늘은 모든 팀원이 개인페이지 개발에 집중하기로 한 날이다. 어젯밤동안 구상한 UI를 Figma를 이용해 구현해보면서 개인페이지에 대한 틀을 잡았다.
-&lt;img src=&quot;/image/221101_01.png&quot; alt=&quot;Figma 구상&quot;&gt;
-WIX의 템플릿에서 영감을 받았다.
-&lt;img src=&quot;/image/221101_02.png&quot; alt=&quot;레퍼런스 템플릿&quot;&gt;
-모바일은 따로 구상을 한게 아니라, 계속 CSS를 수정하면서 이쁜모양을 찾아보고 최종적으로 디자인을 결정하였다.&lt;/p&gt;
+오늘은 모든 팀원이 개인페이지 개발에 집중하기로 한 날이다. 어젯밤동안 구상한 UI를 Figma를 이용해 구현해보면서 개인페이지에 대한 틀을 잡았다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/image/221101_01.png&quot; alt=&quot;Figma 구상&quot;&gt;&lt;/p&gt;
+&lt;p&gt;WIX의 템플릿에서 영감을 받았다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/image/221101_02.png&quot; alt=&quot;레퍼런스 템플릿&quot;&gt;&lt;/p&gt;
+&lt;p&gt;모바일은 따로 구상을 한게 아니라, 계속 CSS를 수정하면서 이쁜모양을 찾아보고 최종적으로 디자인을 결정하였다.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2)&lt;/strong&gt;&lt;br&gt;
 모든 개발을 마치고, 팀원들이 겪는 어려움을 해결해드렸다.&lt;br&gt;
 어려움을 해결해드리는 과정에서 가장 신경썼던 점은, 스스로 문제를 해결하는 즐거움을 팀원들에게 뺏지 않는 것이었다.&lt;br&gt;
@@ -369,7 +429,7 @@ el&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&
 &lt;p&gt;ES6 문법이므로 이하 지원브라우저에서는 사용할 수 없음.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;
 
-console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 1 &lt;/span&gt;
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 1&lt;/span&gt;
 console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 2&lt;/span&gt;
 
 &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;b&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; a&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
@@ -379,30 +439,30 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;p&gt;shift를 이용하게 되면, 빈 첫번째 메모리를 메우는 동작을 하기 때문에 n의 속도가 보장된다.
 따라서, 1의 속도를 보장해야하는 큐에서 적절하지 못하다. 아래와 같이 delete 를 이용하여 사용하면된다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Node&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;token function&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;location&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; priority&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;location &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; location&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;priority &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; priority&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;location&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; priority&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;location &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; location
+    &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;priority &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; priority
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 
 &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Queue&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;token function&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;queue &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;head &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;rear &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-    
-    &lt;span class=&quot;token function&quot;&gt;enqueue&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;location&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; priority&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// 추가 시 길이를 1늘려준다.&lt;/span&gt;
-        &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;queue&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;rear&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Node&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;location&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; priority&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-    
-    &lt;span class=&quot;token function&quot;&gt;dequeue&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// 삭제시 앞에 빈칸을 하나 추가하고, head의 인덱스를 1증가시킨다.&lt;/span&gt;
-        &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; value &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;queue&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;head&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
-        &lt;span class=&quot;token keyword&quot;&gt;delete&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;queue&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;head&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// delete를 이용했기 때문에, 1의 속도를 보장한다.&lt;/span&gt;
-        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; value
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;queue &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;head &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;rear &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;token function&quot;&gt;enqueue&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;location&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; priority&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;// 추가 시 길이를 1늘려준다.&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;queue&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;rear&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Node&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;location&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; priority&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;token function&quot;&gt;dequeue&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;// 삭제시 앞에 빈칸을 하나 추가하고, head의 인덱스를 1증가시킨다.&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; value &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;queue&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;head&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;delete&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;queue&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;head&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// delete를 이용했기 때문에, 1의 속도를 보장한다.&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; value
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3&gt;3. [HTTP] 상태코드의 종류&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;1xx :&lt;/strong&gt; 요청이 수신되어 처리중 (거의사용하지않음)
@@ -412,9 +472,9 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;strong&gt;5xx :&lt;/strong&gt; &lt;strong&gt;&lt;em&gt;서버 오류&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;h3&gt;4. [HTTP] 상태코드 추론&lt;/h3&gt;
 &lt;p&gt;클라이언트가 인식할 수 없는 상태코드를 서버가 반환하면 클라이언트는 &lt;strong&gt;상위 상태코드&lt;/strong&gt;로 해석해서 처리한다.&lt;br/&gt;
-따라서, 미래에 새로운 상태코드가 추가되어도 클라이언트를 변경하지 않아도 된다. &lt;/p&gt;
+따라서, 미래에 새로운 상태코드가 추가되어도 클라이언트를 변경하지 않아도 된다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;388 -&gt; 3xx
-499 -&gt; 4xx &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[✏️ 2022-08-24 Today I Learn]]></title><description><![CDATA[1. form 을 통한 데이터 전송 시 http contents type aplication/x-www-form-urlencoded : string을 인코딩해서 전달해야 하기 때문에 urlencoded 라는 타입을 명시하여 사용한다. multipart…]]></description><link>https://mitoconcrete.github.io/22_08_24/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_08_24/</guid><pubDate>Wed, 24 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;1. form 을 통한 데이터 전송 시 http contents type&lt;/h3&gt;
+499 -&gt; 4xx&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[✏️ 2022-08-24 Today I Learn]]></title><description><![CDATA[1. form 을 통한 데이터 전송 시 http contents type aplication/x-www-form-urlencoded : string을 인코딩해서 전달해야 하기 때문에 urlencoded 라는 타입을 명시하여 사용한다. multipart…]]></description><link>https://mitoconcrete.github.io/22_08_24/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_08_24/</guid><pubDate>Wed, 24 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;1. form 을 통한 데이터 전송 시 http contents type&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;aplication/x-www-form-urlencoded&lt;/strong&gt; : string을 인코딩해서 전달해야 하기 때문에 urlencoded 라는 타입을 명시하여 사용한다.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;multipart/form-data&lt;/strong&gt; : 이미지 전송 시, 바이너리 파일로 여러 파트를 끊어서 보내야 할 경우 사용한다.&lt;/li&gt;
