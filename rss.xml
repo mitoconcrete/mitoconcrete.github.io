@@ -1,4 +1,60 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 03 Nov 2022 00:08:12 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-11-02 Today I Learn]]></title><description><![CDATA[1. JSON과 XML XML(eXtensible Markup Language) 마크업 언어로서, 데이터를 정의할 때 쓰인다. 해당 문서의 요소는 데이터로서, 유저는 작성된 데이터를 저장하여 다른곳에 전송한다. HTML…]]></description><link>https://mitoconcrete.github.io/22_11_02/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_11_02/</guid><pubDate>Wed, 02 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. JSON과 XML&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 03 Nov 2022 18:34:12 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-11-03 Today I Learn]]></title><description><![CDATA[1. 알고리즘 영어가 싫어요 문제 영어가 싫은 머쓱이는 영어로 표기되어있는 숫자를 수로 바꾸려고 합니다. 문자열 numbers가 매개변수로 주어질 때, numbers를 정수로 바꿔 return 하도록 solution 함수를 완성해 주세요. 2. git…]]></description><link>https://mitoconcrete.github.io/22_11_03/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_11_03/</guid><pubDate>Thu, 03 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. [알고리즘] 영어가 싫어요&lt;/h2&gt;
+&lt;h3&gt;문제&lt;/h3&gt;
+&lt;p&gt;영어가 싫은 머쓱이는 영어로 표기되어있는 숫자를 수로 바꾸려고 합니다. 문자열 numbers가 매개변수로 주어질 때, numbers를 정수로 바꿔 return 하도록 solution 함수를 완성해 주세요.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;numbers&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; numbersAsString &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&quot;zero&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&quot;one&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&quot;two&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&quot;three&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&quot;four&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&quot;five&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&quot;six&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&quot;seven&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&quot;eight&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&quot;nine&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&quot;&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; temp &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&quot;&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; string &lt;span class=&quot;token keyword&quot;&gt;of&lt;/span&gt; numbers&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    temp &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; string
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;numbersAsString&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;includes&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;temp&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      result &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; numbersAsString&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;indexOf&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;temp&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      temp &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&quot;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Number&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;result&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;2. [git] fork를 이용한 git 협업 플로우&lt;/h3&gt;
+&lt;p&gt;이번 프로젝트 일 때, fork를 이용해서 진행했는데 뭔가 예전에 했던 방식이랑 다르게 동작해서 계속 팀원들이 최신버전의 코드를 받기 위해 github에서 sync fork를 한뒤 진행했다. 원래는 upstream과 origin을 각각두고, upstream에서 계속 최신코드를 받아서 사용해야하는데 이번엔 origin만 두게되어.. 좀 희안한 플로우가 되었다... 다음엔 이런실수를 하지 않아야지..&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/image/221103_01.png&quot; alt=&quot;이상적인 Fork협업 플로우&quot;&gt;&lt;/p&gt;
+&lt;h2&gt;2. [회고] 221103 회고&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;프로젝트 마무리&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;1)&lt;/strong&gt;&lt;br&gt;
+오늘까지 프로젝트를 완성해야 내일 넉넉하게 발표준비를 할 수 있기 때문에, 각 임무를 열심히 수행 중이신 팀원들에게 죄송하지만..
+어쩔수없이 시간을 정해놓고 문제를 해결하길 요청드렸다.
+다행히도 다들 git에서 문제를 겪으신것 빼고는, 시간안에 기능을 구현하셔서 제출해주셨다.&lt;br&gt;
+그 과정에서 다들 내 덕에 문제를 해결했다는 피드백을 주셨는데, 다들 문제를 해결하는 과정에서 확신이 없다보니 맞는방향으로 가고있음에도 불구하고 그걸 적용하지 않고 있다가, &apos;잘하고 계십니다!&apos;라는 피드백을 드렸을 때 그제야 코드를 적용하시는 모습을 보면서 내가 팀원분들의 생각을 막고 있는 것 같다는 생각이 들어서 많이 죄송했다.&lt;/p&gt;
+&lt;p&gt;아마도 나중엔 팀원들이 내 도움이 아닌 본인 스스로의 능력으로 코드를 작성하셨다는 것을 깨달을 것이라고 생각한다.&lt;/p&gt;
+&lt;p&gt;좀 민망 모먼트가 있었는데, 서버-클라이언트 연결을 하고, 각 페이지에 해당되는 방명록만 받아볼 수 있는 기능을 담당하는 팀원이 작업을 마치고 후련해하고 계셨는데, 할당업무 범위에 대한 오해가 있었다. 우리 프로젝트는 메인페이지 + 각 멤버별 페이지로 구성되어 있는데, 팀원분은 각 멤버별 페이지에서만 해당기능을 동작하도록 만드는 것이라고 생각했고, 나는 메인페이지를 포함한 모든페이지에서 동작하도록 만드는 것을 제안드린 것이었다. 이런 상황을 말씀드리니 팀원분께서 많이 부담스러워 하시는 것이 보였다. 그도그럴게, 어제부터 몇십시간동안 집중을 유지하며 오셨고, 그걸 다 해결했다고 생각했는데 그게 아니라고 하니 아마 소위 &apos;멘붕&apos;이 오셨던게 확실해보였다.&lt;br&gt;
+사실 메인페이지 내용을 불러오는게 다른페이지에 작성하셨던 코드와 별반차이는 없지만, 그게 이미 &apos;멘붕&apos;상태인 팀원에게는 받아들이기 버거울 수 있다는 생각을 했다. 가이드를 머리로는 이해하셨는데, 행동으로 하실 체력이 없어보였다..
+따라서, 내가 콘솔같은 자잘한 것들을 정리하면서, 해당부분을 작업해드리기로 했다. 근데, 내가 작업하는 과정을 공유해달라고 하셔서 작업과정을 화면을 공유하고 팀원들이 내가 지금 어떤 행동을 하고 있는지 알 수 있도록 말하면서 진행했다. 근데 정신을 차리고보니 zep을 봤는데, 멘토님과 매니저님께서 오셔서 그 과정을 구경하고 계셨다(!)
+멘토님께 프로젝트 관여는 최소한으로 해달라는 미션(?)를 받았기 때문에 내가 코드를 작성하고 있는것을 들킨 상황이 민망했다..&lt;/p&gt;
+&lt;p&gt;그래도, 처음에 서먹했던 팀원들이 내가 할당한 업무를 통해 성취감을 얻고, 성장한 것이 보여서 뿌듯했다.
+.&lt;br&gt;
+.&lt;br&gt;
+.&lt;br&gt;
+근데 왜 제가..발표죠?&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;221103_02.png&quot; alt=&quot;사다리타기로 발표 걸림&quot;&gt;&lt;/p&gt;
+&lt;h2&gt;3. [회고] 내일 다짐&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;두괄식으로 이야기하기&lt;/li&gt;
+&lt;li&gt;머릿속에 생각을 정리한 뒤, 말하기&lt;/li&gt;
+&lt;li&gt;남들앞에 서는 것을 두려워하지 않기&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[✏️ 2022-11-02 Today I Learn]]></title><description><![CDATA[1. JSON과 XML XML(eXtensible Markup Language) 마크업 언어로서, 데이터를 정의할 때 쓰인다. 해당 문서의 요소는 데이터로서, 유저는 작성된 데이터를 저장하여 다른곳에 전송한다. HTML…]]></description><link>https://mitoconcrete.github.io/22_11_02/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_11_02/</guid><pubDate>Wed, 02 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. JSON과 XML&lt;/h2&gt;
 &lt;h3&gt;XML(eXtensible Markup Language)&lt;/h3&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;xml&quot;&gt;&lt;pre class=&quot;language-xml&quot;&gt;&lt;code class=&quot;language-xml&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;xml&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&apos;&lt;/span&gt;1.0&lt;span class=&quot;token punctuation&quot;&gt;&apos;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
   &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;toy&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;robot&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;toy&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
@@ -12,7 +68,7 @@
 &lt;li&gt;따라서, 은행,정부문서와 같은 데이터의 무결성이 중요한 곳에서 XML을 주로 사용한다.&lt;/li&gt;
 &lt;li&gt;문서를 파싱하여, 가공가능 한 데이터로 만드는 것에 시간이 필요하다.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;JSON(JavaScript Object Notion)&lt;/h3&gt;
+&lt;h3&gt;JSON(JavaScript Object Notation)&lt;/h3&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;token string-property property&quot;&gt;&quot;toy&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;robot&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
     &lt;span class=&quot;token string-property property&quot;&gt;&quot;fruit&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;apple&quot;&lt;/span&gt;
