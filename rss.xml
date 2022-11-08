@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 08 Nov 2022 17:07:10 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-11-08 Today I Learn]]></title><description><![CDATA[Java 1. JVM / JRE / JDK JDK, JRE, JVM 관계 1-1. JVM (Java Virtual Machine) 우리가 Java…]]></description><link>https://mitoconcrete.github.io/22_11_08/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_11_08/</guid><pubDate>Tue, 08 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;[Java] 1. JVM / JRE / JDK&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 08 Nov 2022 17:17:31 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-11-08 Today I Learn]]></title><description><![CDATA[Java 1. JVM / JRE / JDK JDK, JRE, JVM 관계 1-1. JVM (Java Virtual Machine) 우리가 Java…]]></description><link>https://mitoconcrete.github.io/22_11_08/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_11_08/</guid><pubDate>Tue, 08 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;[Java] 1. JVM / JRE / JDK&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;/image/221108_01.png&quot; alt=&quot;JDK, JRE, JVM 관계&quot;&gt;&lt;/p&gt;
 &lt;h3&gt;1-1. JVM (Java Virtual Machine)&lt;/h3&gt;
 &lt;ul&gt;
@@ -66,7 +66,7 @@
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;catch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Exception_2&lt;/span&gt; e&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;3. [Java] Collection&lt;/h2&gt;
+&lt;h2&gt;[Java] 3. Collection&lt;/h2&gt;
 &lt;p&gt;자료구조를 표현하고 사용하기 위한 클래스의 집합.&lt;/p&gt;
 &lt;h3&gt;3-1. ArrayList vs HashSet&lt;/h3&gt;
 &lt;ul&gt;
@@ -79,7 +79,7 @@
 &lt;li&gt;그래서 pop(), push(), peek() 등에 synchronized를 이용해 ArrayDeque을 구현하면 된다.&lt;/li&gt;
 &lt;li&gt;ArrayDeque의 push는 addFirst와 동일하게 동작한다.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;4. [Java] Generics&lt;/h2&gt;
+&lt;h2&gt;[Java] 4. Generics&lt;/h2&gt;
 &lt;p&gt;Collection 클래스를 Generics를 통해 컴파일타임에 타입체크해줌으로서, 프로그램의 안정성을 증대시켜준다.&lt;/p&gt;
 &lt;h3&gt;4-1. 사용예들&lt;/h3&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token generics&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// Type&lt;/span&gt;
@@ -88,7 +88,7 @@
 &lt;span class=&quot;token generics&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;V&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;//Value&lt;/span&gt;
 &lt;span class=&quot;token generics&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;//Number&lt;/span&gt;
 &lt;span class=&quot;token generics&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;//Result&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;5. [Java] 람다와 스트림&lt;/h2&gt;
+&lt;h2&gt;[Java] 5. 람다와 스트림&lt;/h2&gt;
 &lt;h3&gt;5-1. 람다&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;식별자 없이 실행 가능한 함수.&lt;/li&gt;
@@ -104,15 +104,15 @@
 &lt;li&gt;한번닫힌 흐름은 재사용이 불가하다.&lt;/li&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;collect()&lt;/code&gt; 를 이용하여 스트림과정에서 return된 결과를 모아준다. 매개변수를 통해 collection타입도 변경가능하다.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;6. [CS] API(Application Programing Interface)&lt;/h2&gt;
+&lt;h2&gt;[CS] 6. API(Application Programing Interface)&lt;/h2&gt;
 &lt;p&gt;데이터를 주고받는 형식에 대한 약속(규약-Interface)&lt;/p&gt;
-&lt;h2&gt;7. [Python] set&lt;/h2&gt;
+&lt;h2&gt;[Python] 7. set&lt;/h2&gt;
 &lt;p&gt;set은 집합을 만들기 위한 개념으로서 합/교/차집합을 구하는 것이 가능하다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token builtin&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# 교집합&lt;/span&gt;
 &lt;span class=&quot;token builtin&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# 합집합&lt;/span&gt;
 &lt;span class=&quot;token builtin&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# 차집합&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;set은 중복을 없애준다. 단, 순서를 보장하지 않는다.&lt;/p&gt;
-&lt;h2&gt;8. [Python] 다양한 매개변수를 받는방법&lt;/h2&gt;
+&lt;h2&gt;[Python] 8. 다양한 매개변수를 받는방법&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;args&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
     &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;args&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# (a,b,c,) 튜플형식으로 인자가 들어옴&lt;/span&gt;
 
@@ -129,8 +129,7 @@
 &lt;/ol&gt;
 &lt;p&gt;너무나도 명확하게 내가 고쳐야 할 점들이 도출되었다. 내가 봐 온 위대한 개발자들은 군중앞에서 말하고, 의견을 나누고, 토론하는 것을 즐겼다.
 다만, 그게 틀릴지라도 틀린것에 반박할 수 있는 지식을 가지고 있었지만 말이다.
-어쨋던, 난 너무 내 틀에 갖혀있다는 생각을 했다. 토론이 이뤄질 때, 찌질하게 비전공자들이 모여있는 방에 저건 맞다 저건아니다 하는 시시비비를 가리는 모습을 보면서 마치..
-내가 악플러가 된 것 처럼 느껴졌다.
+어쨋던, 난 너무 내 틀에 갖혀있다는 생각을 했다. 토론이 이뤄질 때, 비전공자 팀원들이 모여있는 방에 숨어 저건 맞다 저건아니다 하는 시시비비를 가리는 모습을 보면서 앞으로 나서지 못하고 뒤에서 의견을 내는 내가 한심하게 느껴졌다.&lt;br&gt;
 이건 아니다.&lt;br&gt;
 이건 성장할 수 없는 태도다.&lt;br&gt;
 왜 겁을 내는가.&lt;br&gt;

@@ -241,7 +241,7 @@ data-styled.g66[id="Footer__HiddenWrapper-sc-zqxmks-9"]{content:"iyImhS,iqspNU,"
 <span class="token punctuation">}</span><span class="token keyword">catch</span><span class="token punctuation">(</span><span class="token class-name">Exception_2</span> e<span class="token punctuation">)</span><span class="token punctuation">{</span>
     <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
 <span class="token punctuation">}</span></code></pre></div>
-<h2>3. [Java] Collection</h2>
+<h2>[Java] 3. Collection</h2>
 <p>자료구조를 표현하고 사용하기 위한 클래스의 집합.</p>
 <h3>3-1. ArrayList vs HashSet</h3>
 <ul>
@@ -254,7 +254,7 @@ data-styled.g66[id="Footer__HiddenWrapper-sc-zqxmks-9"]{content:"iyImhS,iqspNU,"
 <li>그래서 pop(), push(), peek() 등에 synchronized를 이용해 ArrayDeque을 구현하면 된다.</li>
 <li>ArrayDeque의 push는 addFirst와 동일하게 동작한다.</li>
 </ul>
-<h2>4. [Java] Generics</h2>
+<h2>[Java] 4. Generics</h2>
 <p>Collection 클래스를 Generics를 통해 컴파일타임에 타입체크해줌으로서, 프로그램의 안정성을 증대시켜준다.</p>
 <h3>4-1. 사용예들</h3>
 <div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">T</span><span class="token punctuation">></span></span> <span class="token comment">// Type</span>
@@ -263,7 +263,7 @@ data-styled.g66[id="Footer__HiddenWrapper-sc-zqxmks-9"]{content:"iyImhS,iqspNU,"
 <span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">V</span><span class="token punctuation">></span></span> <span class="token comment">//Value</span>
 <span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">N</span><span class="token punctuation">></span></span> <span class="token comment">//Number</span>
 <span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">R</span><span class="token punctuation">></span></span> <span class="token comment">//Result</span></code></pre></div>
-<h2>5. [Java] 람다와 스트림</h2>
+<h2>[Java] 5. 람다와 스트림</h2>
 <h3>5-1. 람다</h3>
 <ul>
 <li>식별자 없이 실행 가능한 함수.</li>
@@ -279,15 +279,15 @@ data-styled.g66[id="Footer__HiddenWrapper-sc-zqxmks-9"]{content:"iyImhS,iqspNU,"
 <li>한번닫힌 흐름은 재사용이 불가하다.</li>
 <li><code class="language-text">collect()</code> 를 이용하여 스트림과정에서 return된 결과를 모아준다. 매개변수를 통해 collection타입도 변경가능하다.</li>
 </ul>
-<h2>6. [CS] API(Application Programing Interface)</h2>
+<h2>[CS] 6. API(Application Programing Interface)</h2>
 <p>데이터를 주고받는 형식에 대한 약속(규약-Interface)</p>
-<h2>7. [Python] set</h2>
+<h2>[Python] 7. set</h2>
 <p>set은 집합을 만들기 위한 개념으로서 합/교/차집합을 구하는 것이 가능하다.</p>
 <div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token builtin">set</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span> <span class="token builtin">set</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment"># 교집합</span>
 <span class="token builtin">set</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">|</span> <span class="token builtin">set</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment"># 합집합</span>
 <span class="token builtin">set</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token builtin">set</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment"># 차집합</span></code></pre></div>
 <p>set은 중복을 없애준다. 단, 순서를 보장하지 않는다.</p>
-<h2>8. [Python] 다양한 매개변수를 받는방법</h2>
+<h2>[Python] 8. 다양한 매개변수를 받는방법</h2>
 <div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">a</span><span class="token punctuation">(</span><span class="token operator">*</span>args<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword">print</span><span class="token punctuation">(</span>args<span class="token punctuation">)</span> <span class="token comment"># (a,b,c,) 튜플형식으로 인자가 들어옴</span>
 
@@ -304,8 +304,7 @@ data-styled.g66[id="Footer__HiddenWrapper-sc-zqxmks-9"]{content:"iyImhS,iqspNU,"
 </ol>
 <p>너무나도 명확하게 내가 고쳐야 할 점들이 도출되었다. 내가 봐 온 위대한 개발자들은 군중앞에서 말하고, 의견을 나누고, 토론하는 것을 즐겼다.
 다만, 그게 틀릴지라도 틀린것에 반박할 수 있는 지식을 가지고 있었지만 말이다.
-어쨋던, 난 너무 내 틀에 갖혀있다는 생각을 했다. 토론이 이뤄질 때, 찌질하게 비전공자들이 모여있는 방에 저건 맞다 저건아니다 하는 시시비비를 가리는 모습을 보면서 마치..
-내가 악플러가 된 것 처럼 느껴졌다.
+어쨋던, 난 너무 내 틀에 갖혀있다는 생각을 했다. 토론이 이뤄질 때, 비전공자 팀원들이 모여있는 방에 숨어 저건 맞다 저건아니다 하는 시시비비를 가리는 모습을 보면서 앞으로 나서지 못하고 뒤에서 의견을 내는 내가 한심하게 느껴졌다.<br>
 이건 아니다.<br>
 이건 성장할 수 없는 태도다.<br>
 왜 겁을 내는가.<br>
