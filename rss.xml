@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 09 Nov 2022 19:19:23 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-11-09 Today I Learn]]></title><description><![CDATA[Python 배열 배열은 본래 메모리의 특정부분을 미리 할당받아 사용한다. 하지만, 파이썬의 배열은 길이가 자유롭게 변화한다. 이유는 파이썬는 내부적으로 동적배열을 사용하며, O(…]]></description><link>https://mitoconcrete.github.io/22_11_09/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_11_09/</guid><pubDate>Wed, 09 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;[Python] 배열&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 09 Nov 2022 19:27:06 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-11-09 Today I Learn]]></title><description><![CDATA[Python 배열 배열은 본래 메모리의 특정부분을 미리 할당받아 사용한다. 하지만, 파이썬의 배열은 길이가 자유롭게 변화한다. 이유는 파이썬는 내부적으로 동적배열을 사용하며, O(…]]></description><link>https://mitoconcrete.github.io/22_11_09/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_11_09/</guid><pubDate>Wed, 09 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;[Python] 배열&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;배열은 본래 메모리의 특정부분을 미리 할당받아 사용한다.&lt;/li&gt;
 &lt;li&gt;하지만, 파이썬의 배열은 길이가 자유롭게 변화한다.&lt;/li&gt;
@@ -140,8 +140,10 @@ num 6 compare with 4&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 내배캠이전 내가 다른부트캠프에서 공부를 하던 시절이 떠올랐다. 모든 게 다 중요한 것만 같아서, 매번 암기하고 정리하고 외우고 하느라 진도가 잘 빠지지 않았다. 그리고, 아티클 같은 것들을 막 첨부되어있는데, 불친절하게 &apos;이거 읽어보면 좋다&apos;라는 뉘앙스로 전달되었다. 너무 많은 정보가 쏟아지니 항상 머리가 터질 것만 같았다. 지금와서 생각해보면 그 때는 어떤게 중요하고 중요하지 않은 건지 필터링 할 수 있는 기준과 집중해야하는 범위가 명확하지 않아서 너무 힘들었다.&lt;/p&gt;
 &lt;p&gt;어려움을 겪으시는 팀원들의 모습을 보니, 예전에 힘들어했던 경험이 오버랩되었다. 또한, 꽤나 내가 개발이라는 직군에 오랫동안 관심을 갖고 살았구나 싶기도 했다.
 지난주에도 그랬던 것 처럼, 어려움을 겪는 팀원들에게 올바른 방향을 잡아주고, 나 또한 적극적으로 도움을 받으며 공부기간을 보내보려고 한다.&lt;/p&gt;
+&lt;p&gt;또한, 지속적으로 내 자신감이 초기와 같지 않다는 것이 느껴지고 있는데, 의도적으로 자신감을 유지하려고 해야겠다. 자신감이 없어지면 의견을 내는것에 소극적이게 된다..!!&lt;/p&gt;
 &lt;h2&gt;[다짐]&lt;/h2&gt;
 &lt;ul&gt;
+&lt;li&gt;의도적으로 자신감 다시 높이기&lt;/li&gt;
 &lt;li&gt;새로운 문제에 노출 되는 것을 두려워하지 않기&lt;/li&gt;
 &lt;li&gt;내 의견을 적극적으로 표출하기&lt;/li&gt;
 &lt;li&gt;상대방의 말을 경청하기&lt;/li&gt;
