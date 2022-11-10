@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 09 Nov 2022 19:27:06 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-11-09 Today I Learn]]></title><description><![CDATA[Python 배열 배열은 본래 메모리의 특정부분을 미리 할당받아 사용한다. 하지만, 파이썬의 배열은 길이가 자유롭게 변화한다. 이유는 파이썬는 내부적으로 동적배열을 사용하며, O(…]]></description><link>https://mitoconcrete.github.io/22_11_09/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_11_09/</guid><pubDate>Wed, 09 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;[Python] 배열&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 10 Nov 2022 00:51:44 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-11-09 Today I Learn]]></title><description><![CDATA[Python 배열 배열은 본래 메모리의 특정부분을 미리 할당받아 사용한다. 하지만, 파이썬의 배열은 길이가 자유롭게 변화한다. 이유는 파이썬는 내부적으로 동적배열을 사용하며, O(…]]></description><link>https://mitoconcrete.github.io/22_11_09/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_11_09/</guid><pubDate>Wed, 09 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;[Python] 배열&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;배열은 본래 메모리의 특정부분을 미리 할당받아 사용한다.&lt;/li&gt;
 &lt;li&gt;하지만, 파이썬의 배열은 길이가 자유롭게 변화한다.&lt;/li&gt;
@@ -132,15 +132,17 @@ num 6 compare with 4&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;코딩이 즐거운 이유는 몰입을 유도해낼 조건을 모두 가지고 있기 때문이다.
 몰입을 유도해내는 조건은 계속해서 도전과제가 주어지고, 그 도전과제를 해결하는 것을 통해 성장하는 것이다.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;내가 개발자로서 처음 길을 택했던 계기는, 2017년 4월에 &lt;strong&gt;별찍기&lt;/strong&gt;문제를 거의 한 1주일 동안 고민해서 해냈던 경험 이후 였는데
-그 이후로 부트캠프에서 학습 할 땐 계속 왜인지 모르게 알고리즘은 자신도 없고, 뭔가 내 영역이 아니란 느낌을 받아서 의식적으로 밀어내었다.&lt;/p&gt;
+&lt;p&gt;내가 개발자로서 처음 길을 택했던 계기는, 2017년 4월에 &lt;strong&gt;별찍기&lt;/strong&gt;문제를 거의 한 1주일 동안 고민해서 해냈던 경험 이후 였다.&lt;br&gt;
+그 일주일 간 몰입했던 경험과 몰입을 통해 원하는 결과를 얻어냈던 순간이 정말 좋았던 기억이 있다.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/image/221109_01.jpg&quot; alt=&quot;개발자가 되기로 마음먹은날&quot;&gt;&lt;/p&gt;
-&lt;p&gt;하지만, 개발자라는 직업은 계속 새로운 환경에 노출되어야 성장하는 것 같다. 나도 의도적으로 알고리즘문제를 접해도 &apos;풀수 있다는 마인드&apos;를 가지고 임해봐야겠다.&lt;/p&gt;
+&lt;p&gt;하지만, 그 이후로 계속 왜인지 모르게 알고리즘은 자신도 없고, 뭔가 내 영역이 아니란 느낌을 받아서 의식적으로 밀어내었다.&lt;/p&gt;
+&lt;p&gt;개발자라는 직업은 계속 새로운 환경에 노출되어야 성장하는 것 같다. 나도 의도적으로 알고리즘문제를 접해도 &apos;풀수 있다는 마인드&apos;를 가지고 임해봐야겠다.&lt;/p&gt;
 &lt;p&gt;오늘은 강의 진도를 무진장 뺏는데, 다른팀원들을 보니 스케쥴대로 따라가는 것 같았다. 심지어 어떤 팀원 분은 아예 프로그래밍이 처음이라 강의를 따라가는 것이 버거워 책을 사서 개인공부를 하신다고 하신다.
 내배캠이전 내가 다른부트캠프에서 공부를 하던 시절이 떠올랐다. 모든 게 다 중요한 것만 같아서, 매번 암기하고 정리하고 외우고 하느라 진도가 잘 빠지지 않았다. 그리고, 아티클 같은 것들을 막 첨부되어있는데, 불친절하게 &apos;이거 읽어보면 좋다&apos;라는 뉘앙스로 전달되었다. 너무 많은 정보가 쏟아지니 항상 머리가 터질 것만 같았다. 지금와서 생각해보면 그 때는 어떤게 중요하고 중요하지 않은 건지 필터링 할 수 있는 기준과 집중해야하는 범위가 명확하지 않아서 너무 힘들었다.&lt;/p&gt;
-&lt;p&gt;어려움을 겪으시는 팀원들의 모습을 보니, 예전에 힘들어했던 경험이 오버랩되었다. 또한, 꽤나 내가 개발이라는 직군에 오랫동안 관심을 갖고 살았구나 싶기도 했다.
+&lt;p&gt;어려움을 겪으시는 팀원들의 모습을 보니, 예전에 힘들어했던 경험이 오버랩되었다. 또한, 뮨재해결에 조금이나마 익숙해진 내 모습을 보면서, 꽤나 내가 개발직군이 익숙해졌구나~ 싶어 감개무량했다.
 지난주에도 그랬던 것 처럼, 어려움을 겪는 팀원들에게 올바른 방향을 잡아주고, 나 또한 적극적으로 도움을 받으며 공부기간을 보내보려고 한다.&lt;/p&gt;
-&lt;p&gt;또한, 지속적으로 내 자신감이 초기와 같지 않다는 것이 느껴지고 있는데, 의도적으로 자신감을 유지하려고 해야겠다. 자신감이 없어지면 의견을 내는것에 소극적이게 된다..!!&lt;/p&gt;
+&lt;p&gt;또한, 지속적으로 내 자신감이 초기와 같지 않다는 것이 느껴지고 있는데, 의도적으로 자신감을 유지하려고 해야겠다. 자신감이 없어지면 의견을 내는것에 소극적이게 된다..!!
+내 자신감을 저하시키는 요소들은 의도적으로 무시하려고 하자.&lt;/p&gt;
 &lt;h2&gt;[다짐]&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;의도적으로 자신감 다시 높이기&lt;/li&gt;
