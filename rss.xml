@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 16 Nov 2022 17:42:16 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-11-16 Today I Learn]]></title><description><![CDATA[회고 221116 "죽을 때 까지 코딩하는 법"…]]></description><link>https://mitoconcrete.github.io/22_11_16/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_11_16/</guid><pubDate>Wed, 16 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;[회고] 221116&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 16 Nov 2022 17:45:42 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-11-16 Today I Learn]]></title><description><![CDATA[회고 221116 "죽을 때 까지 코딩하는 법"…]]></description><link>https://mitoconcrete.github.io/22_11_16/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_11_16/</guid><pubDate>Wed, 16 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;[회고] 221116&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&quot;죽을 때 까지 코딩하는 법&quot;&lt;/strong&gt; 1회 완독
+&lt;li&gt;&lt;strong&gt;&quot;죽을 때 까지 코딩하는 법&quot;&lt;/strong&gt; 1회 완독&lt;br&gt;
 &lt;strong&gt;&quot;죽을 때 까지 코딩하는 법&quot;&lt;/strong&gt; 을 완독했다. 정말 소중한 글귀들이 너무 많다. 길게 갈 수 있는 개발자가 되기 위한 마인드셋과 환경을 찾는법, 그리고 어떤 환경에서 일을 해야할지에 대한 정보를 얻을 수 있었다. 또한, 책 자체가 읽기 부담스럽지 않고, 정말 이야기하듯이 적은 책이라 재미있고, 부담없이 다가왔다. 일단 1회독 했으니 여유 될 때 2회독 3회독 해서 이 안에 있는 글을 체득해야겠다는 생각을 했다.&lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;전 팀원들의 발전을 보다
+&lt;p&gt;전 팀원들의 발전을 보다&lt;br&gt;
 직전 팀원 분들이 알고리즘 문제를 푸는 것을 너무 두려워하는 것이 느껴져, 전 날 늦게까지 함께 문제를 풀었었다. 어쩌다 보니 코딩쇼가 되었지만, 팀원 분들이 공통적으로 알고리즘을 접했을 때 어디부터 손을 대야 할 지 감을 못잡으시는게 보여, 짧은 실력이지만 코딩인터뷰 하듯이 말하면서 내가 푸는 과정을 공유했다. 그동안 깨달은 점을 공유드리면서 문제를 풀었는데 짚어드린 순서는 다음과 같다.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;문제를 먼저 완벽히 이해한다.&lt;/li&gt;
@@ -16,7 +16,7 @@
 &lt;p&gt;&lt;img src=&quot;/image/221116_01.png&quot; alt=&quot;팀원들의 피드백&quot;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;애증의 삼성문제를 드디어 풀어내다.
+&lt;p&gt;애증의 삼성문제를 드디어 풀어내다.&lt;br&gt;
 알고리즘 수업에서 마지막에 전달받은 삼성문제를 풀어냈다.
 아직은 혼자 힘으로 풀기엔 벅차서, 다른 사람들의 풀이법을 보았다. 하지만, 내가 참고한 것은 그들이 어떻게 문제를 이해했는지 였지, 로직을 베끼진 않았다.&lt;/p&gt;
 &lt;p&gt;이 고집 때문에 한 문제를 2일간 푼거긴 하지만, 따라치기로 영혼없이 옮겨적는 것이 나한테 아무 영향을 줄 수 없다는 것을 깨달은 뒤로는, 다른사람의 풀이법을 참고는 하되 &lt;strong&gt;내가 이해 할 수 있는 로직/남이 봐도 깔끔한 로직으로 어떻게 바꿀 수 있을까&lt;/strong&gt;를 끊임없이 고민하고, 그것이 확정되는 순간 코드를 작성하고 있다.&lt;/p&gt;
