@@ -1,4 +1,221 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 16 Nov 2022 17:45:42 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-11-16 Today I Learn]]></title><description><![CDATA[회고 221116 "죽을 때 까지 코딩하는 법"…]]></description><link>https://mitoconcrete.github.io/22_11_16/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_11_16/</guid><pubDate>Wed, 16 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;[회고] 221116&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 17 Nov 2022 16:20:18 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-11-17 Today I Learn]]></title><description><![CDATA[…]]></description><link>https://mitoconcrete.github.io/22_11_17/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_11_17/</guid><pubDate>Thu, 17 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;[객체지향] 객체란?&lt;/h2&gt;
+&lt;p&gt;실제로 존재하는 유형의 물체 혹은 무형의 개념/이론을 통칭하는 말이다.&lt;/p&gt;
+&lt;h2&gt;[객체지향] 소프트웨어란?&lt;/h2&gt;
+&lt;p&gt;변화가능 한 것. 하지만, 시간이 지남에 따라 변화에 대한 비용이 줄어들어야 하는 것.&lt;br&gt;
+시간이 지남에 따라 변화에 대한 비용이 늘어난다면, 잘못된 소프트웨어일 확률이 높다.&lt;br&gt;
+객체지향은 변화에 대한 비용을 감소시키기 위한 디자인패턴 중 하나이다.&lt;/p&gt;
+&lt;h2&gt;[Java] 생성자?&lt;/h2&gt;
+&lt;p&gt;생성자는 &lt;code class=&quot;language-text&quot;&gt;new&lt;/code&gt;키워드를 이용해 인스턴스를 초기화 메서드이다. 생성자로 정의된 매개변수를 통해 이 객체가 생성된 의도를 파악 할 수 있음.&lt;/p&gt;
+&lt;h2&gt;[Java] 클래스? 인스턴스? 객체?&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;left&quot;&gt;클래스&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;인스턴스&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;객체&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;인스턴스를 정의한 명세이다.&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;클래스를 new 키워드를 이용하여 실체화 시킨 객체이다.&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;인스턴스를 총칭하는 포괄적 개념이다.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;붕어빵 틀로 많이 부르곤 한다.&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;실체화 하는 과정을 &apos;인스턴스화&apos; 한다고 칭하며, 인스턴스는 JVM의 힙에 저장되어 사용된다.&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;객체 &gt; 인스턴스&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;[Java] void&lt;/h2&gt;
+&lt;p&gt;반환 타입으로 void를 명시해주면, 자바컴파일러는 암묵적으로 void함수에 &lt;code class=&quot;language-text&quot;&gt;return ;&lt;/code&gt;을 넣어준다.&lt;/p&gt;
+&lt;h2&gt;[Java] Primitive Type vs Wrapper Class&lt;/h2&gt;
+&lt;p&gt;ex)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;int vs Interger&lt;/li&gt;
+&lt;li&gt;boolean vs Boolean&lt;/li&gt;
+&lt;li&gt;long vs Long&lt;/li&gt;
+&lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;left&quot;&gt;Primitive Type&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;Wrapper Class&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;메모리에 곧바로 값이 저장된다.&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;원시타입을 객체로 구현한 것으로서 저장 시, 객체의 참조위치가 저장된다.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Boxing :&lt;/strong&gt; Primitive Type -&gt; Wrapper Class&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Unboxing :&lt;/strong&gt; Wrapper Class -&gt; Primitive Class&lt;/li&gt;
+&lt;li&gt;JDK 1.5부터는 auto boxing/unboxing 을 지원하게 되어 명시적으로 형변환을 해줄 필요가 없어짐.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;[Java] 매개변수(parameter) vs 인자(argument)&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// 매개변수&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Phone&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token class-name&quot;&gt;Phone&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;boolean&lt;/span&gt; c&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;   &lt;span class=&quot;token comment&quot;&gt;// &amp;lt;= 이렇게 받아올 변수들을 정의하는 것을 매개변수&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// 인자&lt;/span&gt;
+&lt;span class=&quot;token class-name&quot;&gt;Phone&lt;/span&gt; phone &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Phone&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;갤럭시&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// &amp;lt;= 이렇게 전달하는 것을 인자&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;[Java] 원시형 매개변수 vs 참조형 매개변수&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;left&quot;&gt;원시형 매개변수&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;참조형 매개변수&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Read 가능&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Create, Read, Update, Delete 가능&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;인자로 전달한 것과 별개로 동작한다.&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;인자로 전달한 것의 주소를 참조하여, 전달받은 인자에 영향을 준다.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;[Java] 객체 변수 종류&lt;/h2&gt;
+&lt;p&gt;객체의 변수에는 멤버변수와 지역변수가 있다.&lt;br&gt;
+그 중에서도 멤버변수는 클래스변수와 인스턴스변수로 분리된다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Phone&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;// 멤버변수 시작&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; phoneNumber&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;  &lt;span class=&quot;token comment&quot;&gt;//1. 클래스 변수&lt;/span&gt;
+    &lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt; name&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;//2. 인스턴스 변수&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;// 멤버변수 끝&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;getPhone&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; phoneDetailName&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;//3. 지역변수&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;1. 클래스 변수&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;- `static`키워드로 선언 된 변수로서, 클래스 메모리에 올라가게 된다.
+- 메모리 저장 시점은 단 1회로서, 컴파일러는 클래스 변수를 가장먼저읽어, 클래스 메모리로 이동시킨다.
+- 이 때 클래스 변수는 생성자를 이용한 선언없이 사용이 가능하다.
+
+```java
+Phone.phoneNumber
+```&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;2. 인스턴스 변수&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;- new 키워드를 통해 **인스턴스가 생성된 시점**에 힙메모리에 올라간다.
+- 이곳에 주소값을 두고, 콜스택에 이 주소값을 쌓아서 사용한다.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;3. 지역 변수&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;- 메소드 내에서만 사용 할 수 있는 변수이다.
+- 각 메소드의 런타임 즉, 스택에서 invoke가 시작 될 때 유효해진다.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;[Java] 객체 메소드 종류&lt;/h2&gt;
+&lt;p&gt;객체의 메소드는 클래스 메소드와 인스턴스 메소드가 있다.&lt;/p&gt;
+&lt;h3&gt;1. 클래스 메소드&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;static 키워드로 선언된 메소드로서, 인스턴스 변수나 인스턴스 메소드를 사용하지 않는 것을 클래스 메소드라고 한다.
+따라서, 클래스 메소드안에서 인스턴스 변수를 사용할 수 없다. 왜냐하면, 클래스 메소드가 사용가능한 시점은 인스턴스가 생성되지 않은 시점이기 때문이다.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;2. 인스턴스 메소드&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;인스턴스 변수를 필요로 하는 메소드. 인스턴스 생성 된 후이기 때문에 인스턴스 변수와 클래스 변수를 모두 사용 할 수 있다.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;[Java] 인터페이스 vs 추상클래스&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;추상 클래스는 부모의 기능을 확장할 때 사용한다. 주로, 상속관계가 확정적일 때 주로 사용. 수직적 확장. (템플릿 메소드 패턴 검색)&lt;/li&gt;
+&lt;li&gt;인터페이스는 객체들에 대한 동일한 동작을 보장하기 위해 사용한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;[Java] 객체지향의 3가지 특성과 구현예시&lt;/h2&gt;
+&lt;h3&gt;1. 캡슐화&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;- 객체가 어떻게 동작하는지 외부에 노출을 막는다.
+- 객체내부의 기능이 변경되도, 외부에는 큰 영향을 끼치지않는다.
+- 접근제어자를 통해 구현한다.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;2. 추상화&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;- 어떤 사물의 특성에서 공통적인 특성/성질을 뽑아 의미있는 표현으로 정의한다.
+- 예를 들어, 카카오톡, 메시지, 메일에는 &apos;전송&apos;이라는 동일동작이 있다. 하지만, 각기 전송을 하기 위한 조건이 다르다. 따라서, 추상적 명세로 &apos;전송&apos;이라는 동작을 인터페이스에 정의해놓고, 그것을 클래스에서 실행하되 오버라이딩을 통해 자신의 특성에 맞게 정의하여 실행 시킬 수 있다.
+- 어떤 특정한 변경없이, &apos;전송&apos;이라는 하나의 동작 키워드로 카카오톡, 메시지, 메일모두에게 명령을 내릴 수 있도록 한다. 즉, kakaoSend/MessageSend/EmailSend 에 대한 메소드구현없이 Send라는 메소드를 갖고와서 자신의 특성에 맞게 사용할 수 있는 것 이다.
+- 인터페이스/추상클래스를 통해 구현한다.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;3. 다형성&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;- 특별한 비용없이, 다양한 타입을 갖는것이 가능해지는 특성이다.
+- 업캐스팅과 오버라이딩을 통해 구현이 가능하다.
+- 업캐스팅이란 부모 클래스로 형변환을 하여 자식클래스를 선언하는 것.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Plug&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;out&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Plug on&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;off&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;InternetOfThings&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;SmartPlug&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Plug&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;InternetOfThings&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;token annotation punctuation&quot;&gt;@Override&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+
+     &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+         &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+     &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Smart&lt;/span&gt;냉장고 &lt;span class=&quot;token keyword&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Plug&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;InternetOfThings&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;token annotation punctuation&quot;&gt;@Override&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+
+     &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+         &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+     &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token class-name&quot;&gt;SmartPlug&lt;/span&gt; smartPlug &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;SmartPlug&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+smartPlug&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+smartPlug&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;off&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token class-name&quot;&gt;Plug&lt;/span&gt; plug &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; smartPlug&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+plug&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+plug&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;stop&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token class-name&quot;&gt;InternetOfThings&lt;/span&gt; iot &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; smartPlug&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+iot &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; smart냉장고&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;//........&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// ......&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// ...&lt;/span&gt;
+iot &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; smartPlug&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+iot &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; smart냉장고&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// 비즈니스 로직&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+iot&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 냉장고&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위 코드에서 iot는 스마트냉장고, 스마트플러그등 다향한 상태를 받아올 수 있다.
+한개의 변수가 다양한 변수타입을 가질 수 있는 것을 다형성이라고하고, 이는 상속,실행을 업캐스팅함으로서 구현 할 수 있다.&lt;/p&gt;
+&lt;h2&gt;[Java] 초기화 블럭&lt;/h2&gt;
+&lt;h3&gt;1. 클래스 초기화 블럭&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;static&lt;/code&gt; 키워드로 정의하는 초기화 블럭으로서, 클래스가 생성되는 시점을 볼 수 있다. 클래스 변수를 초기화 할 때 사용한다.&lt;/p&gt;
+&lt;h3&gt;2. 인스턴스 초기화 블럭&lt;/h3&gt;
+&lt;p&gt;인스턴스가 생성되기 직전에 사용되는 초기화 블럭으로서, 클래스 변수와 인스턴스 변수 모두에 접근가능하다.&lt;/p&gt;
+&lt;h2&gt;[Java] 멤버변수의 초기화 시기와 순서&lt;/h2&gt;
+&lt;p&gt;(클래스 별로 1회만 실행됨) 클래스 로딩 -&gt; 기본값 -&gt; 명시적 초기화 -&gt; 클래스 초기화 블럭 -&gt; (인스턴스 생성마다 반복됨) 인스턴스 생성 -&gt; 기본값 -&gt; 명시적 초기화 -&gt; 인스턴스 초기화 블럭 -&gt; 생성자&lt;/p&gt;
+&lt;p&gt;아래는 2개의 인스턴스를 생성하고, 어떤 순서로 시행되는 지 로그를 찍어본 것이다.
+클래스 초기화는 단 1회만 시행되고, 인스턴스 생성마다 초기화가 진행되는 모습을 확인 할 수 있었다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/221117_01.png&quot; alt=&quot;멤버변수 초기화&quot;&gt;&lt;/p&gt;
+&lt;h2&gt;[회고] 221117&lt;/h2&gt;
+&lt;p&gt;오늘부터 자바의 꽃인 객체지향을 학습하게 된다. 일단, 실제 사례를 통해 어떤식으로 객체지향개념이 적용되는지 명확히 볼 수 있었다. 몇년간 암기식으로만 외우던 것을 실제 사례를 보면서하니, 확 와닿았고, 너무 재미있었다.&lt;/p&gt;
+&lt;p&gt;오늘은 몸이 좋지 않았다. 코감기가 심하게 오는지 어지럽고 피곤한 상태가 지속되었다. 계속 꾸벅꾸벅졸다가 이건 아닌 것 같아서 병원에 다녀왔는데 몸이 금방나아져서 공부에 집중 할 수 있었다. 갈까 말까 고민했는데, 결론적으로 이런 상황에서 팀의 분위기를 저해하지 않기 위해서는 내 몸상태에 대해서 빠르게 파악하고 대처하는 것도 능력이겠다 생각했다. 내가 조는걸 보고 다른 팀원 분들도 괜시리 집중을 못하는 것 같아 죄송했다. 다녀와서 공부가 잘되니, 팀원들이랑 소통도하고, 질문도 주고받았다. 내가 활발해지니, 팀의 분위기가 조금은 올라가는 것처럼 느껴져 기분이 좋았다. 모난 행동을 하는 것은 아주 사소한 것도 팀이 나가는 방향에 방해가 될 수 있다는 자각을 항상 해야겠다.&lt;/p&gt;
+&lt;p&gt;오늘 하루종일 자바의 정석을 보면서, 자바학습을 했다. &lt;strong&gt;객체지향프로그래밍I&lt;/strong&gt; 을 보며 공부했는데, 내가 자바스크립트 공부할 때 어렵다고 간과했던 메모리 동작부가 나왔다. 과거에 이걸 간과하고 개발한 것이 너무 마음에 걸려서, 새로운 언어를 배움에 따라 엔진동작부터 천천히 시작하고자 했다. 생각보다 어렵게 다가오지 않았다. 또한 각 영역에 대한 이해를 하고나니, 지루하게 읽히던 책이 재미있게 다가왔다.&lt;/p&gt;
+&lt;p&gt;다만, 확실하게 이해했다고 생각했지만, 동작순서에 대한 질문이 들어왔을땐 등땀이 주르륵 흐르면서 입밖으로 내뱉질 못했다. 이것또한 모르는것이기 때문에, 자신감있게 입밖으로 개념을 뱉을 수 있도록 곱씹어야겠다는 다짐을 했다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[✏️ 2022-11-16 Today I Learn]]></title><description><![CDATA[회고 221116 "죽을 때 까지 코딩하는 법"…]]></description><link>https://mitoconcrete.github.io/22_11_16/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_11_16/</guid><pubDate>Wed, 16 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;[회고] 221116&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;&quot;죽을 때 까지 코딩하는 법&quot;&lt;/strong&gt; 1회 완독&lt;br&gt;
 &lt;strong&gt;&quot;죽을 때 까지 코딩하는 법&quot;&lt;/strong&gt; 을 완독했다. 정말 소중한 글귀들이 너무 많다. 길게 갈 수 있는 개발자가 되기 위한 마인드셋과 환경을 찾는법, 그리고 어떤 환경에서 일을 해야할지에 대한 정보를 얻을 수 있었다. 또한, 책 자체가 읽기 부담스럽지 않고, 정말 이야기하듯이 적은 책이라 재미있고, 부담없이 다가왔다. 일단 1회독 했으니 여유 될 때 2회독 3회독 해서 이 안에 있는 글을 체득해야겠다는 생각을 했다.&lt;/li&gt;
