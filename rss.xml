@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 22 Nov 2022 15:30:22 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-11-22 Today I Learn]]></title><description><![CDATA[객체지향 객체지향 Study 1. 다운캐스팅 부모가 자식의 참조변수형을 이용하여 형변환을 하는 것. 사용사례 2. 3-Tier Architecture Presentation - Application - Data 의 3단계로 구분되는 아키텍쳐
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 22 Nov 2022 16:16:34 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-11-22 Today I Learn]]></title><description><![CDATA[객체지향 객체지향 Study 1. 다운캐스팅 부모가 자식의 참조변수형을 이용하여 형변환을 하는 것. 사용사례 2. 3-Tier Architecture Presentation - Application - Data 의 3단계로 구분되는 아키텍쳐
 View…]]></description><link>https://mitoconcrete.github.io/22_11_22/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_11_22/</guid><pubDate>Tue, 22 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;[객체지향] 객체지향 Study&lt;/h2&gt;
 &lt;h3&gt;1. 다운캐스팅&lt;/h3&gt;
 &lt;p&gt;부모가 자식의 참조변수형을 이용하여 형변환을 하는 것.&lt;/p&gt;
@@ -44,7 +44,7 @@ View - Controller - Model 의 MVC모델과 비슷한 듯 하다.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;[회고] 221122&lt;/h2&gt;
+&lt;h2&gt;[회고] 221122 : 완전히 아는 상태에서 설계하기&lt;/h2&gt;
 &lt;p&gt;오늘 튜터님께서 하신 강의를 토대로 리팩토링을 해보면서, 무릎을 탁치는 순간들이 있었다.
 계속 똑같은 &lt;code class=&quot;language-text&quot;&gt;getMenuItem&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;getMenu&lt;/code&gt; 가 반복되어서 왜 계속 똑같은 코드를 치시는 거지 라고 의문을 가졌다.
 또한, 내가 직접 처음부터 작성해보려고 했는데, 3 Tier의 정확한 이해가 없이 빌드업 해나가려고하니, 구조가 계속 꼬이고 역할 할당이 잘 되지 않아서 구조를 짜는게 잘 되지 않았다.&lt;/p&gt;
