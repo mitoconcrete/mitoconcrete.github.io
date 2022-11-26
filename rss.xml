@@ -1,4 +1,49 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 24 Nov 2022 18:38:31 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-11-24 Today I Learn]]></title><description><![CDATA[회고 221124 : 작은 프로젝트에 이렇게 진심이라고? 난 뿌듯했음. 그 이유는... 미니 프로젝트가 무사히 마감되고, 본 프로젝트가 시작되었다. 프로젝트 시작 전 팀장이신 ㅈㅎ님께 조심스럽게 PM…]]></description><link>https://mitoconcrete.github.io/22_11_24/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_11_24/</guid><pubDate>Thu, 24 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;[회고] 221124 : 작은 프로젝트에 이렇게 진심이라고? 난 뿌듯했음. 그 이유는...&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 26 Nov 2022 03:34:49 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-11-25 Today I Learn]]></title><description><![CDATA[CS HTTP 1. 회선통신 이후 등장한 패킷통신 2. TCP/IP 3. HTTP의 특성 4. HTTP Method 회고 22111…]]></description><link>https://mitoconcrete.github.io/22_11_25/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_11_25/</guid><pubDate>Fri, 25 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;[CS] HTTP&lt;/h2&gt;
+&lt;h3&gt;1. 회선통신 이후 등장한 패킷통신&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;- 회신통신 : 패킷통신이전에 사용한 통신방식으로서, 회선의 트래픽이나 이동효율을 고려하지 않고 데이터를 이동시킨다.
+- 패킷통신 : 데이터를 패킷이라는 작은단위로 쪼개어 보내고, 순서를 보장하지 않고 목적지까지 전달하여 도착지에서 데이터를 합치는 방식이다. 각 패킷들은 가장 효율적인 경로를 선택하여 이동한다. 패킷을 나누게 되면서, 데이터의 크기가 커서 대역폭을 차지하면서 병목현상이 발생하는 현상이 사라지게 되었다.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;2. TCP/IP&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;- IP는 패킷을 안전하게 보내기 위한 프로토콜이다. 패킷전달여부와 전달순서를 보장하지 않는다. 따라서, 신뢰도 높은 패킷을 전달하기 위해 TCP라는 방식이 사용된다.
+- TCP는 패킷의 전달순서가 보장되고, 3-way handshake, 4-way handshake와 같이 세션을 생성하여 연결된 상태를 유지한다. TCP를 기반으로 한 HTTP, FTP, SMTP등이 IP위에서 동작하기 때에 이러한 프로토콜을 TCP/IP기반의 프로토콜이라고 한다.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;3. HTTP의 특성&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;- 비연결성 : 클라이언트의 요청과 서버의 응답이 완료되면 연결을 곧바로 중단한다.
+- 단방향성 : 서버는 클라이언트의 요청이 있어야 응답을 보낼 수 있다.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;4. HTTP Method&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;- GET, POST, PUT, PATCH, DELETE&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;[회고] 221115 : 프로젝트는 순항중(?)&lt;/h2&gt;
+&lt;p&gt;프로젝트는 나름 순항중이다. 인터페이스도 사용하지 않고 작업중이지만, 이 프로젝트가 분배가 된다고(!?) 하는 느낌으로 몇몇분들은 우리조로 찾아와서 슥 구경하고 가셨다.
+기분이 좋기도 했지만, 진도를 따라가는데 어려움을 겪으시는 팀원분들이 조금씩 속출해서 내심 고민이 많았다. 처음 3Tier 구조를 잡을 때 한 분, 그리고 프로젝트를 진행함에 따라 한분이 더 생겼는데, 뭔가 내가 프로젝트의 난이도를 잘못설정하고 있는게 아닌가 하는 생각이 많이 들었다.&lt;/p&gt;
+&lt;p&gt;추가로, 팀원들이 눈에보이는 순서도나 와이어프레임이 없고, 메소드의 구현체가 없이 문서만 보고 진행해야하다보니 개발이 익숙하지 않으신 팀원분들은 왜 이렇게 작성하는지 이유를 파악하는데 시간을 많이 소요하셨다.&lt;/p&gt;
+&lt;p&gt;또한, 나름 체계적으로 잘 짰다고 생각했지만, 찾아보니 결국 수정할 것 들이나 애매한 것들이 계속 늘어났다. 팀원들끼리 이게 왜 필요한지, 왜 써야하는지를 토론해가면서, 점차 메소드 리턴타입이나, 변수명 등등을 계속 수정해나갔다. 하지만, 토론시간이 늘어날수록 작업시간에 할당된 시간이 줄어들면서, 어쩔수없이 야근을 해야하는 상황으로 까지 번지게 되었다.&lt;/p&gt;
+&lt;p&gt;그래도 모두들 몰입하시고, 테스크를 재미있게 진행하고 계시는게 보여 뿌듯함을 느꼈다. 하지만, 개인적으로 프로젝트하면서 느낀점 고칠점들이 느껴졌는데 다음과 같았다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;- 프로젝트 측면
+1. 추가적인 커뮤니케이션 리소스를 줄이기
+    - API설계는 최대한 확실하고 꼼꼼하게
+    - 메서드명은 최대한 디테일하게
+    - 흐름도를 그려, 시각적인 순서를 팀원들이 공유하도록 하기.
+
+2. 상호협의한 로직은 항상 상기하기
+    - 초기의도를 잊지않기
+
+3. 소통채널을 일원화하기
+    - 헬프데스크 같은 창구를 따로만들어서, 문제해결만을 따로 분리하기
+    - 하나를 정해놓고, 거기서만 소통하기(파편화금지)
+
+4. 인터페이스를 미리정의하기
+    - 팀원들이 문서외에 사용해야할 메서드에 대한 정의가 없다보니, 지속적으로 혼란스러워함. 따라서, 기능단위로 인터페이스를 미리정의해두고, 그걸 상속받아서 사용할 수 있게 만드는게 낫겠다는 생각을 함.
+
+- 개인측면
+1. 말 줄이기
+    - 쓸데없는 말을 해서, 팀원들에게 혼동주지않기
+    - 필요한 말만 하기
+2. 목소리 톤 낮추기
+    - 상대방이 불쾌감을 느낄수 있다고 생각함
+3. 말하면서 흥분하지 않기(말천천히하기)
+    - 말 속도가 점점빨라지면서, 상대방이 치고들어올 타이밍을 못잡게만드는 것 같음.
+3. 상대방의 말을 끊지 않기
+    - 충분히 경청하기&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이것들은 꼭 염두하며, 다음주부터라도 의식적으로 고쳐나가려고 노력해야겠다.&lt;/p&gt;
+&lt;p&gt;아직 완성까지는 많은 단계가 남았지만, 남은기간 힘내서 좋은결과로 이어졌음 좋겠다!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[✏️ 2022-11-24 Today I Learn]]></title><description><![CDATA[회고 221124 : 작은 프로젝트에 이렇게 진심이라고? 난 뿌듯했음. 그 이유는... 미니 프로젝트가 무사히 마감되고, 본 프로젝트가 시작되었다. 프로젝트 시작 전 팀장이신 ㅈㅎ님께 조심스럽게 PM…]]></description><link>https://mitoconcrete.github.io/22_11_24/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_11_24/</guid><pubDate>Thu, 24 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;[회고] 221124 : 작은 프로젝트에 이렇게 진심이라고? 난 뿌듯했음. 그 이유는...&lt;/h2&gt;
 &lt;p&gt;미니 프로젝트가 무사히 마감되고, 본 프로젝트가 시작되었다. 프로젝트 시작 전 팀장이신 ㅈㅎ님께 조심스럽게 PM을 맡고싶다고 요청했다.
 &quot;이미 하고 계시다&quot; 라는 유쾌한 말씀과 함께, 다른 팀원 분들도 동의해주셔서 프로젝트를 매니징 할 수 있는 권한을 가지게 되었다.&lt;/p&gt;
 &lt;p&gt;PM권한을 요청하게 된 이유는, 그래도 3 Tier라는 구조에 대해서 감을 잡았고, 그것을 이번프로젝트를 통해 다른 팀원 분들께 더욱더 이해시키고 싶었기 때문이다.
