@@ -1,4 +1,49 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 05 Dec 2022 18:32:36 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-12-05 Today I Learn]]></title><description><![CDATA[TodayKeywords 오늘 공부한 키워드  : 양간의 경계면/접점  : HTTP의 접점에 있는 계층. 요청 처리 및 렌더링을 담당.  : 유효성 검사 및 계산을 담당.  : DAO 계층  : DB…]]></description><link>https://mitoconcrete.github.io/22_12_05/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_12_05/</guid><pubDate>Mon, 05 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;[TodayKeywords] 오늘 공부한 키워드&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 06 Dec 2022 15:15:32 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-12-06 Today I Learn]]></title><description><![CDATA[TodayKeywords…]]></description><link>https://mitoconcrete.github.io/22_12_06/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_12_06/</guid><pubDate>Tue, 06 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;[TodayKeywords] 오늘 공부한 키워드&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;DI(Dependency Injection)&lt;/code&gt; : 인스턴스 내에서 인스턴스를 선언하는 것은, 의존관계를 가지도록 만든다. 인터페이스 혹은 타입으로 정의해두고, 그걸 생성자를 통해 받아와서 사용하여, 의존관계를 줄이는 것을 의존성 주입이라고 한다. 즉, 의존성을 외부에서 받아와 주입하는 것을 의미한다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;JPA&lt;/code&gt; : JPA내부에 JDBC API가 포함되어 있음. 따라서, 둘을 모두 인스톨하지 않아도 된다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;Spring Data JPA&lt;/code&gt; : JPA를 Wrapping 하여 방언에 맞게 사용하도록 한 것.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;영속성 컨텍스트&lt;/code&gt; : 엔티티를 영구저장하는 환경. DB에서 꺼내온 객체를 저장하며, 엔티티 매니저마다 이 공간을 개별적으로 가진다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;DirtyChecking&lt;/code&gt; : 엔티티 조회시점의 데이터를 스냅샷으로 저장하여, 새로이 수정된 엔티티와 비교하여, 변경된 부분에 대해 필요한 쿼리만 DB에 요청하도록 하는 방법.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;엔티티 주의사항&lt;/code&gt; : final 불가, interface, enum 은 일단제외. final은 저장이 안된다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;엔티티간의 일대다관계&lt;/code&gt; : mapped 를 통해 명시하며, 연관관계의 주인에 의해 외래키(FK) 가 관리된다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;엔티티 지연로딩&lt;/code&gt;: 엔티티간에 종속된 모든 데이터를 불러오게 되면, 불필요한 데이터들 까지 불러오게 된다. 지연로딩을 통해 모든쿼리가 종료될 때 까지, 데이터베이스 접근을 금지한다. 이 때, Proxy 객체를 통해 가상의 엔티티를 사용할 수 있게 만든다. 프록시는 getReference를 이욯하여 가겨온다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;엔티티 즉시로딩 :&lt;/code&gt; 1대 1 연결이 되거나, 단일 정보를 연결한 엔티티는 즉시로딩하여도 무관하다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;영속성 전이&lt;/code&gt; : 한 객체가 영속성 컨텐스트 안에 들어갔을 경우, 해당 객체에 연결된 다른 객체들도 영속성 컨텐스트에 올라갈 수 있도록 하는 것이 가능하다. 이것을 CASCADE 로서 컨트롤 한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;[NextKeyworks] Study Queue&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;HTTPS&lt;/li&gt;
+&lt;li&gt;SOLID&lt;/li&gt;
+&lt;li&gt;loop label&lt;/li&gt;
+&lt;li&gt;CSV&lt;/li&gt;
+&lt;li&gt;파일입출력&lt;/li&gt;
+&lt;li&gt;UML&lt;/li&gt;
+&lt;li&gt;UTC&lt;/li&gt;
+&lt;li&gt;epoch time / Instant time&lt;/li&gt;
+&lt;li&gt;MVC&lt;/li&gt;
+&lt;li&gt;URL ClassLoader&lt;/li&gt;
+&lt;li&gt;Secure ClassLoader&lt;/li&gt;
+&lt;li&gt;JNI&lt;/li&gt;
+&lt;li&gt;GC&lt;/li&gt;
+&lt;li&gt;HOF&lt;/li&gt;
+&lt;li&gt;자바 해시코드&lt;/li&gt;
+&lt;li&gt;OSI 7 계층&lt;/li&gt;
+&lt;li&gt;PCB&lt;/li&gt;
+&lt;li&gt;IOC&lt;/li&gt;
+&lt;li&gt;스프링 설계철학&lt;/li&gt;
+&lt;li&gt;RESTful&lt;/li&gt;
+&lt;li&gt;준 영속성&lt;/li&gt;
+&lt;li&gt;지연로딩&lt;/li&gt;
+&lt;li&gt;프록시객체&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;[회고] 221206 : 벼는 익을 수록 고개를 숙인다. 프론트맨이 되려고 하지말자.&lt;/h2&gt;
+&lt;p&gt;속도가 빠른 것 보단, 제대로 아는 것이 중요하다. 속도가 빠른 것과 제대로 아는 것은 다른 것이다.
+내가 남들보다 조금 더 안다고해서 스스로 뿌듯함을 가질 필요는 없다. 언젠가 모두가 알 수 있는 정보를 가지고 있는 것은, 큰 메리트가 되지 못한다.
+단, 제대로 아는것은 큰 메리트가 된다. 또한 영구적으로 기억에 남는것은 제대로 공부한 것 들이다.
+다른 사람이 손을 뻗기 전까지, 먼저 다가가는 것은 상대방으로 하여금 불쾌감을 줄 수 있다. 도움을 청할 때, 도움을 청한 것에만 집중하여 대답하자.
+제발 하고싶은 모든 말을 뱉는 행위를 멈추자. 제발 필요한 말만 하여, 듣는 사람으로 하여금 불안함, 지루함을 느끼지 않도록 신경쓰자.&lt;/p&gt;
+&lt;p&gt;듣기싫은 말을 듣는 상대는 그 말이 가치있는 말이라도 듣지 않는다. 겸손하지 않은 상대는 천재가 아닌이상 쓸모가 없어지는 순간이 오며, 그 순간에 오는 외로움은 나의 몫이다. 벼는 익을 수록 고개를 숙인다. 모닥불 개발자는 나를 뽐내기 위해 쓸모없는 재료까지 끌어모아 몸집을 불리는 행위를 하지 않는다. 조용히 그리고 묵묵히 자신의 길을 나아간다. 나의 지식을 자랑하기 위한 목적이 아닌, 듣는상대의 공감을 얻어내고 진심으로 대화 할 수 있는 사람이 되자. 나의 목표는 같이 일하고 싶은 사람이다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[✏️ 2022-12-05 Today I Learn]]></title><description><![CDATA[TodayKeywords 오늘 공부한 키워드  : 양간의 경계면/접점  : HTTP의 접점에 있는 계층. 요청 처리 및 렌더링을 담당.  : 유효성 검사 및 계산을 담당.  : DAO 계층  : DB…]]></description><link>https://mitoconcrete.github.io/22_12_05/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_12_05/</guid><pubDate>Mon, 05 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;[TodayKeywords] 오늘 공부한 키워드&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;Interface&lt;/code&gt; : 양간의 경계면/접점&lt;/li&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;Controllor&lt;/code&gt; : HTTP의 접점에 있는 계층. 요청 처리 및 렌더링을 담당.&lt;/li&gt;
