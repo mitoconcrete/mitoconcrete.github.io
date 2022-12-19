@@ -1,4 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 17 Dec 2022 19:24:49 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-12-3rd Weekly I Learn]]></title><description><![CDATA[FACT-O1. 과제구현을 기한내에 마무리 지었다. FEELINGS 설계단계가 매우 귀찮게 느껴졌다. '이 많은 것들을 언제 다 구현 할 수 있을까' 라는 기분이 들어, 막막했다. 설계와 구현사항을 그대로 구현하니 금방 할 수 있었다. FINDINGS…]]></description><link>https://mitoconcrete.github.io/22_12_3rd/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_12_3rd/</guid><pubDate>Sun, 18 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;FACT-O1. 과제구현을 기한내에 마무리 지었다.&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 19 Dec 2022 18:08:38 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-12-19 Today I Learn]]></title><description><![CDATA[TodayKeywords 오늘 공부한 키워드 NextKeyworks Study Queue HTTPS SOLID loop label CSV 파일입출력 UML UTC epoch time / Instant time MVC URL ClassLoader…]]></description><link>https://mitoconcrete.github.io/22_12_19/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_12_19/</guid><pubDate>Mon, 19 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;[TodayKeywords] 오늘 공부한 키워드&lt;/h2&gt;
+&lt;h2&gt;[NextKeyworks] Study Queue&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;HTTPS&lt;/li&gt;
+&lt;li&gt;SOLID&lt;/li&gt;
+&lt;li&gt;loop label&lt;/li&gt;
+&lt;li&gt;CSV&lt;/li&gt;
+&lt;li&gt;파일입출력&lt;/li&gt;
+&lt;li&gt;UML&lt;/li&gt;
+&lt;li&gt;UTC&lt;/li&gt;
+&lt;li&gt;epoch time / Instant time&lt;/li&gt;
+&lt;li&gt;MVC&lt;/li&gt;
+&lt;li&gt;URL ClassLoader&lt;/li&gt;
+&lt;li&gt;Secure ClassLoader&lt;/li&gt;
+&lt;li&gt;JNI&lt;/li&gt;
+&lt;li&gt;GC&lt;/li&gt;
+&lt;li&gt;HOF&lt;/li&gt;
+&lt;li&gt;자바 해시코드(hashCode)&lt;/li&gt;
+&lt;li&gt;OSI 7 계층&lt;/li&gt;
+&lt;li&gt;PCB&lt;/li&gt;
+&lt;li&gt;스프링 설계철학&lt;/li&gt;
+&lt;li&gt;RESTful&lt;/li&gt;
+&lt;li&gt;준 영속성&lt;/li&gt;
+&lt;li&gt;지연로딩&lt;/li&gt;
+&lt;li&gt;프록시객체&lt;/li&gt;
+&lt;li&gt;jpa - mybatis 의 차이&lt;/li&gt;
+&lt;li&gt;orm - mapper 의 차이&lt;/li&gt;
+&lt;li&gt;쿠키/세션/로컬 스토리지&lt;/li&gt;
+&lt;li&gt;HttpMessageConverter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;[회고] 221216 : 리팩토링2 (서로가 서로의 존재를 모르게 하는 것)&lt;/h2&gt;
+&lt;p&gt;리팩토링을 하다 어느순간 손이 멈췄다.
+각 계층이 서로에게 의존하지 않고, 또 흐름에 따라 DTO가 지속적으로 변화하지 않아야하며, DTO는 단순히 데이터를 옮겨주는 꾸러미의 역할만 했어야했다.
+또한, 각 서비스들은 각자의 역할에 충실해야만 했다. 하지만, 계속 손이 멈췄던 이유는 연관관계를 갖는 엔티티들 간에 DTO를 주고받을 때, 어쩔 수 없이 DTO에 엔티티를 넣어줘야하는 상황이 발생했기 때문이었다.&lt;/p&gt;
+&lt;p&gt;ㅅㅁ튜터님은 영속상태의 엔티티는 절대 컨트롤러까지 내려와선 안된다고 당부하셨다. 주말부터 꿈에서 계속 이 프로젝트를 리팩토링하는 꿈을 꿨는데, 꿈에서도 원활하게 안되서 잠도 편히 잘 수 없었다. 오늘 내내 많은 레퍼런스들을 보았다. 하지만, 명확한 해답이 없는 문제라 더욱더 고민이 많아지고 스트레스를 받는 것 같다.&lt;/p&gt;
+&lt;p&gt;확실해진 것은, 일단 영속적인 엔티티를 컨트롤러에서는 알 수 없어야하고, 다룰 수 없어야 한다는 것.
+DTO끼리 매개변수로 넘기는 것은 최대한 지양해야한다는것(DTO에 종속적이게 됨)
+DTO를 엔티티로 바꾸고 다루는 계층은 서비스계층이어야 한다는 것이다.&lt;/p&gt;
+&lt;p&gt;아직 충돌되는 것도 많고, 혼란스러운 점도 많다. 따라서, 이럴때 일수록 나 스스로 납득이 되고, 팀원들도 쉽게 이해시킬 수 있는 역할 정의가 필요하다.&lt;br&gt;
+프로젝트까지 남은 기간이 얼마남지 않았는데, 그 전까지 나름의 기준을 세워 지난 프로젝트처럼 모든 팀원들이 같은 그림을 그리고 프로젝트에 돌입하게 하고 싶다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[✏️ 2022-12-3rd Weekly I Learn]]></title><description><![CDATA[FACT-O1. 과제구현을 기한내에 마무리 지었다. FEELINGS 설계단계가 매우 귀찮게 느껴졌다. '이 많은 것들을 언제 다 구현 할 수 있을까' 라는 기분이 들어, 막막했다. 설계와 구현사항을 그대로 구현하니 금방 할 수 있었다. FINDINGS…]]></description><link>https://mitoconcrete.github.io/22_12_3rd/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_12_3rd/</guid><pubDate>Sun, 18 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;FACT-O1. 과제구현을 기한내에 마무리 지었다.&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;FEELINGS&lt;/strong&gt;&lt;/p&gt;
