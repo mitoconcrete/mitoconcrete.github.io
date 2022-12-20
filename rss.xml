@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 19 Dec 2022 18:08:38 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-12-19 Today I Learn]]></title><description><![CDATA[TodayKeywords 오늘 공부한 키워드 NextKeyworks Study Queue HTTPS SOLID loop label CSV 파일입출력 UML UTC epoch time / Instant time MVC URL ClassLoader…]]></description><link>https://mitoconcrete.github.io/22_12_19/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_12_19/</guid><pubDate>Mon, 19 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;[TodayKeywords] 오늘 공부한 키워드&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 20 Dec 2022 18:35:41 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-12-19 Today I Learn]]></title><description><![CDATA[TodayKeywords 오늘 공부한 키워드 NextKeyworks Study Queue HTTPS SOLID loop label CSV 파일입출력 UML UTC epoch time / Instant time MVC URL ClassLoader…]]></description><link>https://mitoconcrete.github.io/22_12_19/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_12_19/</guid><pubDate>Mon, 19 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;[TodayKeywords] 오늘 공부한 키워드&lt;/h2&gt;
 &lt;h2&gt;[NextKeyworks] Study Queue&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;HTTPS&lt;/li&gt;
@@ -28,7 +28,7 @@
 &lt;li&gt;쿠키/세션/로컬 스토리지&lt;/li&gt;
 &lt;li&gt;HttpMessageConverter&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;[회고] 221216 : 리팩토링2 (서로가 서로의 존재를 모르게 하는 것)&lt;/h2&gt;
+&lt;h2&gt;[회고] 221219 : 리팩토링2 (서로가 서로의 존재를 모르게 하는 것)&lt;/h2&gt;
 &lt;p&gt;리팩토링을 하다 어느순간 손이 멈췄다.
 각 계층이 서로에게 의존하지 않고, 또 흐름에 따라 DTO가 지속적으로 변화하지 않아야하며, DTO는 단순히 데이터를 옮겨주는 꾸러미의 역할만 했어야했다.
 또한, 각 서비스들은 각자의 역할에 충실해야만 했다. 하지만, 계속 손이 멈췄던 이유는 연관관계를 갖는 엔티티들 간에 DTO를 주고받을 때, 어쩔 수 없이 DTO에 엔티티를 넣어줘야하는 상황이 발생했기 때문이었다.&lt;/p&gt;
@@ -37,7 +37,46 @@
 DTO끼리 매개변수로 넘기는 것은 최대한 지양해야한다는것(DTO에 종속적이게 됨)
 DTO를 엔티티로 바꾸고 다루는 계층은 서비스계층이어야 한다는 것이다.&lt;/p&gt;
 &lt;p&gt;아직 충돌되는 것도 많고, 혼란스러운 점도 많다. 따라서, 이럴때 일수록 나 스스로 납득이 되고, 팀원들도 쉽게 이해시킬 수 있는 역할 정의가 필요하다.&lt;br&gt;
-프로젝트까지 남은 기간이 얼마남지 않았는데, 그 전까지 나름의 기준을 세워 지난 프로젝트처럼 모든 팀원들이 같은 그림을 그리고 프로젝트에 돌입하게 하고 싶다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[✏️ 2022-12-3rd Weekly I Learn]]></title><description><![CDATA[FACT-O1. 과제구현을 기한내에 마무리 지었다. FEELINGS 설계단계가 매우 귀찮게 느껴졌다. '이 많은 것들을 언제 다 구현 할 수 있을까' 라는 기분이 들어, 막막했다. 설계와 구현사항을 그대로 구현하니 금방 할 수 있었다. FINDINGS…]]></description><link>https://mitoconcrete.github.io/22_12_3rd/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_12_3rd/</guid><pubDate>Sun, 18 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;FACT-O1. 과제구현을 기한내에 마무리 지었다.&lt;/h2&gt;
+프로젝트까지 남은 기간이 얼마남지 않았는데, 그 전까지 나름의 기준을 세워 지난 프로젝트처럼 모든 팀원들이 같은 그림을 그리고 프로젝트에 돌입하게 하고 싶다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[✏️ 2022-12-19 Today I Learn]]></title><description><![CDATA[TodayKeywords 오늘 공부한 키워드  : 영속성 컨텍스트를 벗어난 객체의 변화가 감지되면, flush 시 변화를 자동으로 업데이트 해주는 것. 주로  어노테이션을 붙혀서 실행시킨다. DirtyChecking…]]></description><link>https://mitoconcrete.github.io/22_12_20/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_12_20/</guid><pubDate>Mon, 19 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;[TodayKeywords] 오늘 공부한 키워드&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;DirtyChecking&lt;/code&gt; : 영속성 컨텍스트를 벗어난 객체의 변화가 감지되면, flush 시 변화를 자동으로 업데이트 해주는 것. 주로 &lt;code class=&quot;language-text&quot;&gt;@Transactional&lt;/code&gt; 어노테이션을 붙혀서 실행시킨다. DirtyChecking으로 업데이트 되는 필드는 같은 내용이 있더라도, 전체 필드를 업데이트를 한다. 이것을 막기위해선 &lt;code class=&quot;language-text&quot;&gt;@DynamicUpdate&lt;/code&gt; 어노테이션을 붙히면 DirtyChecking이라도 업데이트대상 필드만 업데이트된다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;프록시 패턴&lt;/code&gt; vs &lt;code class=&quot;language-text&quot;&gt;파사드 패턴&lt;/code&gt; : 프록시 패턴은 핵심로직을 갖고 있는 어플리케이션을 프록시를 통해 숨기고, 핵심로직을 수행하기 전에 다양한 레이어들을 가변적으로 추가할 수 있다. 반면에 파사드는 어떤 한동작을 하기위해 그안에 있는 다양한 동작들을 보이지 않게 하기위해 사용한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;[NextKeyworks] Study Queue&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;HTTPS&lt;/li&gt;
+&lt;li&gt;SOLID&lt;/li&gt;
+&lt;li&gt;loop label&lt;/li&gt;
+&lt;li&gt;CSV&lt;/li&gt;
+&lt;li&gt;파일입출력&lt;/li&gt;
+&lt;li&gt;UML&lt;/li&gt;
+&lt;li&gt;UTC&lt;/li&gt;
+&lt;li&gt;epoch time / Instant time&lt;/li&gt;
+&lt;li&gt;MVC&lt;/li&gt;
+&lt;li&gt;URL ClassLoader&lt;/li&gt;
+&lt;li&gt;Secure ClassLoader&lt;/li&gt;
+&lt;li&gt;JNI&lt;/li&gt;
+&lt;li&gt;GC&lt;/li&gt;
+&lt;li&gt;HOF&lt;/li&gt;
+&lt;li&gt;자바 해시코드(hashCode)&lt;/li&gt;
+&lt;li&gt;OSI 7 계층&lt;/li&gt;
+&lt;li&gt;PCB&lt;/li&gt;
+&lt;li&gt;스프링 설계철학&lt;/li&gt;
+&lt;li&gt;RESTful&lt;/li&gt;
+&lt;li&gt;준 영속성&lt;/li&gt;
+&lt;li&gt;지연로딩&lt;/li&gt;
+&lt;li&gt;프록시객체&lt;/li&gt;
+&lt;li&gt;jpa - mybatis 의 차이&lt;/li&gt;
+&lt;li&gt;orm - mapper 의 차이&lt;/li&gt;
+&lt;li&gt;쿠키/세션/로컬 스토리지&lt;/li&gt;
+&lt;li&gt;HttpMessageConverter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;[회고] 221220 : 리팩토링3 (DTO)&lt;/h2&gt;
+&lt;p&gt;DTO의 범위 대해 이전조의 팀원분과 토론을 한바탕 나눴다. DTO에는 메소드에서 필요한 정보들과 불필요한 정보들이 한번에 전달될텐데, 그것을 실행하고자 하는 함수에 맞추는 것이 의존도를 높히는 것일까 낮추는 것일까에 대한 토론을 했다.&lt;/p&gt;
+&lt;p&gt;난 서비스를 정의할 때 DTO를 그대로 넘기기보단, 필요한 것들만 넘기는 것을 선호했다. 이유는, 서비스가 DTO에 의존하기 않기를 바랬기 때문이다. DTO에 들어오는 값은 항상 필요한 값들만 들어오는 것이 아니라, 여러가지 항목들이 추가되어 들어오기도 한다. 이 때, &apos;의존&apos;한다는 것에 대한 의미가 헷갈리기 시작했는데, 서비스 입장에서 항상 어떤 것이 들어온다는 보장이 있다면, 외부를 의식하지 않고 개발이 가능하기 때문에, 내가 기존에 하던 방식이 의존도가 낮다고 생각했다. 하지만, 팀원분이 제시한 의견은 달랐다. 오히려 DTO에 미리 정의된 값들이 들어있기 때문에, DTO하나만 넘기면 서비스는 밖에서 어떤게 넘어오던지 상관하지 않고 DTO하나만으로 개발이 가능해진다. 이것이 오히려 상호 의존도가 낮아지는 것이 아닌가 하는 의견을 주셨다. 나는 충분히 납득이 갔고, 쉼표를 이용해 여러개로 받아오던 인자를 DTO를 받아오는것으로 변경하였다.&lt;/p&gt;
+&lt;p&gt;다만, DTO 내부의 값 중에서 상황에 따라 노출되는 값들을 innerclass 로 차등을 두었다. 이렇게 되니, 서비스끼리만 주고받는 DTO와 Request시 주고받는 DTO와, Response 시 보여지는 DTO의 형식이 모두 달라지게 설정 할 수 있었다. 다만, DTO내부에 설정들이 많이 늘어나게 되었는데, 이것이 과연 맞는 것이지는 계속적으로 고민중이긴하다.&lt;/p&gt;
+&lt;p&gt;튜터님께서는 현업에서는 DTO를 세부적으로 쪼개는 것을 선호하신다고 했다. 그게 훨씬 비용적으로 나은게, 내 방식을 유지한다면 작은 프로젝트이기 때문에 서비스가 늘어날 때 마다, DTO내부에 추가되는 코드가 매우 많아질 것이다. 이것은 좋지않은 패턴같다고 생각했다. 하지만, 이미 많은 부분을 innerclass를 이용해 작업을 해서, 이부분을 먼저 작업한 뒤, dto를 쪼개는 방식을 적용해보려고 한다.&lt;/p&gt;
+&lt;p&gt;하지만, 오늘 토론을 통해 각자의 역할이 확실한 DTO를 생성해주는 것이 의존도를 낮추는데 도움을 준다는 것이 확실시 되서 기분이 좋았다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[✏️ 2022-12-3rd Weekly I Learn]]></title><description><![CDATA[FACT-O1. 과제구현을 기한내에 마무리 지었다. FEELINGS 설계단계가 매우 귀찮게 느껴졌다. '이 많은 것들을 언제 다 구현 할 수 있을까' 라는 기분이 들어, 막막했다. 설계와 구현사항을 그대로 구현하니 금방 할 수 있었다. FINDINGS…]]></description><link>https://mitoconcrete.github.io/22_12_3rd/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_12_3rd/</guid><pubDate>Sun, 18 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;FACT-O1. 과제구현을 기한내에 마무리 지었다.&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;FEELINGS&lt;/strong&gt;&lt;/p&gt;
