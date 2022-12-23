@@ -1,4 +1,59 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 22 Dec 2022 17:21:54 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-12-22 Today I Learn]]></title><description><![CDATA[TodayKeywords…]]></description><link>https://mitoconcrete.github.io/22_12_22/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_12_22/</guid><pubDate>Thu, 22 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;[TodayKeywords] 오늘 공부한 키워드&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 23 Dec 2022 19:48:50 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-12-23 Today I Learn]]></title><description><![CDATA[TodayKeywords…]]></description><link>https://mitoconcrete.github.io/22_12_23/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_12_23/</guid><pubDate>Fri, 23 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;[TodayKeywords] 오늘 공부한 키워드&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;디자인패턴의 종류&lt;/code&gt; : 객체지향의 디자인 패턴은 큰 구분으로 생성, 구조, 행위의 목적으로 나뉘어진다. 생성의 경우에는 어떤 객체를 잘 생성하기 위한 것이다. 구조는 객체들을 모아 어플리케이션의 구조를 효율적으로 구성하기 위한 것이다. 행위는 객체간 어떤 행위 즉, 알고리즘이나 책임분배등을 위해 사용한다. 각각의 구분 하에는 다양한 패턴들이 있다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;Bean&lt;/code&gt; : 스프링의&lt;code class=&quot;language-text&quot;&gt;IoC(Inversion Of Control) 컨테이너&lt;/code&gt;에서 관리하는 클래스들이다. &lt;code class=&quot;language-text&quot;&gt;싱글톤 패턴&lt;/code&gt;으로 관리되기 때문에, 어디에서 사용하나 같은 객체를 참조한다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;@Component&lt;/code&gt; : 커스텀 빈을 선언 할 때, 사용하는 어노테이션이다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;@Bean&lt;/code&gt; : 이것을 통해 선언한 것은 빈으로 관리되며, &lt;code class=&quot;language-text&quot;&gt;@Component&lt;/code&gt; 를 포함하고 있다. 주로 외부라이브러리들을 가져와 &lt;code class=&quot;language-text&quot;&gt;IOC컨테이너&lt;/code&gt; 에 등록할 때 사용한다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;@ 의 의미&lt;/code&gt; : 컴파일러에게 일을 시키는 주석이다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;어노테이션의 종류&lt;/code&gt; : 자바에 내장된 내장(Built-in)어노테이션, 사용자 정의하여 사용하는 커스텀 어노테이션, 커스텀어노테이션을 만들기위해 사용하는 메타 어노테이션이 있다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;@Target&lt;/code&gt; : 메타어노테이션이며, 해당 어노테이션이 어디에 쓰일지 정의해준다. (필드, 파라미터, 클래스, 컨스트럭터 등등..)&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;@Retention&lt;/code&gt; : 메타어노테이션이며, 해당 어노세이션이 어느시점에 쓰일지 정의해준다. 소스코드시점, 클래스시점, 런타임시점으로 나뉜다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;Reflection API&lt;/code&gt; : 컴파일 시, static 영역에 있는 클래스 정보를 이용하여, 런타임 때 사용가능하게 만들어준다. 평상시에는 잘쓰지않지만, 라이브러리를 개발하거나, 라이브러리를 사용할 때 사용한다고한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;[NextKeyworks] Study Queue&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;HTTPS&lt;/li&gt;
+&lt;li&gt;SOLID&lt;/li&gt;
+&lt;li&gt;loop label&lt;/li&gt;
+&lt;li&gt;CSV&lt;/li&gt;
+&lt;li&gt;파일입출력&lt;/li&gt;
+&lt;li&gt;UML&lt;/li&gt;
+&lt;li&gt;UTC&lt;/li&gt;
+&lt;li&gt;epoch time / Instant time&lt;/li&gt;
+&lt;li&gt;MVC&lt;/li&gt;
+&lt;li&gt;URL ClassLoader&lt;/li&gt;
+&lt;li&gt;Secure ClassLoader&lt;/li&gt;
+&lt;li&gt;JNI&lt;/li&gt;
+&lt;li&gt;GC&lt;/li&gt;
+&lt;li&gt;HOF&lt;/li&gt;
+&lt;li&gt;자바 해시코드(hashCode)&lt;/li&gt;
+&lt;li&gt;OSI 7 계층&lt;/li&gt;
+&lt;li&gt;PCB&lt;/li&gt;
+&lt;li&gt;스프링 설계철학&lt;/li&gt;
+&lt;li&gt;RESTful&lt;/li&gt;
+&lt;li&gt;준 영속성&lt;/li&gt;
+&lt;li&gt;지연로딩&lt;/li&gt;
+&lt;li&gt;프록시객체&lt;/li&gt;
+&lt;li&gt;jpa - mybatis 의 차이&lt;/li&gt;
+&lt;li&gt;orm - mapper 의 차이&lt;/li&gt;
+&lt;li&gt;쿠키/세션/로컬 스토리지&lt;/li&gt;
+&lt;li&gt;HttpMessageConverter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;[회고] 221223 : 리팩토링4 (회고)&lt;/h2&gt;
+&lt;p&gt;강의 전에 하려고 했던, 리팩토링을 오늘중으로 모두 마무리했다. 근 2주간 각각의 계층이 의존도를 낮추면서 어떻게 잘 일하게 할 수 있을까를 고민을 했고, 튜터님들의 세션, 조언들 그리고 팀원들과의 토론을 통해 도출된 결과를 오늘 한번에 반영했다. 아직 아쉬운 점은 많지만, 나름 서비스와 컨트롤러 사이의 의존도를 많이 낮춘 것 같아서 좋았다. 그리고 프로젝트를 4단계에 걸쳐 리팩토링하면서 얻은 꺠달음은 다음과 같다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Service에 맞게 DTO를 작성하는 것이 의존도를 낮추는 방법이다.
+컨트롤러에서는 서비스의 필요에 맞게 DTO를 구성하여 타겟서비스에 전달한다. 그럼 앞단 컨트롤러가 변해도, 받는곳의 인자는 그대로 유지되기 때문에 의존도가 낮아진다.&lt;/li&gt;
+&lt;li&gt;서비스는 자기가 맡은 역할만 충실하면 된다.
+인증/인가와 같은 서브 로직이 들어가면 안된다. 예를들어, &apos;게시글을 수정한다&apos; 라는 로직은 게시글을 수정하는 목적만 수행해야한다. 게시글 수정이 실제로 일어나는 시점, 즉 핵심비즈니스 로직이 실행되는 시점에는 모든 서브로직들을 거치고 완전한 데이터를 받는 상황을 가정한다.&lt;/li&gt;
+&lt;li&gt;연관관계는 보수적으로 만든다.
+정말 필요한 곳에만 만든다. 연관관계가 있다는 것은, 조회시 여러 테이블을 살펴봐야한다는 것이다. 물론 모두가 연결되면 좋지만, 긴 쿼리수행시간으로 인한 서비스속도의 저하나, 순환참조같은 변수를 줄이기 위해선 정말 필요한 곳에만 연관을 맺어줘야한다. 마찬가지로 양방향보단 단방향으로 관계를 맺어주고, 필요한 곳에만 양방향으로 관계를 맺어줘야한다.&lt;/li&gt;
+&lt;li&gt;역전의 제어를 기억한다.
+역전의 제어는 이미 잘만들어진 상위 객체를 가져다 쓰는 것이다. 레파지토리는 이미 잘만들어져있기 때문에, 서비스를 잘만들어주는 것이 스프링 프로젝트를 잘 구성하는 방법중에 하나이다. 컨트롤러는 단지 잘 만들어진 서비스를 가져다쓰는 친구이다.&lt;/li&gt;
+&lt;li&gt;역할과 책임에 충실해야한다.
+도메인 부터 시작해서 서비스, 레파지토리, 컨트롤러는 각자의 역할이 있다. 그 역할을 벗어나는 일을 맡아선 안된다. 또한 무언가를 뱉는 것은 다음사람에게 똥을 투척하는것이나 같기 때문에 최대한 void형태로 책임을 자기 안에서 마무리 할 수 있도록하자. 만일 무언가를 뱉어야하는 상황이 된다면, 정말 필요한 것만 뱉자.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;이외에 더 많은 경험들을 했지만 생각나는것은 이정도이다. 슬슬 자바의 핵심개념들이 다시 등장하고 있는데, 항상 스프링은 자바위에서 돌아가고 있음을 또한 자바는 컴퓨터위에서 돌아가고 있음을 상기해야겠다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[✏️ 2022-12-22 Today I Learn]]></title><description><![CDATA[TodayKeywords…]]></description><link>https://mitoconcrete.github.io/22_12_22/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_12_22/</guid><pubDate>Thu, 22 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;[TodayKeywords] 오늘 공부한 키워드&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;맨하탄 거리법&lt;/code&gt; : 두 점사이의 거리를 구하는 방식은 루트를 사용하는 방법인 &lt;code class=&quot;language-text&quot;&gt;유클리드 방식&lt;/code&gt;과 &lt;code class=&quot;language-text&quot;&gt;맨하탄 방식&lt;/code&gt; 이 있다. 맨하탄 방식은 주로 상하좌우로 움직이는 제한이 있을 때 사용하는데 공식은 다음과 같다. &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;∣&lt;/mi&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mo&gt;−&lt;/mo&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;∣&lt;/mi&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;∣&lt;/mi&gt;&lt;mi&gt;y&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mo&gt;−&lt;/mo&gt;&lt;mi&gt;y&lt;/mi&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;∣&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;| x2 - x1 | + | y2 - y1 |&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1em;vertical-align:-0.25em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;∣&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2222222222222222em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mbin&quot;&gt;−&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2222222222222222em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1em;vertical-align:-0.25em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;∣&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2222222222222222em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mbin&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2222222222222222em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1em;vertical-align:-0.25em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;∣&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.03588em;&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2222222222222222em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mbin&quot;&gt;−&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2222222222222222em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1em;vertical-align:-0.25em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.03588em;&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;∣&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;REST(REpresentaional State Transfer)&lt;/code&gt; : 자원을 표현(Representation)에 의한 상태(State)에 맞게 전달(Transfer)하는것.&lt;/li&gt;
