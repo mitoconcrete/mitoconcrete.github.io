@@ -1,4 +1,73 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 26 Dec 2022 18:23:52 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-12-26 Today I Learn]]></title><description><![CDATA[TodayKeywords…]]></description><link>https://mitoconcrete.github.io/22_12_26/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_12_26/</guid><pubDate>Mon, 26 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;[TodayKeywords] 오늘 공부한 키워드&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 27 Dec 2022 19:30:55 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-12-27 Today I Learn]]></title><description><![CDATA[회고 221227 : 카카오 로그인은 어떻게 동작하지..? 강의 중 OAuth…]]></description><link>https://mitoconcrete.github.io/22_12_27/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_12_27/</guid><pubDate>Tue, 27 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;[회고] 221227 : 카카오 로그인은 어떻게 동작하지..?&lt;/h2&gt;
+&lt;p&gt;강의 중 OAuth 개념을 배우고 적용해 본 뒤 플로우를 따라가다보니, 이해가 되질 않는 부분이 생겼다. 초기로그인 이후 다시 로그인을 시도했을 때, 카카오톡 로그인 창을 보는것이 아니라 곧바로 메인화면으로 넘어가는 현상이었다. 즉, 처음에만 카카오에게 내 정보를 넘겼는데, 다음부턴 로그인 버튼만 눌러도 자동으로 카카오는 내가 &apos;김태훈&apos;이라는 것을 인지하는 현상이었다.
+이 과정이 OAuth의 플로우 중에 어떤 과정에서 일어나는지 도저히 이해되지 않았다.&lt;/p&gt;
+&lt;p&gt;카카오 OAuth 의 과정을 간단히 설명하면, 로그인 버튼을 클릭하면, 카카오에서 보내준 인가코드를 내가 설정해 놓은 리다이렉트 api로 전달한다. 나는 이 인가코드를 이용해서 access&lt;em&gt;code 를 받을 수 있고, 이 access&lt;/em&gt;code에서 로그인을 시도한 사람의 정보를 가져올 수 있다.&lt;/p&gt;
+&lt;p&gt;근데 첫 로그인이야.. 내가 내 이메일과 패스워드를 직접 입력했다고 치고, 그 다음부턴 어떤 일이 일어나기에, 내가 직접입력을 하지 않아도 내 정보를 카카오에서 가져올 수 있는 것일까..?&lt;/p&gt;
+&lt;p&gt;몇가지 의심을 해보았다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;컴퓨터 IP의 정보를 카카오에서 들고있다.
+카카오 DB에서 내 IP의 정보를 들고 있고, 따라서 내가 요청을 했을 때 나인 것을 인지 할 수 있다는 가설이었다.
+하지만, 같은 컴퓨터에서 아내의 계정으로 접속해서 로그인해보았고, 아내의 정보를 잘 불러오는 것을 보았을 땐 이 가설은 절대 성립 할 수 없음을 깨달았다.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;인가코드를 통해 구분을 한다..?
+access_code에서는 내 정보를 뽑아오기 때문에, 뭔가 리다이렉 api 에 전달되는 인가코드가 나를 인지하는 트리거가 되지 않을까? 하는 가설을 해보았다.
+나는 처음에 인가코드가 카카오 개발자에서 보낸 REST API KEY에만 종속되어있다고 생각하여, 저 키가 변하지 않는 이상 계속 같은 코드가 오지 않을까? 생각했다.
+하지만, 실험을 해보니, 로그인 마다 매번 다른 인가코드가 전달되어 오고 있었다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/image/221227_01.png&quot; alt=&quot;1차실험&quot;&gt;
+&lt;img src=&quot;/image/221227_02.png&quot; alt=&quot;2차실험&quot;&gt;&lt;/p&gt;
+&lt;p&gt;그렇다는 것은 현재 이 브라우저 어딘가에, 나를 인지 할 수 있는 어떤 값이 숨어있고 그것을 리다이렉트 요청 시에 같이 보내고 있다는 것인데.. 그것이 어디있는지 추적하다보니 요청헤더에 쿠키값이 포함되어 가는 것을 발견 할 수 있었다. 하지만, 브라우저 어디에서도 이 값들이 어디에 셋팅되어 있는지 찾을 수 없었다.
+그러다, zep에서 쿠키문제로 고생했던 경험이 떠올랐고, 그 때도 브라우저 어플리케이션 탭의 쿠키에서 찾을 수 없던 것들을 볼 수 있었던 경험을 되살려 동일한 방법으로 쿠키를 찾아보았다.
+그랬더니..&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/image/221227_03.png&quot; alt=&quot;카카오쿠키발견&quot;&gt;&lt;/p&gt;
+&lt;p&gt;드디어 발견했다. 로그인 시, 이정보들을 보내주는 것 이었다. 하지만 새로고침 시 이 정보들은 모두 사라졌는데, 쿠키의 정보는 데스크탑에 저장되는 것을 알고 있어서 찾아보니, &lt;code class=&quot;language-text&quot;&gt;~/Library/Application Support/Google/Chrome/&lt;/code&gt; 의 경로에 각각 브라우저에 대한 &lt;code class=&quot;language-text&quot;&gt;Profile&lt;/code&gt; 이 있고, 그에 따른 쿠키들이 &lt;code class=&quot;language-text&quot;&gt;Cookies&lt;/code&gt;라는 이름으로 저장되어 있었다. hex code로 변환해서 까보니, kakao에 대한 쿠키를 발견 할 수 있었다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;이로서 알아낸 것은 초기 로그인 시, 카카오는 브라우저에 유저를 인증 할 수 있는 쿠키를 저장하고, 로그인 시도 시 쿠키값이 있다면 함께보내주어 리다이렉트 url에 해당유저에 대한 인가코드를 전달하여 1차적으로 이 유저에 대한 권한을 인가한다는 것 이었다.&lt;/p&gt;
+&lt;p&gt;위의 경험을 트래킹하는 과정에서 OAuth의 플로우를 전반적으로 살펴 볼 수 있었고, 그에따라 이전에는 계속이해가 가지않았던 플로우에 대해서 조금더 이해 할 수 있는 시간이 되어서 좋았다.&lt;/p&gt;
+&lt;h2&gt;[TodayKeywords] 오늘 공부한 키워드&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;스프링 시큐리티의 세션&lt;/code&gt; : 스프링 시큐리티는 기본적으로 쿠키-세션 방식을 지향한다. 따라서, JWT를 사용하기 위해선 이 설정을 끄고 진행해주어야한다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;블랙박스 테스팅&lt;/code&gt; : 내부의 동작을 모르는 다수의 인원이 기능을 테스트 하는 것이다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;개발자 테스팅&lt;/code&gt; : 개발자가 자신이 작성한 코드를 테스트 하는 것이다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;TDD&lt;/code&gt; : 테스트 주도 개발은 테스트를 먼저 작성하고 개발을 진행하는 방식이다. Given(준비) -&gt; When(실행) -&gt; Then(검즘) 방식이 있다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;@Mock vs @InjectMocks&lt;/code&gt; : 실제 Service, Controller, Entity 등을 사용하면, 실제서비스에 영향이 갈 수 있기 때문에 목업 컴포넌트들을 만들 수 있다. &lt;code class=&quot;language-text&quot;&gt;@Mock&lt;/code&gt;은 컴포넌트의 복사본이고, &lt;code class=&quot;language-text&quot;&gt;@InjectMocks&lt;/code&gt;는 동일한 복사복이지만, &lt;code class=&quot;language-text&quot;&gt;@Mock&lt;/code&gt; 들이 DI된 컴포넌트이다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;AOP JointPoint&lt;/code&gt; : JointPoint 는 핵심로직을 의미한다. aop는 핵심로직의 전 후에서 실행되기 때문에, 이 시점을 관리하기 위해서 jointPoint 라는 매개변수를 넘겨받아 AOP의 실행시점을 정해준다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;PointCut Expression&lt;/code&gt; : AOP의 어드바이스가 어느 컴포넌트에서 실행되야 할지 위치를 지정해준다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;@PointCut&lt;/code&gt; : Expression 의 재사용 및 조합이 가능해진다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;@Transactional&lt;/code&gt; : AOP이다. 트랜잭션이 플러시 되거나 롤백되는것은 유저의 핵심관심사가 아니다, 이것은 백업에서 해주어야 할 서브관심사로서, AOP단계에서 동작한다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;Primary &amp;amp; Replica&lt;/code&gt; : 트랜젝션의 ACID원칙을 지키기 위해 DB를 읽기전용, 쓰기전용으로 나눠쓰는 방식을 말한다. &lt;code class=&quot;language-text&quot;&gt;@Transactional(readOnly=true)&lt;/code&gt; 를 쓰게되면, 읽기전용 DB로 요청이 가게 된다. 따라서, DB를 한개만 사용할 땐 readOnly를 활성화하는 것은 큰 의미가 없다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;[NextKeyworks] Study Queue&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;HTTPS&lt;/li&gt;
+&lt;li&gt;SOLID&lt;/li&gt;
+&lt;li&gt;loop label&lt;/li&gt;
+&lt;li&gt;CSV&lt;/li&gt;
+&lt;li&gt;파일입출력&lt;/li&gt;
+&lt;li&gt;UML&lt;/li&gt;
+&lt;li&gt;UTC&lt;/li&gt;
+&lt;li&gt;epoch time / Instant time&lt;/li&gt;
+&lt;li&gt;MVC&lt;/li&gt;
+&lt;li&gt;URL ClassLoader&lt;/li&gt;
+&lt;li&gt;Secure ClassLoader&lt;/li&gt;
+&lt;li&gt;JNI&lt;/li&gt;
+&lt;li&gt;GC&lt;/li&gt;
+&lt;li&gt;HOF&lt;/li&gt;
+&lt;li&gt;자바 해시코드(hashCode)&lt;/li&gt;
+&lt;li&gt;OSI 7 계층&lt;/li&gt;
+&lt;li&gt;PCB&lt;/li&gt;
+&lt;li&gt;스프링 설계철학&lt;/li&gt;
+&lt;li&gt;RESTful&lt;/li&gt;
+&lt;li&gt;준 영속성&lt;/li&gt;
+&lt;li&gt;지연로딩&lt;/li&gt;
+&lt;li&gt;프록시객체&lt;/li&gt;
+&lt;li&gt;jpa - mybatis 의 차이&lt;/li&gt;
+&lt;li&gt;orm - mapper 의 차이&lt;/li&gt;
+&lt;li&gt;쿠키/세션/로컬 스토리지&lt;/li&gt;
+&lt;li&gt;HttpMessageConverter&lt;/li&gt;
+&lt;li&gt;서블릿&lt;/li&gt;
+&lt;li&gt;ACID&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[✏️ 2022-12-26 Today I Learn]]></title><description><![CDATA[TodayKeywords…]]></description><link>https://mitoconcrete.github.io/22_12_26/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_12_26/</guid><pubDate>Mon, 26 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;[TodayKeywords] 오늘 공부한 키워드&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;FilterChain&lt;/code&gt; : 스프링이 클라이언트로부터 어떤 요청을 받아 서블릿으로 전달되어 처리되는 과정(&lt;code class=&quot;language-text&quot;&gt;init&lt;/code&gt; -&gt; &lt;code class=&quot;language-text&quot;&gt;doGet/doPost&lt;/code&gt; -&gt; &lt;code class=&quot;language-text&quot;&gt;destroy&lt;/code&gt;) 중, &lt;code class=&quot;language-text&quot;&gt;doFilter&lt;/code&gt; 을 사용하여 인증/인가, 로깅, 인코딩 등등 사전에 할 수 있는 작업을 처리하기 위해 존재하는 필터영역이 존재한다. 스프링에서는 &lt;code class=&quot;language-text&quot;&gt;FilterRegistrationBean&lt;/code&gt; 을 사용하여 필터를 등록하여 이어서 사용한다고 한다.&lt;/li&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;SecurityFilterChain&lt;/code&gt; : &lt;code class=&quot;language-text&quot;&gt;FilterChain&lt;/code&gt;은 위임가능한 &lt;code class=&quot;language-text&quot;&gt;FilterProxy&lt;/code&gt; 가 존재하며, 스프링시큐리티는 이것을 위임받아 인증/인가를 위한 기능들을 수행하는 필터리스트를 만들어 차례대로 수행한다.&lt;/li&gt;
