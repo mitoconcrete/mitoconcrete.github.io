@@ -1,4 +1,49 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 28 Dec 2022 19:09:33 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-12-28 Today I Learn]]></title><description><![CDATA[회고 221228 : Swagger Page 권한 허용하기 스프링 시큐리티를 기존 프로젝트에 적용하는 과정에서, 스웨거 문서에 접속을 시도할 때 40…]]></description><link>https://mitoconcrete.github.io/22_12_28/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_12_28/</guid><pubDate>Wed, 28 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;[회고] 221228 : Swagger Page 권한 허용하기&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 29 Dec 2022 20:01:25 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-12-29 Today I Learn]]></title><description><![CDATA[회고 221229 : 팀 프로젝트를 하루 남긴 현재 갑작스런 반변동으로 인해서, 한 반에…]]></description><link>https://mitoconcrete.github.io/22_12_29/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_12_29/</guid><pubDate>Thu, 29 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;[회고] 221229 : 팀 프로젝트를 하루 남긴 현재&lt;/h2&gt;
+&lt;p&gt;갑작스런 반변동으로 인해서, 한 반에 9명의 팀원이 있는 조가 되어버렸다.
+모든 조원의 이해도가 다르고, 개인 프로젝트 진행상황이 다르기 때문에 앞으로 어떤식으로 진행될지 도저히 감이오지 않았다.
+나는 우선 구글 폼을 구성하여, 각자가 어떤 상태에 놓여있는지 파악하였다. 일단, 가시적으로 모두의 상태에 보이고 어떤 것을 원하는지 눈에 들어오니 좀더 명확해졌다.&lt;/p&gt;
+&lt;p&gt;실제 회사에서도 팀이 프로젝트를 리딩을 할 때, 모든 개발자가 각기 다른 이해도와 지식을 가지고 있다.
+그런 상황에서 PM은 어떤식으로 조율을 해야할까? 에 대한 포커스로 고민을 해봐야겠다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;팀원 개개인이 자신이 프로젝트에 기여하고, 자신감을 회복해야한다.&lt;/li&gt;
+&lt;li&gt;모든 팀원이 흐름을 이해 할 수 있어야한다.&lt;/li&gt;
+&lt;li&gt;각기가 원하는 결과를 가져가도록 유도해야한다.&lt;/li&gt;
+&lt;li&gt;유의미한 결과물이 있어야 한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;이 4가지에 포커싱을 해서 끊임없이 고민하여, 프로젝트가 잘 흘러가는데 기여하고 싶다..
+화이티이!!&lt;/p&gt;
+&lt;h2&gt;[TodayKeywords] 오늘 공부한 키워드&lt;/h2&gt;
+&lt;h2&gt;[NextKeyworks] Study Queue&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;HTTPS&lt;/li&gt;
+&lt;li&gt;SOLID&lt;/li&gt;
+&lt;li&gt;loop label&lt;/li&gt;
+&lt;li&gt;CSV&lt;/li&gt;
+&lt;li&gt;파일입출력&lt;/li&gt;
+&lt;li&gt;UML&lt;/li&gt;
+&lt;li&gt;UTC&lt;/li&gt;
+&lt;li&gt;epoch time / Instant time&lt;/li&gt;
+&lt;li&gt;MVC&lt;/li&gt;
+&lt;li&gt;URL ClassLoader&lt;/li&gt;
+&lt;li&gt;Secure ClassLoader&lt;/li&gt;
+&lt;li&gt;JNI&lt;/li&gt;
+&lt;li&gt;GC&lt;/li&gt;
+&lt;li&gt;HOF&lt;/li&gt;
+&lt;li&gt;자바 해시코드(hashCode)&lt;/li&gt;
+&lt;li&gt;OSI 7 계층&lt;/li&gt;
+&lt;li&gt;PCB&lt;/li&gt;
+&lt;li&gt;스프링 설계철학&lt;/li&gt;
+&lt;li&gt;RESTful&lt;/li&gt;
+&lt;li&gt;준 영속성&lt;/li&gt;
+&lt;li&gt;지연로딩&lt;/li&gt;
+&lt;li&gt;프록시객체&lt;/li&gt;
+&lt;li&gt;jpa - mybatis 의 차이&lt;/li&gt;
+&lt;li&gt;orm - mapper 의 차이&lt;/li&gt;
+&lt;li&gt;쿠키/세션/로컬 스토리지&lt;/li&gt;
+&lt;li&gt;HttpMessageConverter&lt;/li&gt;
+&lt;li&gt;서블릿&lt;/li&gt;
+&lt;li&gt;ACID&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[✏️ 2022-12-28 Today I Learn]]></title><description><![CDATA[회고 221228 : Swagger Page 권한 허용하기 스프링 시큐리티를 기존 프로젝트에 적용하는 과정에서, 스웨거 문서에 접속을 시도할 때 40…]]></description><link>https://mitoconcrete.github.io/22_12_28/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_12_28/</guid><pubDate>Wed, 28 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;[회고] 221228 : Swagger Page 권한 허용하기&lt;/h2&gt;
 &lt;p&gt;스프링 시큐리티를 기존 프로젝트에 적용하는 과정에서, 스웨거 문서에 접속을 시도할 때 403에러가 발생하는 이슈가 발생했다.
 해당 이슈를 해결하기 위해서 시큐리티 설정 측에서 스웨거 페이지에 대한 접근을 허가했다.
 하지만.. 지속적으로 에러가 발생하여 로그를 보니, 토큰을 인가하는 로직이 잘못된 부분이 있었다.
