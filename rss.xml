@@ -1,4 +1,62 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 29 Dec 2022 20:01:25 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-12-29 Today I Learn]]></title><description><![CDATA[회고 221229 : 팀 프로젝트를 하루 남긴 현재 갑작스런 반변동으로 인해서, 한 반에…]]></description><link>https://mitoconcrete.github.io/22_12_29/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_12_29/</guid><pubDate>Thu, 29 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;[회고] 221229 : 팀 프로젝트를 하루 남긴 현재&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 30 Dec 2022 19:37:29 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-12-30 Today I Learn]]></title><description><![CDATA[회고 221230 : @RequestBody 의 데이터를 AOP에서 불러오기 프로젝트의 요구조건 중, Request Body로 전달되는 username 과 password의 길이,포맷에 대한 필터링을 AOP로 분리해야한다는 조건이 있었다.
+AOP…]]></description><link>https://mitoconcrete.github.io/22_12_30/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_12_30/</guid><pubDate>Fri, 30 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;[회고] 221230 : @RequestBody 의 데이터를 AOP에서 불러오기&lt;/h2&gt;
+&lt;p&gt;프로젝트의 요구조건 중, Request Body로 전달되는 username 과 password의 길이,포맷에 대한 필터링을 AOP로 분리해야한다는 조건이 있었다.
+AOP는 일반적인 메서드와 다르게, 메인 플로우의 흐름 밖에 위치하기 때문에, 매개변수에 곧바로 접근하여 가져오는 것이 일반적인 사용법과 다르다.&lt;/p&gt;
+&lt;p&gt;AOP를 적용할 클래스, 패키지를 직접 지정한 뒤, JointPoint 라는 객체를 통해 실행 할 메서드들과 그곳에 전달되는 매개변수에 접근한다.
+단, 이 때 매개변수는 hashCode 로 제공되기에, .get~~와 같이 내부에 정의된 메서드를 실행시켜 내부의 값에 접근하여 가져오기가 매우 어렵다.&lt;/p&gt;
+&lt;p&gt;따라서, 나는 Reflection API를 적용하여, 해당 클래스를 가져와 클래스의 메소드를 invoke함으로서 username을 가져올 수 있게 하였다. 하지만, 이 때 Reflection API를 잘못사용해서 그런지 의도대로 동작하지 않았고, 곧바로 다른 방법을 찾아보게 되었다.
+내가 집중한 것은 arg로 가져오는 것의 타입이 Object라는 것, 그리고 이것이 RequestDto 라는 hashCode로 정확히 그 역할을 가져온다는 것 이었다.
+물론 모든 객체의 부모가 Object이긴 하지만, 확실하게 이 object가 RequesDto라는 것을 인지하고 있네? 그렇다면 RequesDto로 형변환을 시켜주면 어떻게 될까..? 하는 추측을 했다.&lt;/p&gt;
+&lt;p&gt;결과는..&lt;/p&gt;
+&lt;p&gt;잘동작한다!&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;       &lt;span class=&quot;token class-name&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; args &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; joinPoint&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getArgs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Object&lt;/span&gt; arg &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; args&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token class-name&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;out&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arg&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// SignUpRequestDto&apos;s hashcode&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arg &lt;span class=&quot;token keyword&quot;&gt;instanceof&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;SignUpRequestDto&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+               &lt;span class=&quot;token class-name&quot;&gt;SignUpRequestDto&lt;/span&gt; dto &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;SignUpRequestDto&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; arg&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+                    &lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt; username &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; dto&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getUsername&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+                    &lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt; password &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; dto&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getPassword&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+                    &lt;span class=&quot;token class-name&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;out&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;username &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot; &quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; password&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// work!&lt;/span&gt;
+                    &lt;span class=&quot;token keyword&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이런 과정을 거치면서, AOP에 대한 많은 실험을 거칠 수 있었고, 이에따라 AOP가 어떤 흐름으로 진행되는지 이해하게 되었다.
+항상 어떤 시행착오를 거치고 성공하면, 그전에 했던 모든실수의 원인이 기억이 나고 스스로 민망해지는 순간들이 있다.
+하지만, 백문이불여일타 라고 확실히 나는 뭔가를 손으로 일단 써봐야 그다음 이해를 하는 경향이 강한 것 같다. 공식문서와도 얼른 친해져야하는데.. 걱정이다.
+또, 프로젝트를 지속적으로 진행함에따라 자바에 대한 기본기, 스프링에 대한 기본기와 철학을 계속 잊어버리게 되는데, 책으로서 보충하던지 시간을내어 복습을 하던지 기본기를 잃지않도록 스스로 인지해야할 것 같다는 성찰을 했다.&lt;/p&gt;
+&lt;h2&gt;[TodayKeywords] 오늘 공부한 키워드&lt;/h2&gt;
+&lt;h2&gt;[NextKeyworks] Study Queue&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;HTTPS&lt;/li&gt;
+&lt;li&gt;SOLID&lt;/li&gt;
+&lt;li&gt;loop label&lt;/li&gt;
+&lt;li&gt;CSV&lt;/li&gt;
+&lt;li&gt;파일입출력&lt;/li&gt;
+&lt;li&gt;UML&lt;/li&gt;
+&lt;li&gt;UTC&lt;/li&gt;
+&lt;li&gt;epoch time / Instant time&lt;/li&gt;
+&lt;li&gt;MVC&lt;/li&gt;
+&lt;li&gt;URL ClassLoader&lt;/li&gt;
+&lt;li&gt;Secure ClassLoader&lt;/li&gt;
+&lt;li&gt;JNI&lt;/li&gt;
+&lt;li&gt;GC&lt;/li&gt;
+&lt;li&gt;HOF&lt;/li&gt;
+&lt;li&gt;자바 해시코드(hashCode)&lt;/li&gt;
+&lt;li&gt;OSI 7 계층&lt;/li&gt;
+&lt;li&gt;PCB&lt;/li&gt;
+&lt;li&gt;스프링 설계철학&lt;/li&gt;
+&lt;li&gt;RESTful&lt;/li&gt;
+&lt;li&gt;준 영속성&lt;/li&gt;
+&lt;li&gt;지연로딩&lt;/li&gt;
+&lt;li&gt;프록시객체&lt;/li&gt;
+&lt;li&gt;jpa - mybatis 의 차이&lt;/li&gt;
+&lt;li&gt;orm - mapper 의 차이&lt;/li&gt;
+&lt;li&gt;쿠키/세션/로컬 스토리지&lt;/li&gt;
+&lt;li&gt;HttpMessageConverter&lt;/li&gt;
+&lt;li&gt;서블릿&lt;/li&gt;
+&lt;li&gt;ACID&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[✏️ 2022-12-29 Today I Learn]]></title><description><![CDATA[회고 221229 : 팀 프로젝트를 하루 남긴 현재 갑작스런 반변동으로 인해서, 한 반에…]]></description><link>https://mitoconcrete.github.io/22_12_29/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_12_29/</guid><pubDate>Thu, 29 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;[회고] 221229 : 팀 프로젝트를 하루 남긴 현재&lt;/h2&gt;
 &lt;p&gt;갑작스런 반변동으로 인해서, 한 반에 9명의 팀원이 있는 조가 되어버렸다.
 모든 조원의 이해도가 다르고, 개인 프로젝트 진행상황이 다르기 때문에 앞으로 어떤식으로 진행될지 도저히 감이오지 않았다.
 나는 우선 구글 폼을 구성하여, 각자가 어떤 상태에 놓여있는지 파악하였다. 일단, 가시적으로 모두의 상태에 보이고 어떤 것을 원하는지 눈에 들어오니 좀더 명확해졌다.&lt;/p&gt;
