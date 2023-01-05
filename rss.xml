@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 31 Dec 2022 19:38:19 GMT</lastBuildDate><item><title><![CDATA[✏️ 2022-12-30 Today I Learn]]></title><description><![CDATA[회고 221230 : @RequestBody 의 데이터를 AOP에서 불러오기 프로젝트의 요구조건 중, Request Body로 전달되는 username 과 password의 길이,포맷에 대한 필터링을 AOP로 분리해야한다는 조건이 있었다.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 05 Jan 2023 22:27:38 GMT</lastBuildDate><item><title><![CDATA[✏️ 2023-01-05 Today I Learn]]></title><description><![CDATA[회고 230105 : 수술 후 3일의 기간동안 한 일들 철심제거 수술 후…]]></description><link>https://mitoconcrete.github.io/23_01_05/</link><guid isPermaLink="false">https://mitoconcrete.github.io/23_01_05/</guid><pubDate>Thu, 05 Jan 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;[회고] 230105 : 수술 후 3일의 기간동안 한 일들&lt;/h2&gt;
+&lt;p&gt;철심제거 수술 후 3일 간, 입원해있으면서도 팀 프로젝트를 원활하게 이끌어가기 위해서 드문드문 방문하여 진도를 체크하고 팀원들을 도와주었다.
+기력이 너무 떨어져 매 시간 붙어있진 못했는데, 그래도 뭔가 프로젝트를 통해 얻고 싶은게 있는 의지를 보이는 팀원들 덕분에 힘을 낼 수 있었다.
+매일 아침 10시마다 출석하여 팀원들이 어떤 어려움을 겪고있는지, 무슨일을 할 것인지 체크하였고, 응답이 없는 팀원들에게는 따로 연락하여 진도를 체크하였다.
+그리고 기력이 회복 될 쯤 한번씩 들어와 잘 진행되고 있는지 체크하며, PR에 대해 리뷰를 드리곤 하였다.&lt;/p&gt;
+&lt;p&gt;이번 프로젝트의 변수는 내 기력이었던 것 같다. 가벼운 수술로 치부하고, 100% 팔로업이 가능 할 것이라고 판단했는데 생각보다 기력이 많이 죽어버렸다.
+거기에 팀 프로젝트를 잘 흘러가도록 고민하는 것이 에너지를 많이 잡아먹을 것이라고 생각하지 못했는데, 여기서 뺏기는 에너지가 상당했다.
+오늘 복귀했음에도 계속 머리가 아프고, 기운이 빠져서 누워있다가 팀원분들이 헬프를 외칠때만 도움을 드리곤 하였다.&lt;/p&gt;
+&lt;p&gt;하지만, 팀원들의 의지,흥미만 있다면, 나의 존재없이도 프로젝트가 어떻게든 흘러가는 모습도 보았다. 반면에, 의지,흥미가 없다면 프로젝트가 계속 정체되는 모습도 보았다.
+코드를 작성하는 것 없이 온전히 팀이 어떻게 흘러가는지만 고민하고, 관찰하였는데 그 시간들에서 의미있는 결과들을 얻었다.&lt;/p&gt;
+&lt;p&gt;유동적으로 흘러가는 팀을 만들기 위해선 의지, 목표가 뚜렷한 팀원들이 모여야한다. 큰 목표를 기반으로 계속 작은 미션을 주면 팀원들의 성취도, 흥미가 올라간다.
+서로 돕는 시스템을 만들면 관리자에 의존하지 않는 형태가 되어, 팀이 느리게나마 독립성을 가지고 앞으로 나아가는 시스템이 구축된다.
+나의 기력저하가 도움(?)이 되었던것 같기도 하다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[✏️ 2022-12-30 Today I Learn]]></title><description><![CDATA[회고 221230 : @RequestBody 의 데이터를 AOP에서 불러오기 프로젝트의 요구조건 중, Request Body로 전달되는 username 과 password의 길이,포맷에 대한 필터링을 AOP로 분리해야한다는 조건이 있었다.
 AOP…]]></description><link>https://mitoconcrete.github.io/22_12_30/</link><guid isPermaLink="false">https://mitoconcrete.github.io/22_12_30/</guid><pubDate>Fri, 30 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;[회고] 221230 : @RequestBody 의 데이터를 AOP에서 불러오기&lt;/h2&gt;
 &lt;p&gt;프로젝트의 요구조건 중, Request Body로 전달되는 username 과 password의 길이,포맷에 대한 필터링을 AOP로 분리해야한다는 조건이 있었다.
 AOP는 일반적인 메서드와 다르게, 메인 플로우의 흐름 밖에 위치하기 때문에, 매개변수에 곧바로 접근하여 가져오는 것이 일반적인 사용법과 다르다.&lt;/p&gt;
