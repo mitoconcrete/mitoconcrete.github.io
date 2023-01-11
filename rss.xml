@@ -1,4 +1,54 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 10 Jan 2023 19:00:48 GMT</lastBuildDate><item><title><![CDATA[✏️ 2023-01-10 Today I Learn]]></title><description><![CDATA[회고 220110: TDD 시작해보기 sql을 학습하면서 시간이 많이 남게되어, 무엇을 할지 고민하던 중 TDD라는 여태까지 피해왔던 카드를 다시꺼내보게 되었다.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 11 Jan 2023 15:02:48 GMT</lastBuildDate><item><title><![CDATA[✏️ 2023-01-11 Today I Learn]]></title><description><![CDATA[회고 22011…]]></description><link>https://mitoconcrete.github.io/23_01_11/</link><guid isPermaLink="false">https://mitoconcrete.github.io/23_01_11/</guid><pubDate>Wed, 11 Jan 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;[회고] 220111&lt;/h2&gt;
+&lt;p&gt;테스트를 작성하다가 계속 혼란이 왔던 부분이 있었다. 잘 작성해놓은걸 테스트하는건 로그를 이용해서 하면되는데, 굳이 이렇게 어렵게 작성하는 이유가 있을까..? 하는 의문이었다.
+테스트에서 사용되는 서비스나 컨트롤러가 이미 모두 완성되어있고, 그것에 대한 기능을 테스트하는 순서로 진행되었기 때문에 계속적으로 혼란이 왔던 것이었다.
+TDD는 테스트를 먼저 작성하고, 테스트에 맞게 클래스나 메소드를 완성시키는 방식이다. 따라서, 지금처럼 이미 완성을 다 하고 난 뒤, 잘 동작하는지 테스트하는 것이 아니라 빈 클래스를 이렇게 사용할 것이다~ 하고 가정하고 그 틀을 먼저 마련 한 뒤, 점차 실제 클래스를 채워나가는 방식으로 진행하는 것이다.&lt;/p&gt;
+&lt;p&gt;이것은 이해가 되었지만, 아직 when에서 서비스를 굳이 사용하는 이유나, Service를 검증하는 이유가 아직은 너무 애매모호하다. 하지만, 개발 전 어떤 틀을 잡아놓고, 그것을 채워나가는 방식은 확실히 안전성이 보장된다는 깨달음은 얻긴했다. 내일은, 빈 메소드에 대한 테스트를 작성해보고, 그것을 테스트에 맞게 채워나가는 식으로 진행해봐야겠다.&lt;/p&gt;
+&lt;h2&gt;[TodayKeywords] 오늘 공부한 키워드&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;BDD(Behavior Driven Development)&lt;/code&gt; : TDD에서 파생된 개념으로서, 단위테스트 보단 어떤 행동에 대한 테스트 즉, 시나리오를 이용한 테스트를 의미한다. given-&gt;when-&gt;then의 순서가 이 개념에서 나온다.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;SSL Handshake과정&lt;/code&gt; :&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;서비스에서 CA인증기관에 자신의 서비스에 대한 SSL인증서를 요청하여 발급받는다. SSL인증서 안에는 CA정보, 공개키 등이 있다. (서버 -&gt; CA)&lt;/li&gt;
+&lt;li&gt;유저가 브라우저를 이용해 서비스에 접속한다. 이 때, 랜덤데이터와 사용가능한 인증방식을 서버로 전송한다. (유저 -&gt; 서버)&lt;/li&gt;
+&lt;li&gt;서버는 유저가 보낸 인증방식에 해당되는 SSL인증서와 함께 랜덤데이터를 유저에게 전달한다.(서버 -&gt; 유저)&lt;/li&gt;
+&lt;li&gt;유저의 브라우저는 CA리스트를 보고, SSL인증서가 인증된 CA에서 작성된 인증서인지 확인하고, 인증기관에서 미리발급되어 저장된 공개키로 인증서를 복호화한다. (유저 -&gt; CA)&lt;/li&gt;
+&lt;li&gt;복호화된 인증서안에 있는 공개키와 서버로 부터받은 랜덤데이터를 이용하여 임시키를 생성하여 서버에 전달한다.(유저 -&gt; 서버)&lt;/li&gt;
+&lt;li&gt;서버는 전달받은 임시키를 자신이 가지고 있는 비밀키로 복호화하여, 유저를 신뢰하여 대칭키를 만들어 유저에게 보낸다.&lt;/li&gt;
+&lt;li&gt;유저는 전달받은 대칭키를 이용해 이후에 통신을 주고 받는다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;[NextKeyworks] Study Queue&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;SOLID&lt;/li&gt;
+&lt;li&gt;loop label&lt;/li&gt;
+&lt;li&gt;CSV&lt;/li&gt;
+&lt;li&gt;파일입출력&lt;/li&gt;
+&lt;li&gt;UML&lt;/li&gt;
+&lt;li&gt;UTC&lt;/li&gt;
+&lt;li&gt;epoch time / Instant time&lt;/li&gt;
+&lt;li&gt;MVC&lt;/li&gt;
+&lt;li&gt;URL ClassLoader&lt;/li&gt;
+&lt;li&gt;Secure ClassLoader&lt;/li&gt;
+&lt;li&gt;JNI&lt;/li&gt;
+&lt;li&gt;GC&lt;/li&gt;
+&lt;li&gt;HOF&lt;/li&gt;
+&lt;li&gt;자바 해시코드(hashCode)&lt;/li&gt;
+&lt;li&gt;OSI 7 계층&lt;/li&gt;
+&lt;li&gt;PCB&lt;/li&gt;
+&lt;li&gt;스프링 설계철학&lt;/li&gt;
+&lt;li&gt;RESTful&lt;/li&gt;
+&lt;li&gt;준 영속성&lt;/li&gt;
+&lt;li&gt;지연로딩&lt;/li&gt;
+&lt;li&gt;프록시객체&lt;/li&gt;
+&lt;li&gt;jpa - mybatis 의 차이&lt;/li&gt;
+&lt;li&gt;orm - mapper 의 차이&lt;/li&gt;
+&lt;li&gt;쿠키/세션/로컬 스토리지&lt;/li&gt;
+&lt;li&gt;HttpMessageConverter&lt;/li&gt;
+&lt;li&gt;서블릿&lt;/li&gt;
+&lt;li&gt;ACID&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[✏️ 2023-01-10 Today I Learn]]></title><description><![CDATA[회고 220110: TDD 시작해보기 sql을 학습하면서 시간이 많이 남게되어, 무엇을 할지 고민하던 중 TDD라는 여태까지 피해왔던 카드를 다시꺼내보게 되었다.
 번거롭다는 단점때문에 TDD…]]></description><link>https://mitoconcrete.github.io/23_01_10/</link><guid isPermaLink="false">https://mitoconcrete.github.io/23_01_10/</guid><pubDate>Tue, 10 Jan 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;[회고] 220110: TDD 시작해보기&lt;/h2&gt;
 &lt;p&gt;sql을 학습하면서 시간이 많이 남게되어, 무엇을 할지 고민하던 중 TDD라는 여태까지 피해왔던 카드를 다시꺼내보게 되었다.
 번거롭다는 단점때문에 TDD를 받아들이지 못하고 있다가, 내 어플리케이션이 항상 의도대로 동작하지 않는 것을 보고, 또 스웨거에서 점점 길어지는 검증로직들을 보며 TDD의 필요성을 느끼게 되었다. 클라이언트를 통해 검증을 할 수도 있겠지만, 점점 과정이 길어질수록 로그인하고, 토큰발급받고하다보면 여간 귀찮은게 아니기 때문이다.
