@@ -179,27 +179,27 @@ data-styled.g66[id="Footer__HiddenWrapper-sc-zqxmks-9"]{content:"iyImhS,iqspNU,"
 <p>한번에 많은 API를 만들다보니, URL이 Restful하게 작업되지 못한부분들이 있어, 팀원들과 머리를 맞대고 수정하는 과정을 거쳤다.
 아래는 논의했던 사항들과 도출된 항목들이다.</p>
 <ol>
-<li><em>JWT를 통해 userId를 가져올 수 있는 상황에서, 굳이 <code class="language-text">/users/{userId}</code>과 같이 해당 리소스의 계층을 표현을 굳이 해주어야할까?</em>
+<li>
+<p><em>JWT를 통해 userId를 가져올 수 있는 상황에서, 굳이 <code class="language-text">/users/{userId}</code>과 같이 해당 리소스의 계층을 표현을 굳이 해주어야할까?</em><br>
 해당 API는 고객이 자신의 정보를 수정, 삭제하는 기능을 가졌었다. 나 자신만이 글수정을 할 수 있어야하기 때문에 JWT토큰을 통하여 인증을 해야했다.
 인증이 이뤄졌기 때문에 controller에 해당요청이 도착한 시점엔, 이미 이 요청을 보낸 사람의 정보가 <code class="language-text">Authorization Context</code>에 넣어진 상태일 것이다.
-하지만, userId 를 <code class="language-text">@PathVariable</code>로 전달하기 때문에, 우리는 JWT토큰으로 전달한 사람의 정보가 아닌 userId로 전달 된 리소스를 수정해야한다.</li>
-</ol>
+하지만, userId 를 <code class="language-text">@PathVariable</code>로 전달하기 때문에, 우리는 JWT토큰으로 전달한 사람의 정보가 아닌 userId로 전달 된 리소스를 수정해야한다.</p>
 <p>따라서, JWT의 정보와 userId의 정보가 일치하는지 검증하는 과정이 필요한데, 그것을 굳이 매번넣어줘야하는지가 고민사항이었다.
 그럴바에 차라리 <code class="language-text">/users</code> + JWT Token으로 조합하여 사용하는것이 더 낫지 않을까 생각했다. 하지만, 이것은 전혀 Restful하지않기 때문에 팀원들과 많이 고민했던 것 같다.</p>
 <p>합의된 결과는 <strong>그냥 JWT의정보와 userId 의 정보가 일치하는지 검증을 하자</strong>였다. 우리팀은 Restful을 선택한 것이다.</p>
-<ol start="2">
-<li><em>불분명한 워딩 수정하기</em>
+</li>
+<li>
+<p><em>불분명한 워딩 수정하기</em><br>
 우리 어플리케이션의 리소스 중엔 <code class="language-text">sellerRequestForm</code>, <code class="language-text">customerRequestForm</code> 이라는 대중적이지 않은 리소스들이 있다.
 <code class="language-text">sellerRequestForm</code>은 고객이 판매자 요청을 하기 위한 정보이고, <code class="language-text">customerRequestForm</code> 은 고객이 상품구매를 요청하는 정보이다.
-일단 요구사항의 표현을 그대로 따라가긴 했는데, 현실에 없는 단어이기 때문에, 이것을 URL에 적용을 하려니깐 내가 무슨 리소스를 요청하는지 혼란이 오는 상황이 벌어졌다.</li>
-</ol>
+일단 요구사항의 표현을 그대로 따라가긴 했는데, 현실에 없는 단어이기 때문에, 이것을 URL에 적용을 하려니깐 내가 무슨 리소스를 요청하는지 혼란이 오는 상황이 벌어졌다.</p>
 <p><code class="language-text">/sellers/{sellerId}/customerRequestForm</code> 이 무슨 기능을 하는지 명확한가..? 우리팀은 그렇지 않다고 생각하고, 머리를 맞대어 보았다.<br>
 request, buy, waitinglist, wanted 등등 다양한 후보군이 나왔는데 최종적으로 선택된 것은 <code class="language-text">quotation</code>이었다.<br>
 견적서라는 의미로, <code class="language-text">/sellers/{sellerId}/quotations</code> 를 쓰게 되면, <em>'어떤 판매자가 받은 견적서'</em>들 이라는 의미로 좀더 명확해지는 것이 있었다.
 나에게는 생소한 단어라서 처음엔 의아했지만, 팀원들의 의견을 들어보니 생각보다 많이 사용되는 단어같았다. 따라서, 이를 수용했다.</p>
 <p>그렇다면, <code class="language-text">sellerRequestForm</code> 는 어떻게 표현할 수 있을까?
 waitinglist, authroization-list 등등 다양한 의견이 나왔지만, 최종적으로 선택된 것은 <code class="language-text">waitings</code> 였다. 보통 현실에서도 대기자 목록을 웨이팅이라는 단어로 쓰기 때문에, 굳이 list라는 표현을 쓰지 않아도 된다고 판단했다. 다만, 이것이 권한요청을 하는 대기열에 추가를 하는 기능이기때문에, 리소스앞에 <code class="language-text">auth</code>라는 단어를 덧붙혀 <strong>권한 대기열</strong> 이라는 의미로 해당 리소스를 표현하기로 했다. <code class="language-text">/users/{userId}/auth/waitings</code> 는 어떤 유저의 권한 대기를 의미한다.</p>
-<ol start="3">
+</li>
 <li><em>기능에 대한 요청 분리하기</em>
 login, logout, signup 과 같은 기능들은, 유저가 지닌 기능이라기보단, 서비스가 가진 인증기능이다.<br>
 따라서, <code class="language-text">/users/login</code>, <code class="language-text">/users/signup</code> 과 같은 표현은 적절하지 않다고 판단했다.<br>
