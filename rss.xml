@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 18 Jan 2023 16:41:13 GMT</lastBuildDate><item><title><![CDATA[✏️ 2023-01-18 Today I Learn]]></title><description><![CDATA[회고 22011…]]></description><link>https://mitoconcrete.github.io/23_01_18/</link><guid isPermaLink="false">https://mitoconcrete.github.io/23_01_18/</guid><pubDate>Wed, 18 Jan 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;[회고] 220118 : 컨디션이 나에게 미치는 영향&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 19 Jan 2023 18:21:07 GMT</lastBuildDate><item><title><![CDATA[✏️ 2023-01-19 Today I Learn]]></title><description><![CDATA[회고 220119 : 성장하는 팀이 되기 Q. A보다 B의 개발 실력이 좋다고 가정해보자, B는 A가 하는말에 대해 의심하지않고 그냥 받아들인다. 그렇다면 A의 말은 모두 옮은 것 일까? 단, A와 B…]]></description><link>https://mitoconcrete.github.io/23_01_19/</link><guid isPermaLink="false">https://mitoconcrete.github.io/23_01_19/</guid><pubDate>Thu, 19 Jan 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;[회고] 220119 : 성장하는 팀이 되기&lt;/h2&gt;
+&lt;p&gt;Q. A보다 B의 개발 실력이 좋다고 가정해보자, B는 A가 하는말에 대해 의심하지않고 그냥 받아들인다.&lt;br&gt;
+그렇다면 A의 말은 모두 옮은 것 일까? 단, A와 B의 공부기간은 비슷하다고 가정하자.&lt;/p&gt;
+&lt;p&gt;정답은 &quot;아니다&quot; 이다. 어떤 이론적인 부분에 있어서, 논란의 여지가 없는 확실한 개념은 그럴가능성이 높을 수 있다.&lt;br&gt;
+하지만, 계층의 구분, 연관관계 맵핑, 코드컨벤션, DTO사용, 라이브러리 사용여부 등 개인의 신념에 따른 차이가 있는 개념에 대해선, A의 의견이 정답이 아닐 확률이 높다.
+B는 자신보다 맞는 말을 하는 A에게 책임을 전가하고, 그의 의견에 동조한다. 그동안 A의 말이 대부분 맞는 것처럼 보였기 때문이다. 이 프로젝트의 완성여부는 전적으로 A의 능력에 달려있게 된다. A의 코드나 신념에 문제가 발생한다면, 어플리케이션은 그 결함때문에 와르르 무너지게 된다.&lt;/p&gt;
+&lt;p&gt;이것은 좋은 팀이 아니라고 생각한다. 팀은 유기체다. 실력의 여하에 관계없이, 내가 맞다고 믿는 것을 근거를 들어 주장하는 것은 팀을 건강하게 만든다. 팀은 유기체이기 때문이다. 서로의 결점을 메워나가며 팀은 단단한 돌이 된다.&lt;/p&gt;
+&lt;p&gt;단, 전제조건은 상대에 대한 존중이다. 주장의 목적이 비난이 되서는 안된다. 그렇다면 제자리를 걸을 것이다.
+서로가 서로의 의견을 존중하며, 살을 붙혀나가면 나 한사람이 두명분의 생각과 의견을 가지게 되는 것 이다.&lt;/p&gt;
+&lt;p&gt;이런과정을 반복해나가다 보면, 나 한사람은 여러명의 생각과 의견을 가질 수 있게되고, 다른 사람들도 마찬가지일 것이다.
+이것은 곧 팀의 성장을 의미한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[✏️ 2023-01-18 Today I Learn]]></title><description><![CDATA[회고 22011…]]></description><link>https://mitoconcrete.github.io/23_01_18/</link><guid isPermaLink="false">https://mitoconcrete.github.io/23_01_18/</guid><pubDate>Wed, 18 Jan 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;[회고] 220118 : 컨디션이 나에게 미치는 영향&lt;/h2&gt;
 &lt;p&gt;몇일 째, 밤낮이 바뀌어 잠을 잘 자지못했다. 그 결과 내 몸에 일어난 변화들이 있는데, &apos;함께 일하고 싶은 사람&apos;이 되기엔 각성하고 고쳐야 할 점 들이 많이 보여서, 항상주의 하기위해 글을 작성한다.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;끊임 없이 쏟아지는 졸음
