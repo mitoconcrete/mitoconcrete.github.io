@@ -1,4 +1,61 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 02 Feb 2023 22:40:21 GMT</lastBuildDate><item><title><![CDATA[✏️ 2023-02-02 Today I Learn]]></title><description><![CDATA[1. Auditing 없이 Audit을 구현해보기 - createdby, modifiedby auditing은 스프링이 엔티티의 상태를 감시(audit…]]></description><link>https://mitoconcrete.github.io/23_02_02/</link><guid isPermaLink="false">https://mitoconcrete.github.io/23_02_02/</guid><pubDate>Thu, 02 Feb 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. Auditing 없이 Audit을 구현해보기 - createdby, modifiedby&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 03 Feb 2023 16:20:18 GMT</lastBuildDate><item><title><![CDATA[✏️ 2023-02-03 Today I Learn]]></title><description><![CDATA[1. 알고리즘 문제를 풀 때 N…]]></description><link>https://mitoconcrete.github.io/23_02_03/</link><guid isPermaLink="false">https://mitoconcrete.github.io/23_02_03/</guid><pubDate>Fri, 03 Feb 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. 알고리즘 문제를 풀 때 N의 범위를 고려해보다.&lt;/h2&gt;
+&lt;p&gt;오늘 아침 푼 문제는 &lt;a href=&quot;https://school.programmers.co.kr/learn/courses/30/lessons/138476&quot;&gt;귤 고르기&lt;/a&gt;문제 였다.
+문제를 이해하는 시간을 가졌다. 문제를 모두 이해한 뒤, 그에 맞는 풀이법을 고안했다.
+처음 떠올린 풀이법은 &lt;strong&gt;조합&lt;/strong&gt; 이었다. 하지만, 문제의 조건으로 주어진 K의범위가 천만이었기 때문에, 만일 K가 천만인 케이스가 있다면, 이중 반복문을 이용하게 된다면, 시간초과가 반드시 날 것 이라고 판단했다.
+역시나, 조합을 구하는 과정에서 시간초과가 지속적으로 발생하는 것을 발생 할 수 있었고, 그에따라 해답을 바꿔야했다.
+조합을 이용하지 않고, 이중 반복문을 사용하지 않으며 이문제를 풀 수 있는 방법에 대해서 계속 고민했다. 그순간, &lt;em&gt;Greedy알고리즘&lt;/em&gt;이 생각났다. 최대한 적은 종류의 귤을 이용해 최대한 많이 담아야하기 때문에, 종류를 카테고리화 시키고, 그것을 많을 순으로 정렬하여 담게되면 정답을 도출 할 수 있게 될 것이라고 생각했다.&lt;/p&gt;
+&lt;p&gt;그 생각에 맞는 식을 세우고, 도출해냈다!&lt;/p&gt;
+&lt;p&gt;이번 시간을 통해 배운 사항은 &lt;code class=&quot;language-text&quot;&gt;K를 범위를 보기시작하면 시간초과를 바라보는 시선이 달라진다.&lt;/code&gt; 이다. 이것은 사용해야할 알고리즘의 종류를 줄여주고, 시간초과 오류를 방지할 수 있게된다. 그에따라, 빠르고 효율적인 알고리즘작성이 가능해진다!&lt;/p&gt;
+&lt;h2&gt;2. 우당탕탕 JPA&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;save를 수행했는데, Insert Select 쿼리가 날라가는 이유는?&lt;br&gt;
+ID값이 존재하는 엔티티를 업데이트 하려고 할 때, 업데이트할 필드가 있는지 select 쿼리를 먼저날려서 조회한다. 만일 수정요청를 보냈지만, 변경사항이 아무것도 없다면 JPA는 쿼리를 날리지 않는다.&lt;/li&gt;
+&lt;li&gt;@SpringBootTest : Spring 통합테스트&lt;/li&gt;
+&lt;li&gt;@DataJpaTest : JPA슬라이스 테스트&lt;/li&gt;
+&lt;li&gt;단위테스트는 PR시 검증하는 용도(CI)&lt;/li&gt;
+&lt;li&gt;통합테스트는 정기배포 당일 해당 브랜치에 대해 검증하고, 검증이 완료되면 자동배포되는 프로세스에서 사용한다.(CD)&lt;/li&gt;
+&lt;li&gt;트랜젝션 Propagation option을 통해 전파여부를 설정할 수 있다.
+REQUIRES_NEW 는 부모트랜젝션과 구분되는 새로운 트랜젝션을 생성하는 것이다.
+MANDATORY 는 부모 트랜젝션이 없으면, 에러를 발생시켜 무조건 트랜젝션에 참여하도록 강제한다.&lt;/li&gt;
+&lt;li&gt;non-transacional 은 커밋에 실패했을 경우 롤백여부와 관련있다.&lt;/li&gt;
+&lt;li&gt;TRANSACTION 고립&lt;br&gt;
+READ UNCOMMITTED : 커밋되지 않은 레코드 조회가능
+READ COMMITTED : 커밋된 레코드 조회가능
+REPETABLE READ : 트랜젝션 시작전 마지막으로 커밋된 레코드 조회가능
+SERIALIZABLE : 트렌젝션 진입 이후 타 트렌젝션을 막음.&lt;/li&gt;
+&lt;li&gt;rollback - UNCHECKED Exception, ERROR 에서만 발생한다.
+이유는 한 흐름에서 회복이 절대 불가능한 상황이기 때문이다.
+흐름의 회복이 가능한 상황에서는 Checked Exception을 이용해 핸들링하여, 요청을 회복해주어야한다.&lt;/li&gt;
+&lt;li&gt;N+1 엔티티 하나를 조회하기 위해 연관관계 엔티티또한 모두 조회하는 현상
+1(대상엔티티) + N(연관관계에 있는 엔티티)
+global fetch strategy - 엔티티생성시(컴파일시점)에 결정하는 전략
+fetch join
+entityGraph&lt;/li&gt;
+&lt;li&gt;Spring Data JPA에서 적용하려는 메소드 위에 @EntityGraph 어노테이션을 달고 옵션을 준다&lt;/li&gt;
+&lt;li&gt;attributePaths는 같이 조회할 연관 엔티티명을 적으면 된다.&lt;/li&gt;
+&lt;li&gt;, (콤마)를 통하여 여러개를 줄 수도 있다
+type은 EntityGraphType.LOAD, EntityGraphType.FETCH 2가지가 있다&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;LOAD : attributePaths에 정의한 엔티티들은 EAGER, 나머지는 글로벌 패치 전략에 따라 패치한다&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;일단 attributePaths 는 EAGER, 나머지는 매핑 설정 따라서&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;FETCH : attributePaths에 정의한 엔티티들은 EAGER, 나머지는 LAZY로 패치한다&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;나빼고 다 LAZY!!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;@SpringBootApplication이 구동되면서, 그 안에서 인식하도록 셋팅되어있는 의존성들이 bean으로 주입된다.&lt;/li&gt;
+&lt;li&gt;delete 와 remove의 차이는 CRUDRepository에 속해있는 delete는 non-transactional하고, remove는 JPAREpository에 속해있기 떄문에 transactional하다&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;고립레벨에 따른 트랜젝션 읽기 이슈들..&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dirty Read : 다른곳에서 쿼리를 날렸을 때, 커밋되지 않은 정보를 다른트랜젝션에서 볼 수 있는것&lt;/li&gt;
+&lt;li&gt;Unchecked Read : (??)&lt;/li&gt;
+&lt;li&gt;Panthom Read : 아직 커밋하지 않은 데이터를, 레벨이 낮은 트랜젝션이 조회해가는것.&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[✏️ 2023-02-02 Today I Learn]]></title><description><![CDATA[1. Auditing 없이 Audit을 구현해보기 - createdby, modifiedby auditing은 스프링이 엔티티의 상태를 감시(audit…]]></description><link>https://mitoconcrete.github.io/23_02_02/</link><guid isPermaLink="false">https://mitoconcrete.github.io/23_02_02/</guid><pubDate>Thu, 02 Feb 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. Auditing 없이 Audit을 구현해보기 - createdby, modifiedby&lt;/h2&gt;
 &lt;p&gt;auditing은 스프링이 엔티티의 상태를 감시(audit)하는 것인데, 주로 엔티티의 생성일자와 수정일자를 감시하여 엔티티 생성/수정 시점을 기록하는 timestamped기능을 구현할 때 사용한다. 엔티티의 상태는 &lt;code class=&quot;language-text&quot;&gt;@PostConstruct&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;@PrePersist&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;@PreUpdate&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;@PreDelete&lt;/code&gt; 등을 통해 엔티티의 생성직전, 영속상태직전, 업데이트직전, 삭제직전을 제어할 수 있다. 이를통해 createdby, modifiedby를 구현가능한데, 본래는 AuditorAware이라는 것을 이용해 getCurrentAuditor을 구현하여, 이곳에서 return되는 유저의 principal을 createdby, modifiedby에 넣어주는 방식이라고 한다.&lt;/p&gt;
 &lt;p&gt;시큐리티에서 제공하는 ContextHolder가 있어서 이걸통해 쉽게 Principal를 저장할 수 있지만, 굳이 이 기능구현을 위해 스프링시큐리티를 의존성주입하고 싶지않았다.
 대신 HttpRequestSevlet 생성 시 Spring에서 static하게 생성해주는 RequestContextHolder를 이용해보기로 했다.
