@@ -1,4 +1,50 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 03 Feb 2023 16:20:18 GMT</lastBuildDate><item><title><![CDATA[✏️ 2023-02-03 Today I Learn]]></title><description><![CDATA[1. 알고리즘 문제를 풀 때 N…]]></description><link>https://mitoconcrete.github.io/23_02_03/</link><guid isPermaLink="false">https://mitoconcrete.github.io/23_02_03/</guid><pubDate>Fri, 03 Feb 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. 알고리즘 문제를 풀 때 N의 범위를 고려해보다.&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 04 Feb 2023 16:05:19 GMT</lastBuildDate><item><title><![CDATA[✏️ 2023-02-1st Weekly I Learn]]></title><description><![CDATA[FACT-O1. 처음으로 학습할 때 버거움을 느꼈다. FEELINGS JPA 심화를 학습하는데, 처음으로 학습의 벽을 느꼈다. 거의 영화보듯이, 영상만 보고 있는 나의 모습을 볼 수 있었다. FINDINGS…]]></description><link>https://mitoconcrete.github.io/23_02_1st/</link><guid isPermaLink="false">https://mitoconcrete.github.io/23_02_1st/</guid><pubDate>Sat, 04 Feb 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;FACT-O1. 처음으로 학습할 때 버거움을 느꼈다.&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h2&gt;&lt;strong&gt;FEELINGS&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;JPA 심화를 학습하는데, 처음으로 학습의 벽을 느꼈다.&lt;/li&gt;
+&lt;li&gt;거의 영화보듯이, 영상만 보고 있는 나의 모습을 볼 수 있었다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;FINDINGS&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;모든 자료와 모든 정보들을 언제나 한번에 소화하는 것은 어렵다는 것을 배울 수 있었다.&lt;/li&gt;
+&lt;li&gt;또한, 내가 소화할 수 있도록 학습방식을 빠르게 바꾸는 것, 그리고 내가 소화할 수 있는 것과 그렇지 않은 것들을 구분해내는것이 학습효율에 좋다는 점을 깨달을 수 있었다.&lt;/li&gt;
+&lt;li&gt;이해되지 않는 부분들을 팀원들과 소통하면서, 조금은 이해할 수 있는 시간을 가질 수 있었다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;FUTURE&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;지금부터는 모르는 것들 천지일텐데, 내가 소화 할 수 있는 범위로 업무의 스코프를 줄이는 것과, 모르는 것에 대해 능동적으로 소통하면서 실력을 키워나가는 것이 중요하겠다는 생각을 했다.&lt;/li&gt;
+&lt;li&gt;어떻게든 해내려는 의지가 있다면, 해낼 수 있다는 자신감을 가져야겠다는 다짐을 했다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;FACT-O2. 알고리즘을 꾸준히 풀었다.&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h2&gt;&lt;strong&gt;FEELINGS&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;문제 안에서 해결점을 찾고, 그에따른 솔루션을 찾는 과정이 점차 빨라지고 있는 것이 느껴졌다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;FINDINGS&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;N의 범위를 알고, 그에 맞는 솔루션을 도출해내는 것이 얼마나 중요한 것인지 깨달았다.&lt;/li&gt;
+&lt;li&gt;N의 범위를 계산하고 나니 어떻게 문제를 풀어나가야 할지 고민하는 선택지가 줄어들고, 그에 따른 효율적인 방법을 선택할 수 있게되는 점이 좋다고 느껴졌다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;FUTURE&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;아직 엣지케이스를 찾아내는 힘이 부족해서 질문하기 탭을 통해서 계속 정답을 찾게 되는데, 최대한 스스로 고민해보며 알고리즘역량을 키울 수 있도록 노력해야겠다는 다짐을 했다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[✏️ 2023-02-03 Today I Learn]]></title><description><![CDATA[1. 알고리즘 문제를 풀 때 N…]]></description><link>https://mitoconcrete.github.io/23_02_03/</link><guid isPermaLink="false">https://mitoconcrete.github.io/23_02_03/</guid><pubDate>Fri, 03 Feb 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. 알고리즘 문제를 풀 때 N의 범위를 고려해보다.&lt;/h2&gt;
 &lt;p&gt;오늘 아침 푼 문제는 &lt;a href=&quot;https://school.programmers.co.kr/learn/courses/30/lessons/138476&quot;&gt;귤 고르기&lt;/a&gt;문제 였다.
 문제를 이해하는 시간을 가졌다. 문제를 모두 이해한 뒤, 그에 맞는 풀이법을 고안했다.
 처음 떠올린 풀이법은 &lt;strong&gt;조합&lt;/strong&gt; 이었다. 하지만, 문제의 조건으로 주어진 K의범위가 천만이었기 때문에, 만일 K가 천만인 케이스가 있다면, 이중 반복문을 이용하게 된다면, 시간초과가 반드시 날 것 이라고 판단했다.
@@ -52,9 +98,9 @@ type은 EntityGraphType.LOAD, EntityGraphType.FETCH 2가지가 있다&lt;/li&
 &lt;/ul&gt;
 &lt;p&gt;고립레벨에 따른 트랜젝션 읽기 이슈들..&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Dirty Read : 다른곳에서 쿼리를 날렸을 때, 커밋되지 않은 정보를 다른트랜젝션에서 볼 수 있는것&lt;/li&gt;
-&lt;li&gt;Unchecked Read : (??)&lt;/li&gt;
-&lt;li&gt;Panthom Read : 아직 커밋하지 않은 데이터를, 레벨이 낮은 트랜젝션이 조회해가는것.&lt;/li&gt;
+&lt;li&gt;Dirty Read : 다른곳에서 쿼리를 날렸을 때, 커밋되지 않은 정보를 다른트랜젝션에서 볼 수 있는것 L0에서 발생&lt;/li&gt;
+&lt;li&gt;Unchecked Read : (??) L1에서 발생&lt;/li&gt;
+&lt;li&gt;Panthom Read : 아직 커밋하지 않은 데이터를, 레벨이 낮은 트랜젝션이 조회해가는것. L1에서 발생&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[✏️ 2023-02-02 Today I Learn]]></title><description><![CDATA[1. Auditing 없이 Audit을 구현해보기 - createdby, modifiedby auditing은 스프링이 엔티티의 상태를 감시(audit…]]></description><link>https://mitoconcrete.github.io/23_02_02/</link><guid isPermaLink="false">https://mitoconcrete.github.io/23_02_02/</guid><pubDate>Thu, 02 Feb 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. Auditing 없이 Audit을 구현해보기 - createdby, modifiedby&lt;/h2&gt;
 &lt;p&gt;auditing은 스프링이 엔티티의 상태를 감시(audit)하는 것인데, 주로 엔티티의 생성일자와 수정일자를 감시하여 엔티티 생성/수정 시점을 기록하는 timestamped기능을 구현할 때 사용한다. 엔티티의 상태는 &lt;code class=&quot;language-text&quot;&gt;@PostConstruct&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;@PrePersist&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;@PreUpdate&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;@PreDelete&lt;/code&gt; 등을 통해 엔티티의 생성직전, 영속상태직전, 업데이트직전, 삭제직전을 제어할 수 있다. 이를통해 createdby, modifiedby를 구현가능한데, 본래는 AuditorAware이라는 것을 이용해 getCurrentAuditor을 구현하여, 이곳에서 return되는 유저의 principal을 createdby, modifiedby에 넣어주는 방식이라고 한다.&lt;/p&gt;
 &lt;p&gt;시큐리티에서 제공하는 ContextHolder가 있어서 이걸통해 쉽게 Principal를 저장할 수 있지만, 굳이 이 기능구현을 위해 스프링시큐리티를 의존성주입하고 싶지않았다.
