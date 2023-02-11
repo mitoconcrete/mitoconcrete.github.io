@@ -1,4 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 10 Feb 2023 19:14:48 GMT</lastBuildDate><item><title><![CDATA[✏️ 2023-02-10 Today I Learn]]></title><description><![CDATA[…]]></description><link>https://mitoconcrete.github.io/23_02_10/</link><guid isPermaLink="false">https://mitoconcrete.github.io/23_02_10/</guid><pubDate>Fri, 10 Feb 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;프로젝트를 하면서 배워나가기&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 11 Feb 2023 16:15:24 GMT</lastBuildDate><item><title><![CDATA[✏️ 2023-02-2nd Weekly I Learn]]></title><description><![CDATA[FACT-O1. 프로젝트 구조를 위해 다른사람들과 치열하게 토론했다. FEELINGS…]]></description><link>https://mitoconcrete.github.io/23_02_2nd/</link><guid isPermaLink="false">https://mitoconcrete.github.io/23_02_2nd/</guid><pubDate>Sat, 11 Feb 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;FACT-O1. 프로젝트 구조를 위해 다른사람들과 치열하게 토론했다.&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h2&gt;&lt;strong&gt;FEELINGS&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;기존에는 주도하던 입장이었기에, 이런 토론이 낯설었다.&lt;/li&gt;
+&lt;li&gt;계속 발생하는 브레이크에 당혹스러웠고, 어쩔때는 답답했다.&lt;/li&gt;
+&lt;li&gt;기획 진도가 나가지 않아서 힘들었다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;FINDINGS&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;의견을 내는 것에 대해 타당한 이유를 들어 팀원들을 기술적으로 설득하는 과정을 반복함에 따라, 내가 아는것과 모르는 것에 대한 메타인지능력을 키울 수 있었습니다.&lt;/li&gt;
+&lt;li&gt;그동안 기술을 선택하는 것에 대해 스스로에 대한 납득만 있었으면 되었었는데, 다른 사람들의 이해를 뚫어야 최종적으로 선발이 될 수 있기 때문에 기술선택에 대해서는 더욱더 많은 기준과 잣대를 둬야겠다는 생각이 들었습니다. 또한, 그것을 혼자하는 것이 어렵기 때문에 팀과함께하는 것이 얼마나 소중한 일인지 깨달았습니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h2&gt;&lt;strong&gt;FUTURE&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;개발자로 성장하기 위해서, 소통하는 것에 대해 거부감을 느끼지 않고 끊임없이 타인과 소통하는 과정을 즐겨야겠다고 생각했습니다.&lt;/li&gt;
+&lt;li&gt;또한, 이 과정을 통해서 실수를 점차줄이며 뒤를 맡겨도 든든한 개발자가 되고 싶습니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[✏️ 2023-02-10 Today I Learn]]></title><description><![CDATA[…]]></description><link>https://mitoconcrete.github.io/23_02_10/</link><guid isPermaLink="false">https://mitoconcrete.github.io/23_02_10/</guid><pubDate>Fri, 10 Feb 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;프로젝트를 하면서 배워나가기&lt;/h2&gt;
 &lt;p&gt;오늘은 문서를 완성하고, 코드작업을 시작했다.
 엔티티 점검을 받았는데, 정규화가 필요한 곳이 있다는 피드백을 받았다. 이전에 오갔던 이야기이긴 했는데, 변경이 자주일어나는 필드들은 따로 분리했다.
 또한 어떤 애너테이션을 사용하게 되면 리스트형태로 저장된 데이터를 컨트롤 하기 편하단 것을 배웠다.&lt;/p&gt;
