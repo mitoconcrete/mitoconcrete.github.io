@@ -1,4 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 13 Feb 2023 18:53:59 GMT</lastBuildDate><item><title><![CDATA[✏️ 2023-02-13 Today I Learn]]></title><description><![CDATA[1. 그래들에서 의존성 충돌이 발생했을 경우 해결하기 Test코드를 작성하려고 하는데, Log4j 라이브러리가 충돌하여 Bean…]]></description><link>https://mitoconcrete.github.io/23_02_13/</link><guid isPermaLink="false">https://mitoconcrete.github.io/23_02_13/</guid><pubDate>Mon, 13 Feb 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. 그래들에서 의존성 충돌이 발생했을 경우 해결하기&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 14 Feb 2023 18:38:34 GMT</lastBuildDate><item><title><![CDATA[✏️ 2023-02-14 Today I Learn]]></title><description><![CDATA[1. enum 비교 시 equles 대신 == 를 사용해야하는이유. == 는 null safe 합니다. equals는 내부적으로 == 를 사용하여 비교합니다. 2. soft delete 를 사용하는 엔티티의 삭제 구현하기 soft delete…]]></description><link>https://mitoconcrete.github.io/23_02_14/</link><guid isPermaLink="false">https://mitoconcrete.github.io/23_02_14/</guid><pubDate>Tue, 14 Feb 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. enum 비교 시 equles 대신 == 를 사용해야하는이유.&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;== 는 null safe 합니다.&lt;/li&gt;
+&lt;li&gt;equals는 내부적으로 == 를 사용하여 비교합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;2. soft delete 를 사용하는 엔티티의 삭제 구현하기&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;soft delete 는 엔티티를 직접삭제하는 것이 아니라, is&lt;em&gt;deleted/is&lt;/em&gt;removed 와 같은 value 값을 전환함으로서, 레코드는 그대로 두고 삭제를 구현하는 것이다.&lt;/li&gt;
+&lt;li&gt;본래는 엔티티의 is_delete 값을 업데이트 하고 save함으로서, 처리를 하였는데 @SQLDelete 라는 것을 사용하게 되면 로우쿼리를 날려, softdelete 를 구현할 수 있다.
+아래와 같이 표현한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token annotation punctuation&quot;&gt;@SQLDelete&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;sql &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;UPDATE user SET is_deleted = true WHERE id = ?&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;3. soft delete 엔티티를 제외하고 조회하기&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;soft delete 를 사용할 때, 굳이 is_delete 된 것을 조회하고 싶지 않을 수도 있고, 굳이 JPA문법을 이용해 매번 조건을 붙히기 귀찮은 경우도 있다. 이럴땐 @Where 절을 이용하여, 특정 컬럼에 대한 필터링을 할 수 있다.&lt;/li&gt;
+&lt;li&gt;하지만, 만약 delete 된 값을 불러오고 싶다면, native쿼리를 사용하거나(@Query), @FilterDef와 @Filter 를 사용하면 된다고 한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;4. 코드리뷰지옥&lt;/h2&gt;
+&lt;p&gt;오늘은 하루종일 코드리뷰를 주고받으면서, 악취를 걷어냈다.
+우리조에 JPA 고수가 계셔서 많은 도움을 받았다. 계속 대응하다보니 어느새 40개가 넘는 개선 사항이 쌓였다. 악취가 많이 난다는 뜻이겠지..
+확실히 혼자하는 것 보다 같이 함으로서 얻어가는게 많은 것 같다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[✏️ 2023-02-13 Today I Learn]]></title><description><![CDATA[1. 그래들에서 의존성 충돌이 발생했을 경우 해결하기 Test코드를 작성하려고 하는데, Log4j 라이브러리가 충돌하여 Bean…]]></description><link>https://mitoconcrete.github.io/23_02_13/</link><guid isPermaLink="false">https://mitoconcrete.github.io/23_02_13/</guid><pubDate>Mon, 13 Feb 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. 그래들에서 의존성 충돌이 발생했을 경우 해결하기&lt;/h2&gt;
 &lt;p&gt;Test코드를 작성하려고 하는데, Log4j 라이브러리가 충돌하여 Bean 등록이 원홯라게 안되는 이슈가 있었다. 팀원 분들이 다같이 통합테스트를 못하는 상황이 발생하였는데, 한 팀원분께서 솔루션을 찾아서 공유주셨다.
 자바스크립트로 개발을 할 때는 이런 상황이 생기면, 어떻게 할 줄 몰랐는데, 그래들에서는 아래와 같이 사용할 의존성과 배제할 의존성을 구분지을 수 있는 것 같다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;testImplementation &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&apos;it&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;ozimov&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;embedded&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;redis&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0.7&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;.3&lt;/span&gt;&apos;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
