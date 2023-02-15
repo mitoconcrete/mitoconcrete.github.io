@@ -1,4 +1,50 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 14 Feb 2023 18:38:34 GMT</lastBuildDate><item><title><![CDATA[✏️ 2023-02-14 Today I Learn]]></title><description><![CDATA[1. enum 비교 시 equles 대신 == 를 사용해야하는이유. == 는 null safe 합니다. equals는 내부적으로 == 를 사용하여 비교합니다. 2. soft delete 를 사용하는 엔티티의 삭제 구현하기 soft delete…]]></description><link>https://mitoconcrete.github.io/23_02_14/</link><guid isPermaLink="false">https://mitoconcrete.github.io/23_02_14/</guid><pubDate>Tue, 14 Feb 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. enum 비교 시 equles 대신 == 를 사용해야하는이유.&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 15 Feb 2023 17:42:25 GMT</lastBuildDate><item><title><![CDATA[✏️ 2023-02-15 Today I Learn]]></title><description><![CDATA[access token - refersh token 사용 전략 원래는 로그인 시, access token과 refresh token 을 같이 보내고, access token 의 주기를 짧게하여, 만료되면 특정 url…]]></description><link>https://mitoconcrete.github.io/23_02_15/</link><guid isPermaLink="false">https://mitoconcrete.github.io/23_02_15/</guid><pubDate>Wed, 15 Feb 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;access token - refersh token 사용 전략&lt;/h2&gt;
+&lt;p&gt;원래는 로그인 시, access token과 refresh token 을 같이 보내고, access token 의 주기를 짧게하여, 만료되면 특정 url로 요청을 보내고, 그때서야 비로스 리프레시 토큰을 검증하여 엑세스 토큰을 재발급하는 형식으로 진행되었다.
+rfc에는 oauth2에 대해 아래와 같은 방식을 추천했고, 위에 서술한 방식은 방식을 그대로 따르는 것이기 때문에 이것이 맞다고 생각하고, redis 의 사용에 대해서 의도적으로 배제했다. redis는 인메모리이긴 하지만, 엄연히 db이고 검증을 위해 db에 다녀오는 일은 말그대로 맨 뒷단(Repository)에 다녀오는 것이기 때문에, 의도적으로 배제시키려고했다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;  +--------+                                           +---------------+
+  |        |--(A)------- Authorization Grant ---------&gt;|               |
+  |        |                                           |               |
+  |        |&amp;lt;-(B)----------- Access Token -------------|               |
+  |        |               &amp;amp; Refresh Token             |               |
+  |        |                                           |               |
+  |        |                            +----------+   |               |
+  |        |--(C)---- Access Token ----&gt;|          |   |               |
+  |        |                            |          |   |               |
+  |        |&amp;lt;-(D)- Protected Resource --| Resource |   | Authorization |
+  | Client |                            |  Server  |   |     Server    |
+  |        |--(E)---- Access Token ----&gt;|          |   |               |
+  |        |                            |          |   |               |
+  |        |&amp;lt;-(F)- Invalid Token Error -|          |   |               |
+  |        |                            +----------+   |               |
+  |        |                                           |               |
+  |        |--(G)----------- Refresh Token -----------&gt;|               |
+  |        |                                           |               |
+  |        |&amp;lt;-(H)----------- Access Token -------------|               |
+  +--------+           &amp;amp; Optional Refresh Token        +---------------+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;redis 사용하기&lt;/h2&gt;
+&lt;p&gt;하지만, 위의 그림에서 인가서버와 리소스서버를 따로 이용하는 것을 보면서, 인증/인가만을 위한 서버를 따로 두는것이 더 낫겠다고 판단했다. 리소스서버 즉, 실제 비즈니스 로직이 돌아가는 서버와 단일 기능을 가진 서버는 따로 두는것이 맞으며, 그에따라 DB의 역할도 나뉘어야한다고 어느순간 깨달음이 왔다. 또한, JWT자체에 클레임들이 들어가기 때문에, 만료되지 않은 토큰이 클라이언트에 보여지는 상황자체가 기존에도 와닿지 않아서, 서버측에 refreshtoken을 저장하는 방식에 대한 호감이 증가했다. 따라서, 나는 아래와 같이 코드전략을 짰다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;로그인 시도 시, accesstoken 과 refreshtoken을 동시에 발급하며, accesstoken은 매우 짧은 주기(30분)으로 설정한다.
+refreshtoken은 redis에 저장하고, accestoken은 response header에 넣어서 전달한다.&lt;/li&gt;
+&lt;li&gt;access token 이 만료됨에 따라 redis에 저장한 refreshtoken을 확인한다.&lt;/li&gt;
+&lt;li&gt;refreshtoken이 유효하다면, accesstoken을 발급하여 세션을 이어나갈 수 있도록 한다.&lt;/li&gt;
+&lt;li&gt;refreshtoken이 유효하지않다면, 그냥 로그아웃 한다. 그리고 더이상 사용하지 않아도 좋으니, redis에서 삭제해준다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;그리고 로그아웃할때 accesstoken을 redis에 저장해주는데, 소위 &lt;strong&gt;블랙리스트&lt;/strong&gt; 라고 하는데, 이걸 그동안 왜 해야하는지 이해하지 못했다.
+어차피 클라이언트에서 지워주면 다시 사용할 수 있으니깐!&lt;/p&gt;
+&lt;p&gt;그런데 다시 생각해보니, 해당 토큰을 재 사용하는 경우 해킹된다면 유효기간이 남은 토큰을 그대로 쓸 가능성이 있고, 이런경우를 위해 로그아웃 처리가 되면 이 토큰은 이미 죽어버린 토큰이라는 마킹을 해줘야하는 것 이다.
+이렇게 redis를 사용한, 우당탕탕 플로우 개발이 끝났다.&lt;/p&gt;
+&lt;h2&gt;firebase hosting시 새로고침 해도 페이지가 뜰 수 있도록 하기&lt;/h2&gt;
+&lt;p&gt;그동안 SPA를 이용해서 작업을 할 때, 고질적으로 겪었던 문제는 개발환경에서는 괜찮은데, /login 과 같이 /하위의 페이지에서 리다이렉트를 하게되면, 404.html이 보이게 되던 이슈가 있었다. 해당이슈는 백엔드를 배우니 조금더 잘 이해가 되었다. 리액트나 뷰등으로 만들어진 싱글페이지어플리케이션은 index.html 이라는 엔트리포인트를 기준으로 렌더링이 되는 것이다. 보통 백엔드는 login.html, signup.html 과 같이 해당 페이지에 맵핑되는 html이 있는반면, SPA는 index.html 에 작성한 로직들이 모이는 식이다. 따라서 /login 위치에 실제로 login.html이 존재하지 않고, 그에 따라 404.html를 보여주고 있었던 것 이다.&lt;/p&gt;
+&lt;p&gt;그럼 어떻게 하면 될까?&lt;/p&gt;
+&lt;p&gt;보통 이런 권한은 호스팅하는 곳에 맡기면 된다. 다른페이지 요청이 들어와도 index.html이 덮어쓰게 해줘라는 명령어를 적어주면 되는데, firebase는 firebase.json에 아래와 같이 설정을 해주면 해결된다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;json&quot;&gt;&lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;    &lt;span class=&quot;token property&quot;&gt;&quot;rewrites&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token property&quot;&gt;&quot;source&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;**&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token property&quot;&gt;&quot;destination&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;/index.html&quot;&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;해당 이슈의 해결을 통해 SPA에 대한 이해가 한단계 높아졌다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[✏️ 2023-02-14 Today I Learn]]></title><description><![CDATA[1. enum 비교 시 equles 대신 == 를 사용해야하는이유. == 는 null safe 합니다. equals는 내부적으로 == 를 사용하여 비교합니다. 2. soft delete 를 사용하는 엔티티의 삭제 구현하기 soft delete…]]></description><link>https://mitoconcrete.github.io/23_02_14/</link><guid isPermaLink="false">https://mitoconcrete.github.io/23_02_14/</guid><pubDate>Tue, 14 Feb 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. enum 비교 시 equles 대신 == 를 사용해야하는이유.&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;== 는 null safe 합니다.&lt;/li&gt;
 &lt;li&gt;equals는 내부적으로 == 를 사용하여 비교합니다.&lt;/li&gt;
