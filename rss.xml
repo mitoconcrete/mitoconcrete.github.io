@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 17 Feb 2023 19:12:01 GMT</lastBuildDate><item><title><![CDATA[✏️ 2023-02-17 Today I Learn]]></title><description><![CDATA[캐시의 역할은
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 18 Feb 2023 21:37:25 GMT</lastBuildDate><item><title><![CDATA[✏️ 2023-02-3rd Weekly I Learn]]></title><description><![CDATA[FACT-O1. 코드리뷰를 진행했다. FEELINGS 생각보다 코드리뷰에 쏟는 시간이 길어져서 당황했다. 생각보다 리뷰를 꼼꼼하게 달아주셔서 당황했다. 내 코드를 남이 보고 평가한다는 점에서 부담되었다. FINDINGS…]]></description><link>https://mitoconcrete.github.io/23_02_3rd/</link><guid isPermaLink="false">https://mitoconcrete.github.io/23_02_3rd/</guid><pubDate>Sun, 19 Feb 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;FACT-O1. 코드리뷰를 진행했다.&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h2&gt;&lt;strong&gt;FEELINGS&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;생각보다 코드리뷰에 쏟는 시간이 길어져서 당황했다.&lt;/li&gt;
+&lt;li&gt;생각보다 리뷰를 꼼꼼하게 달아주셔서 당황했다.&lt;/li&gt;
+&lt;li&gt;내 코드를 남이 보고 평가한다는 점에서 부담되었다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;FINDINGS&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;점점 코드를 작성할때 남이 어떻게 읽을 수 있을지 신경쓰면서 코드를 작성하는 내 모습을 볼 수 있었다.&lt;/li&gt;
+&lt;li&gt;처음에는 다른 기준이 나의 코드에 접목되는 점이 부담되었지만, 무조건 적용을 하는것이아니라, 의견을 주고 받으면서 컨벤션같은 것들을 맞춰나갈 수 있어서 좋았다.&lt;/li&gt;
+&lt;li&gt;코드들이 점점 일관되어지고, 깔끔해지는 것이 보여서 좋았다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h2&gt;&lt;strong&gt;FUTURE&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;코드리뷰는 반드시 적용을 하되, 컨벤션 뿐만 아니라 흐름을 읽을 수 있게 작은 단위로 해야겠다는 생각을 했다.&lt;/li&gt;
+&lt;li&gt;또한, 중점적으로 짚어야 할 기준들을 잘 세워야겠다고 생각했다. 크리티컬/하드/미디움/소프트와 같이 우선순위를 매겨서 라벨링을 달고, 추후에 개선해야할 것들 당장에 개선을 해야 할 점들을 팀차원에서도 구분해야겠다고 생각했다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[✏️ 2023-02-17 Today I Learn]]></title><description><![CDATA[캐시의 역할은
 CPU…]]></description><link>https://mitoconcrete.github.io/23_02_17/</link><guid isPermaLink="false">https://mitoconcrete.github.io/23_02_17/</guid><pubDate>Fri, 17 Feb 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;캐시의 역할은
 CPU와 메모리 사이의 데이터 전송 지연속도를 개선하기 위한 전략이다.&lt;/p&gt;
 &lt;p&gt;지역성(캐싱 알고리즘)을 이용하여 캐싱할 데이터를 결정한다.&lt;/p&gt;
