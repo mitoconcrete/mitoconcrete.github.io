@@ -1,4 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 24 Feb 2023 00:02:00 GMT</lastBuildDate><item><title><![CDATA[✏️ 2023-02-23 Today I Learn]]></title><description><![CDATA[중간 발표 준비 오늘은 MVP…]]></description><link>https://mitoconcrete.github.io/23_02_23/</link><guid isPermaLink="false">https://mitoconcrete.github.io/23_02_23/</guid><pubDate>Thu, 23 Feb 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;중간 발표 준비&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 24 Feb 2023 20:09:04 GMT</lastBuildDate><item><title><![CDATA[✏️ 2023-02-24 Today I Learn]]></title><description><![CDATA[엑세스 토큰을 이용한 세션유지 플로우 변경 기존 서비스는 아래와 같이 엑세스 토큰을 이용한 플로우가 진행되었다. 엑세스 토큰을 발급한다. 해당 토큰이 만료되면, 서버에서 특정응답을 보낸다. 특정응답을 받은 클라이언트는 서버의 토큰 재발급 api…]]></description><link>https://mitoconcrete.github.io/23_02_24/</link><guid isPermaLink="false">https://mitoconcrete.github.io/23_02_24/</guid><pubDate>Fri, 24 Feb 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;엑세스 토큰을 이용한 세션유지 플로우 변경&lt;/h2&gt;
+&lt;p&gt;기존 서비스는 아래와 같이 엑세스 토큰을 이용한 플로우가 진행되었다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;엑세스 토큰을 발급한다.&lt;/li&gt;
+&lt;li&gt;해당 토큰이 만료되면, 서버에서 특정응답을 보낸다.&lt;/li&gt;
+&lt;li&gt;특정응답을 받은 클라이언트는 서버의 토큰 재발급 api로 요청을 보낸다.&lt;/li&gt;
+&lt;li&gt;서버는 새로운 토큰을 클라이언트에게 발급해주고, 클라이언트는 새로받은 토큰을 첨부하여, 같은 요청을 서버에 전송한다.
+&lt;img src=&apos;/image/230224_01.png&apos; width=&apos;300&apos; alt=&apos;기존플로우&apos;&gt;&lt;/img&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;이 방법은 아래와 같은 상황을 야기했다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;클라이언트가 서버의 특정응답을 인지하기 어렵다.&lt;/li&gt;
+&lt;li&gt;다시금 요청을 보내 발급을 받고, 또 다시 서버로 동일 요청을 보내는 일은 클라이언트에게 이전에 요청을 보낸 페이로드와 엔드포인트를 다시 알아와야하는 번거로움을 야기시킨다.&lt;/li&gt;
+&lt;li&gt;클라이언트 - 서버간 연결이 원활하지 않을경우 여러번 티키타카하는 것에 문제가 발생할 수 있다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;최종적으로 문제로 대두되었던 것은, 팀원들이 클라이언트와의 소통에 익숙하지 않으셨기때문에, 연결에 굉장한 애를 먹고 계셨고, 나또한 재발급을 위한 api를 따로 마련해두지 않았기 떄문에, 팀원들은 로그인이 풀릴때마다 다시 로그인을 해야하는 번거로움을 호소하셨다.&lt;/p&gt;
+&lt;p&gt;따라서, 이 과정을 단순화하기 위해 아래전략을 세웠다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;엑세스토큰을 발급한다.&lt;/li&gt;
+&lt;li&gt;토큰이 만료되면, 서버내부에서 새로운토큰을 발급받아 해당 토큰으로 일단 로직을 통과시킨다.&lt;/li&gt;
+&lt;li&gt;응답값과 함께 헤더에 새로 발급한 토큰을 실어 보내준다.&lt;/li&gt;
+&lt;li&gt;클라이언트는 헤더에 새로운 토큰이 있다면, 자신의 로컬저장소의 엑세스토큰을 재갱신한다.
+&lt;img src=&apos;/image/230224_02.png&apos; width=&apos;300&apos; alt=&apos;기존플로우&apos;&gt;&lt;/img&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;이렇게 되니 세션이 끊기지도 않고, 서버에 로직이 조금 추가되었을 뿐, 좀 더 플로우가 심플해졌다.
+극단적으로 엑세스토큰의 만료 시간을 1초로 뒀는데, 끊임없이 갱신되며 세션이 유지되었다.
+&lt;img src=&apos;/image/230224_03.png&apos; width=&apos;300&apos; alt=&apos;기존플로우&apos;&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;의미있는 개선이었다. 하지만, 아직 리프레시토큰이 만료되었을 경우에 대한 대처가 미흡하고, TTL적용이 되어있지 않아서 더 개선이 필요하다. 다음주 유지보수 때 좀 개선해보아야겠다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[✏️ 2023-02-23 Today I Learn]]></title><description><![CDATA[중간 발표 준비 오늘은 MVP…]]></description><link>https://mitoconcrete.github.io/23_02_23/</link><guid isPermaLink="false">https://mitoconcrete.github.io/23_02_23/</guid><pubDate>Thu, 23 Feb 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;중간 발표 준비&lt;/h2&gt;
 &lt;p&gt;오늘은 MVP를 마치고, 중간 발표를 위한 테스트와 발표전략을 짜기로 했다.
 가장 큰 이슈는 아직 많은 기능들이 미흡하고, 완성이 되지 않았다는 것 이었다. 다들 시간에 쫒겨서 진행하다보니 테스트도 진행하지 못하고 완성하지 못한 화면들도 있었다.
 그래도 일정은 맞춰야하기 때문에, 해당 신경쓰이는 사항들에 대해서는 일단 체크만 해두고, 내일중으로 함께 리팩토링 해보자고 말씀드렸다.
