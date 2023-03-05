@@ -1,4 +1,41 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 02 Mar 2023 17:47:36 GMT</lastBuildDate><item><title><![CDATA[✏️ 2023-03-02 Today I Learn]]></title><description><![CDATA[CI 를 뚫어라..! 오늘 CI를 진행하는 중 그동안 잘 돌아갔던 테스트가 막히는 일이 발생했다. 로그인, 로그아웃, Oauth…]]></description><link>https://mitoconcrete.github.io/23_03_02/</link><guid isPermaLink="false">https://mitoconcrete.github.io/23_03_02/</guid><pubDate>Thu, 02 Mar 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;CI 를 뚫어라..!&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 05 Mar 2023 20:32:43 GMT</lastBuildDate><item><title><![CDATA[✏️ 2023-03-1st Weekly I Learn]]></title><description><![CDATA[FACT-O1. 최적화 작업 및 테스트 작성을 했다. FEELINGS 모든 서비스의 테스트를 작성하려니, 막막했다. 이미 너무 사이즈가 커버린 프로젝트 규모 덕분에 어디서부터 손을 대야할 지 막막했다. FINDINGS…]]></description><link>https://mitoconcrete.github.io/23_03_1st/</link><guid isPermaLink="false">https://mitoconcrete.github.io/23_03_1st/</guid><pubDate>Sun, 05 Mar 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;FACT-O1. 최적화 작업 및 테스트 작성을 했다.&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h2&gt;&lt;strong&gt;FEELINGS&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;모든 서비스의 테스트를 작성하려니, 막막했다.&lt;/li&gt;
+&lt;li&gt;이미 너무 사이즈가 커버린 프로젝트 규모 덕분에 어디서부터 손을 대야할 지 막막했다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;FINDINGS&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;테스트를 작성하면서, 의도가 잘 기억이 나지않아서, 내부에 사용되는 동작관련 로직을 다시금 리마인드 하는 상황이 발생했다.&lt;/li&gt;
+&lt;li&gt;또한, 리팩토링을 다시 하려다보니, 하다가 기존 서비스들을 건드리는 곳들이 많아서 고쳐야하는 곳이 많아졌다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;FUTURE&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;테스트는 그때그때 작성해야겠다는 생각을 했다.&lt;/li&gt;
+&lt;li&gt;또한, 의존성 분리를 통해 유지보수 시에 다른 파일들에 영향이 가지 않도록 하는게 중요하다는 생각을 했다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[✏️ 2023-03-03 Today I Learn]]></title><description><![CDATA[…]]></description><link>https://mitoconcrete.github.io/23_03_03/</link><guid isPermaLink="false">https://mitoconcrete.github.io/23_03_03/</guid><pubDate>Fri, 03 Mar 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;효율적으로 더미데이터를 만들기&lt;/h2&gt;
+&lt;p&gt;이제 도메인 배포도 했고, 점차 프로젝트 마무리를 향해 달려가고 있다.
+하지만, 우리의 서비스가 실제로 구동되고 있는 서비스가 아니기 때문에, 더미 데이터들을 우선적으로 셋팅해야했다.
+위치 기반으로 근처에 있는 레스토랑 목록을 가져오는 것이기 때문에, 최대한 많은 데이터를 수집하여야 고객 피드백도 받고 우리의 부하테스트도 진행 할 수 있는 상태였다.
+따라서, 팀원 분께서 제작하신 더미생성 api를 이용하려고 했는데, 퍼포먼스가 너무 좋지 않았다. 긁어온 데이터가 총 9만개 였는데, 그걸 불러와서 반복문을 돌려가며 업데이트하는 방식이었는데, 불러오는 것 자체가 1분이상이 되는 현상이 발생하였고, 가장 중요한 건 생성 쿼리가 날라가지 않고 영속성 컨텍스트에 쌓이기만 한다는 것이었다.&lt;/p&gt;
+&lt;p&gt;따라서, 1개의 데이터만 가져와서 업데이트하는 식으로 만들어보았는데, 위의 로직보다 성능이 꽤 좋았다. 그래서 해당 api를 postman으로 계속 호출하면서 더미를 업데이트 했는데, 이렇게 9만개의 데이터를 만드는것이 말이 안된다고 생각하여 자동화를 위한 방안을 고민했다.&lt;/p&gt;
+&lt;p&gt;결론적으로, 아래와 같이 쉘스크립트를 사용하여, curl을 통해 더미 api로 호출하게 만들었고, 이것을 레코드 수 만큼 반복하게 하여 자동화를 할 수 있었다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;COUNT=1
+while [ $COUNT -le 90876 ]; do
+        echo 누적 전송 횟수 : $COUNT
+        let COUNT=COUNT+1;
+        curl --location --request POST &apos;http://localhost:8080/api/general/seller-managements/dummy&apos;;
+done;
+echo 완료&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;기술을 갖고 있다는게 편하게 느껴지는 순간이었다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[✏️ 2023-03-02 Today I Learn]]></title><description><![CDATA[CI 를 뚫어라..! 오늘 CI를 진행하는 중 그동안 잘 돌아갔던 테스트가 막히는 일이 발생했다. 로그인, 로그아웃, Oauth…]]></description><link>https://mitoconcrete.github.io/23_03_02/</link><guid isPermaLink="false">https://mitoconcrete.github.io/23_03_02/</guid><pubDate>Thu, 02 Mar 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;CI 를 뚫어라..!&lt;/h2&gt;
 &lt;p&gt;오늘 CI를 진행하는 중 그동안 잘 돌아갔던 테스트가 막히는 일이 발생했다.&lt;/p&gt;
 &lt;p&gt;로그인, 로그아웃, Oauth 테스트와 같이 레디스에서 토큰을 잘 가져오는지 테스트를 하는 로직들이 있었는데,&lt;/p&gt;
 &lt;p&gt;알고보니, 로컬에서 돌릴 때는 레디스가 켜져있으니, 테스트가 원활하게 돌아갔지만, 테스트환경에서는 레디스를 돌릴 수 없기 때문에 발생하는 일이라고 했다.
