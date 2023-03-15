@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 15 Mar 2023 23:39:32 GMT</lastBuildDate><item><title><![CDATA[웨이팅 캐치 프로젝트 과정 및 회고]]></title><description><![CDATA[0. 여는 글 K-Digital Training 내일배움캠프 스프링 과정은 프로젝트 기반 교육(Project Lead Educate)을 실행한다. 그 중 마지막 장식인…]]></description><link>https://mitoconcrete.github.io/waitingcatch/</link><guid isPermaLink="false">https://mitoconcrete.github.io/waitingcatch/</guid><pubDate>Tue, 14 Mar 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;0. 여는 글&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 15 Mar 2023 23:44:58 GMT</lastBuildDate><item><title><![CDATA[웨이팅 캐치 프로젝트 과정 및 회고]]></title><description><![CDATA[0. 여는 글 K-Digital Training 내일배움캠프 스프링 과정은 프로젝트 기반 교육(Project Lead Educate)을 실행한다. 그 중 마지막 장식인…]]></description><link>https://mitoconcrete.github.io/waitingcatch/</link><guid isPermaLink="false">https://mitoconcrete.github.io/waitingcatch/</guid><pubDate>Tue, 14 Mar 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;0. 여는 글&lt;/h2&gt;
 &lt;p&gt;K-Digital Training 내일배움캠프 스프링 과정은 프로젝트 기반 교육(Project Lead Educate)을 실행한다. 그 중 마지막 장식인 5주간 진행되는 최종프로젝트가 어제부로 마무리가 되었고, 살짝 아련해져서 프로젝트 과정을 톺아볼겸 회고를 해보려고한다. 긴 기간동안 진행되었기 때문에, 모든일들을 다 적을 순없고 스프린트 별 인상깊었던 사건들 위주로 적어보려고 한다.&lt;/p&gt;
 &lt;h2&gt;1. 프로젝트 소개&lt;/h2&gt;
 &lt;p&gt;&apos;테X블X&apos; 이라는 서비스에서 많은 영감을 받은 서비스이다.
@@ -26,14 +26,16 @@
 &lt;li&gt;&lt;strong&gt;[일정 수립]&lt;/strong&gt;&lt;br&gt;
 기간을 정하고, 각 스프린트에 대한 due를 정했다. 여기까지는 반드시 해야한다! 라는 공통된 목표날짜를 잡고, 그에따라 날짜를 분배했다. 지나고 생각해보면 계획대로 거의 된 것 같아서 뿌듯하긴 하다 ㅎㅎㅎ 각설하고, 내배캠 측에서 정해놓은 due도 있어서, 그에 맞게 기획-개발-개선-최종 의 기간을 정했다.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;[그라운드 룰]&lt;/strong&gt;&lt;br&gt;
-프로젝트 진입 전 원활한 프로젝트 진행을 위해, 팀원들이 어떤 약속을 지켜야 할지에 대한 약속을 정했다. 계속해서 수정되긴했지만, 아침 10시와 저녁 20시에는 반드시 모여서 오늘 무슨일을 할지 공유하고, 무슨일을 했는지 공유하기로 했다. 또한, 인상깊었던 룰은 &apos;투표&apos;였는데, 개발을 하다보면 각자의 생각이 부딫히는 순간이 오는데, 서로의 말이 모두 옳기 때문에 대화가 계속 수평으로 가기만 하고 마무리는 되지않는 상황이 발생했다. 거의 반나절 이상을 한 주제로 토론하고, 그 과정에서 감정이 상하는 과정이 너무 에너지 소비라고 생각되서 &apos;투표&apos;라는 정책을 마련했다.
-&apos;투표&apos;가 개최되기 위해선 아래와 같은 조건이 필요했다.&lt;/li&gt;
-&lt;li&gt;2지 선다로 의견이 좁혀진 상태에서 서로의 의견이 논리적으로 타당하다고 생각했을 때&lt;/li&gt;
-&lt;li&gt;팀원 전체가 &apos;투표&apos;에 대해서 동의 할 때&lt;/li&gt;
+프로젝트 진입 전 원활한 프로젝트 진행을 위해, 팀원들이 어떤 약속을 지켜야 할지에 대한 약속을 정했다. 계속해서 수정되긴했지만, 아침 10시와 저녁 20시에는 반드시 모여서 오늘 무슨일을 할지 공유하고, 무슨일을 했는지 공유하기로 했다. 또한, 인상깊었던 룰은 &apos;투표&apos;였는데, 개발을 하다보면 각자의 생각이 부딫히는 순간이 오는데, 서로의 말이 모두 옳기 때문에 대화가 계속 수평으로 가기만 하고 마무리는 되지않는 상황이 발생했다. 거의 반나절 이상을 한 주제로 토론하고, 그 과정에서 감정이 상하는 과정이 너무 에너지 소비라고 생각되서 &apos;투표&apos;라는 정책을 마련했다.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;이 정책 도입 후, 우리 팀은 불필요한 토론이 사라져서 빠르게 다음단계로 넘어갈 수 있었다. 대신, 토론은 언제든지 주최 할 수 있도록 제한을 두진 않았다.&lt;/p&gt;
-&lt;p&gt;추가적으로 우리조는 코드리뷰를 모든 팀원이 해야지 merge될 수 있는 룰이 있었는데, 따라서, 오전은 코드리뷰에 시간을 쏟고 오후에는 개발에 몰두하기로 했다.&lt;/p&gt;
+&lt;p&gt;&apos;투표&apos;가 개최되기 위해선 아래와 같은 조건이 필요했다.&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;2지 선다로 의견이 좁혀진 상태에서 서로의 의견이 논리적으로 타당하다고 생각했을 때&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;팀원 전체가 &apos;투표&apos;에 대해서 동의 할 때&lt;/p&gt;
+&lt;p&gt;이 정책 도입 후, 우리 팀은 불필요한 토론이 사라져서 빠르게 다음단계로 넘어갈 수 있었다. 대신, 토론은 언제든지 주최 할 수 있도록 제한을 두진 않았다.
+추가적으로 우리조는 코드리뷰를 모든 팀원이 해야지 merge될 수 있는 룰이 있었는데, 따라서, 오전은 코드리뷰에 시간을 쏟고 오후에는 개발에 몰두하기로 했다.&lt;/p&gt;
+&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;[기능 선정]&lt;/strong&gt;&lt;br&gt;
 서비스가 정해졌으니, 그에 따른 기능들을 선정을 해야했다. 기본 기능 외에 &apos;대용량 트래픽&apos;을 실험해볼만한 기능에 대해서, 선정해야했다.
 다른 생각하는 기능들이 다르고, 이 과정에서 선정 서비스에 대해서 충분히 토론했음에도 불구하고, 우리가 어떤 서비스를 개발하려고하는지 오해하고 계신 팀원들도 계셨다. 따라서, 이 시간을 통해 다시금 &apos;우리가 뭘 개발하려고 하는지&apos; 싱크를 맞추게 되었다. 다들 욕심이 많고, 개발에 대한 두려움이 없으신 분들이라, 너무 많은 기능들을 개발하고자 하셨다.&lt;/li&gt;
