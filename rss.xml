@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 15 Mar 2023 23:32:59 GMT</lastBuildDate><item><title><![CDATA[웨이팅 캐치 프로젝트 과정 및 회고]]></title><description><![CDATA[0. 여는 글 K-Digital Training 내일배움캠프 스프링 과정은 프로젝트 기반 교육(Project Lead Educate)을 실행한다. 그 중 마지막 장식인…]]></description><link>https://mitoconcrete.github.io/waitingcatch/</link><guid isPermaLink="false">https://mitoconcrete.github.io/waitingcatch/</guid><pubDate>Tue, 14 Mar 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;0. 여는 글&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 15 Mar 2023 23:38:13 GMT</lastBuildDate><item><title><![CDATA[웨이팅 캐치 프로젝트 과정 및 회고]]></title><description><![CDATA[0. 여는 글 K-Digital Training 내일배움캠프 스프링 과정은 프로젝트 기반 교육(Project Lead Educate)을 실행한다. 그 중 마지막 장식인…]]></description><link>https://mitoconcrete.github.io/waitingcatch/</link><guid isPermaLink="false">https://mitoconcrete.github.io/waitingcatch/</guid><pubDate>Tue, 14 Mar 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;0. 여는 글&lt;/h2&gt;
 &lt;p&gt;K-Digital Training 내일배움캠프 스프링 과정은 프로젝트 기반 교육(Project Lead Educate)을 실행한다. 그 중 마지막 장식인 5주간 진행되는 최종프로젝트가 어제부로 마무리가 되었고, 살짝 아련해져서 프로젝트 과정을 톺아볼겸 회고를 해보려고한다. 긴 기간동안 진행되었기 때문에, 모든일들을 다 적을 순없고 스프린트 별 인상깊었던 사건들 위주로 적어보려고 한다.&lt;/p&gt;
 &lt;h2&gt;1. 프로젝트 소개&lt;/h2&gt;
 &lt;p&gt;&apos;테X블X&apos; 이라는 서비스에서 많은 영감을 받은 서비스이다.
@@ -52,7 +52,7 @@
 &lt;li&gt;리뷰 남겨야 할 줄서기를 줄서기 내역을 통해서 알게 할지 vs 유저가 곧바로 자신이 리뷰를 남겨야 할 줄서기 내역을 알 수 있도록 할지 : 유저가 리뷰를 남겨야 할 무조건적인 책임은 없기 때문에 &apos;리뷰 남겨야 할 줄서기를 줄서기 내역을 통해서&apos; 알 수 있도록 함.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;치열한 토론 끝에 엄청 복잡한.. 구조의 ERD구조가 완성되었다. (이후에도 계속 변경된 것은 안비밀..)
-&lt;img src=&apos;/image/waitingcatch02.png&apos; width=&apos;300&apos; alt=&apos;01&apos;&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;img src=&apos;/image/waitingcatch02.png&apos; width=&apos;800&apos; alt=&apos;01&apos;&gt;&lt;/img&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;[API 문서]&lt;/strong&gt;&lt;br&gt;
 완성된 ERD 기반으로 정해진 기능을 페이지 별로 나누어 재 리스트업 한 뒤, 페이지별로 탭을 나누어 &lt;a href=&quot;https://docs.google.com/spreadsheets/d/1Hhjp6eKlJxv6ZLsFz1xe50t-xMe478o5_Je7RIvn1YA/edit?usp=sharing&quot;&gt;해당문서&lt;/a&gt;안에 기능 별 API를 정의하기 시작했다. RESTful 한 상태를 유지하면서 진행하려고 했지만, 우리가 기능별, 권한별로 api를 구분 짓하고 약속을 한 상태라 무조건 적으로 RESTful 하게 작성하기는 어려웠다.
