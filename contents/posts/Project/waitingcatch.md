@@ -198,8 +198,8 @@ K-Digital Training 내일배움캠프 스프링 과정은 프로젝트 기반 �
 
     정신없이 준비하다보니.. 어느새 발표시간이 점점 다가오고 있었고, 드디어 3월 14일 오후 19시가 되었다!
 
-  - **2-8. 최종발표 결과**
-    <img src="/image/waitingcatch05.png" width="300" alt="05"></img>
+  - **2-8. 최종발표 결과**  
+    <img src="/image/waitingcatch05.jpg" width="300" alt="05"></img>
     <img src="/image/waitingcatch06.png" width="300" alt="06"></img>
     2등과 4표차를 내면서 최고의 프로젝트로 뽑혔다! 매니저께서 좋은 피드백도 많이 들어왔다며 공유도 해주셨다. 또한, 현업 선배개발자들이 우리조에 오셔서, 인상깊었다고 피드백도 많이 해주셨다.
 
