@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 15 Mar 2023 23:50:54 GMT</lastBuildDate><item><title><![CDATA[웨이팅 캐치 프로젝트 과정 및 회고]]></title><description><![CDATA[0. 여는 글 K-Digital Training 내일배움캠프 스프링 과정은 프로젝트 기반 교육(Project Lead Educate)을 실행한다. 그 중 마지막 장식인…]]></description><link>https://mitoconcrete.github.io/waitingcatch/</link><guid isPermaLink="false">https://mitoconcrete.github.io/waitingcatch/</guid><pubDate>Tue, 14 Mar 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;0. 여는 글&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 15 Mar 2023 23:55:38 GMT</lastBuildDate><item><title><![CDATA[웨이팅 캐치 프로젝트 과정 및 회고]]></title><description><![CDATA[0. 여는 글 K-Digital Training 내일배움캠프 스프링 과정은 프로젝트 기반 교육(Project Lead Educate)을 실행한다. 그 중 마지막 장식인…]]></description><link>https://mitoconcrete.github.io/waitingcatch/</link><guid isPermaLink="false">https://mitoconcrete.github.io/waitingcatch/</guid><pubDate>Tue, 14 Mar 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;0. 여는 글&lt;/h2&gt;
 &lt;p&gt;K-Digital Training 내일배움캠프 스프링 과정은 프로젝트 기반 교육(Project Lead Educate)을 실행한다. 그 중 마지막 장식인 5주간 진행되는 최종프로젝트가 어제부로 마무리가 되었고, 살짝 아련해져서 프로젝트 과정을 톺아볼겸 회고를 해보려고한다. 긴 기간동안 진행되었기 때문에, 모든일들을 다 적을 순없고 스프린트 별 인상깊었던 사건들 위주로 적어보려고 한다.&lt;/p&gt;
 &lt;h2&gt;1. 프로젝트 소개&lt;/h2&gt;
 &lt;p&gt;&apos;테X블X&apos; 이라는 서비스에서 많은 영감을 받은 서비스이다.
@@ -36,26 +36,28 @@
 &lt;p&gt;이 정책 도입 후, 우리 팀은 불필요한 토론이 사라져서 빠르게 다음단계로 넘어갈 수 있었다. 대신, 토론은 언제든지 주최 할 수 있도록 제한을 두진 않았다.
 추가적으로 우리조는 코드리뷰를 모든 팀원이 해야지 merge될 수 있는 룰이 있었는데, 따라서, 오전은 코드리뷰에 시간을 쏟고 오후에는 개발에 몰두하기로 했다.&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[기능 선정]&lt;/strong&gt;&lt;br&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;[기능 선정]&lt;/strong&gt;&lt;br&gt;
 서비스가 정해졌으니, 그에 따른 기능들을 선정을 해야했다. 기본 기능 외에 &apos;대용량 트래픽&apos;을 실험해볼만한 기능에 대해서, 선정해야했다.
-다른 생각하는 기능들이 다르고, 이 과정에서 선정 서비스에 대해서 충분히 토론했음에도 불구하고, 우리가 어떤 서비스를 개발하려고하는지 오해하고 계신 팀원들도 계셨다. 따라서, 이 시간을 통해 다시금 &apos;우리가 뭘 개발하려고 하는지&apos; 싱크를 맞추게 되었다. 다들 욕심이 많고, 개발에 대한 두려움이 없으신 분들이라, 너무 많은 기능들을 개발하고자 하셨다.&lt;/li&gt;
+다른 생각하는 기능들이 다르고, 이 과정에서 선정 서비스에 대해서 충분히 토론했음에도 불구하고, 우리가 어떤 서비스를 개발하려고하는지 오해하고 계신 팀원들도 계셨다. 따라서, 이 시간을 통해 다시금 &apos;우리가 뭘 개발하려고 하는지&apos; 싱크를 맞추게 되었다. 다들 욕심이 많고, 개발에 대한 두려움이 없으신 분들이라, 너무 많은 기능들을 개발하고자 하셨다.&lt;/p&gt;
+&lt;p&gt;나는 이전에 프로젝트를 해온 경험도 있고, 이번 프로젝트는 프론트엔드도 우리가 직접 개발해야했기 때문에, 이 모든 기능들을 개발한다는 것이 불가능 할 것이란게 어렴풋이 느껴졌다. 따라서, 기능들을 필수/추가/추추가 로 나눈 뒤, 필수기능들을 우선적으로 구현 한 뒤, 다른 기능들을 붙혀보잔 제안을 드렸다.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;나는 이전에 프로젝트를 해온 경험도 있고, 이번 프로젝트는 프론트엔드도 우리가 직접 개발해야했기 때문에, 이 모든 기능들을 개발한다는 것이 불가능 할 것이란게 어렴풋이 느껴졌다. 따라서, 기능들을 필수/추가/추추가 로 나눈 뒤, 필수기능들을 우선적으로 구현 한 뒤, 다른 기능들을 붙혀보잔 제안을 드렸다.
-&lt;img src=&apos;/image/waitingcatch01.png&apos; width=&apos;800&apos; alt=&apos;01&apos;&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&apos;/image/waitingcatch01.png&apos; width=&apos;800&apos; alt=&apos;01&apos;&gt;&lt;/img&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;[ERD작성]&lt;/strong&gt;&lt;br&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;[ERD작성]&lt;/strong&gt;&lt;br&gt;
 정해진 기능에 따라, Entity Relation Diagram을 작성해보았다. 구현하려는 기능에 따라 엔티티가 필요한 항목들이 있었고, 그것에 어떻게 접근할 것이며, 분리하는 것이 효율적인지 쪼개는 것이 효과적인지 지속적으로 토론하며 수정해나갔다.
-팀원 중에 최적화에 대해 신경을 많이쓰시는 분이 계셨는데, 한편으로 고맙긴 했지만 추후에 테스트 해보고 진행해도 될 법한 것들을 지속적으로 제안주셔서 당황스러웠다. 개인적인 판단으로 오버엔지니어링이 될 것 같은 부분들이 있어서, 해당 팀원을 설득하고 다른 팀원들의 의견을 구하면서 필요한 부분들은 수용하고, 불필요한 부분들은 추후에 시도해보기로 합의보고 메모하면서 진행했다.&lt;/li&gt;
-&lt;/ul&gt;
+팀원 중에 최적화에 대해 신경을 많이쓰시는 분이 계셨는데, 한편으로 고맙긴 했지만 추후에 테스트 해보고 진행해도 될 법한 것들을 지속적으로 제안주셔서 당황스러웠다. 개인적인 판단으로 오버엔지니어링이 될 것 같은 부분들이 있어서, 해당 팀원을 설득하고 다른 팀원들의 의견을 구하면서 필요한 부분들은 수용하고, 불필요한 부분들은 추후에 시도해보기로 합의보고 메모하면서 진행했다.&lt;/p&gt;
 &lt;p&gt;논의중에 가장 기억에 남는 토론들이 있었는데, 지금은 해결된 문제였지만.. 거의 하루종일 토론했던 기억이 있다.&lt;/p&gt;
-&lt;ul&gt;
+&lt;/li&gt;
 &lt;li&gt;이미지만 관리하는 테이블을 만들어서 사용 vs 엔티티 별로 이미지 테이블을 만들어서 관리 vs 엔티티안에 이미지를 넣어서 관리 : 이미지를 그냥 주소만으로 관리하고 추가적인 정보가 필요하지 않기 때문에 &apos;엔티티안에 이미지를 넣어서 관리&apos;하기로 합의&lt;/li&gt;
 &lt;li&gt;줄서기 테이블을 하나로 관리 vs 두개로 분리 : 지속적인 조회가 필요한 상황이 생기면, 풀 스캔을 해야하는 상황이 지속발생하기에 하루단위로 줄서기 기록을 쌓고 그것을 영구저장 테이블에 올려서 관리하기로 함.&lt;/li&gt;
-&lt;li&gt;리뷰 남겨야 할 줄서기를 줄서기 내역을 통해서 알게 할지 vs 유저가 곧바로 자신이 리뷰를 남겨야 할 줄서기 내역을 알 수 있도록 할지 : 유저가 리뷰를 남겨야 할 무조건적인 책임은 없기 때문에 &apos;리뷰 남겨야 할 줄서기를 줄서기 내역을 통해서&apos; 알 수 있도록 함.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;치열한 토론 끝에 엄청 복잡한.. 구조의 ERD구조가 완성되었다. (이후에도 계속 변경된 것은 안비밀..)
-&lt;img src=&apos;/image/waitingcatch02.png&apos; width=&apos;800&apos; alt=&apos;01&apos;&gt;&lt;/img&gt;&lt;/p&gt;
-&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;리뷰 남겨야 할 줄서기를 줄서기 내역을 통해서 알게 할지 vs 유저가 곧바로 자신이 리뷰를 남겨야 할 줄서기 내역을 알 수 있도록 할지 : 유저가 리뷰를 남겨야 할 무조건적인 책임은 없기 때문에 &apos;리뷰 남겨야 할 줄서기를 줄서기 내역을 통해서&apos; 알 수 있도록 함.&lt;/p&gt;
+&lt;p&gt;  치열한 토론 끝에 엄청 복잡한.. 구조의 ERD구조가 완성되었다. (이후에도 계속 변경된 것은 안비밀..)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&apos;/image/waitingcatch02.png&apos; width=&apos;800&apos; alt=&apos;01&apos;&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;[API 문서]&lt;/strong&gt;&lt;br&gt;
 완성된 ERD 기반으로 정해진 기능을 페이지 별로 나누어 재 리스트업 한 뒤, 페이지별로 탭을 나누어 &lt;a href=&quot;https://docs.google.com/spreadsheets/d/1Hhjp6eKlJxv6ZLsFz1xe50t-xMe478o5_Je7RIvn1YA/edit?usp=sharing&quot;&gt;해당문서&lt;/a&gt;안에 기능 별 API를 정의하기 시작했다. RESTful 한 상태를 유지하면서 진행하려고 했지만, 우리가 기능별, 권한별로 api를 구분 짓하고 약속을 한 상태라 무조건 적으로 RESTful 하게 작성하기는 어려웠다.
 따라서, 어떤 자원을 가지고 올때는 RESTful하게(GET /members, /members/3), 그게 아닌 단순히 기능(POST /login, /logout)을 나타 낼 때는 단수를 써서 자원을 가지고 오는 것과 그렇지 않은 것을 구분짓기로 약속했다.&lt;/li&gt;
@@ -66,9 +68,11 @@
 &lt;li&gt;줄서기 : 우리 서비스의 핵심 도메인&lt;/li&gt;
 &lt;li&gt;유저 : 서비스의 이용자. 관리자, 판매자, 고객이 될 수 있다.&lt;/li&gt;
 &lt;li&gt;레스토랑 : 줄서기의 대상이 되는 도메인&lt;/li&gt;
-&lt;li&gt;이벤트 : 유저에게 부여될 수 있는 도메인으로서, 서비스 전체적인 이벤트와 레스토랑 개인의 이벤트로 분리 할 수 있다.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;
+&lt;p&gt;이벤트 : 유저에게 부여될 수 있는 도메인으로서, 서비스 전체적인 이벤트와 레스토랑 개인의 이벤트로 분리 할 수 있다.&lt;/p&gt;
 &lt;p&gt;팀원 5명이 각자 하고 싶은 도메인을 담당하게 되었고, 나는 인증,인가에 대한 지식이 부족하다고 생각하여 &apos;유저&apos; 도메인을 담당하게 되었다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;h3&gt;2-2. 개발 (23.02.13 ~ 23.02.22)&lt;/h3&gt;
