@@ -1,4 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 27 Mar 2023 05:56:24 GMT</lastBuildDate><item><title><![CDATA[웨이팅 캐치 프로젝트 과정 및 회고]]></title><description><![CDATA[0. 여는 글 K-Digital Training 내일배움캠프 스프링 과정은 프로젝트 기반 교육(Project Lead Educate)을 실행한다. 그 중 마지막 장식인…]]></description><link>https://mitoconcrete.github.io/waitingcatch/</link><guid isPermaLink="false">https://mitoconcrete.github.io/waitingcatch/</guid><pubDate>Tue, 14 Mar 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;0. 여는 글&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of mitoconcrete]]></title><description><![CDATA[어제보다 조금 더 성장하기 위해 기록합니다.]]></description><link>https://mitoconcrete.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 27 Mar 2023 13:34:33 GMT</lastBuildDate><item><title><![CDATA[✏️ 2023-03-27 Today I Learn]]></title><description><![CDATA[객체지향 프로그래밍(OOP…]]></description><link>https://mitoconcrete.github.io/23_03_27/</link><guid isPermaLink="false">https://mitoconcrete.github.io/23_03_27/</guid><pubDate>Mon, 27 Mar 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;객체지향 프로그래밍(OOP)에 대해 설명해주세요. 알고있는 원칙이나 키워드를 언급해주세요.&lt;/h2&gt;
+&lt;p&gt;객체지향 프로그래밍이란, 현실의 사물의 특징을 가진 객체를 만들고, 그 객체 간의 상호작용을 통해 현실을 모방한 새로운 세계를 만드는 프로그래밍 기법을 말한다.
+기존 프로그램의 순서대로 작성되던 절차지향 프로그래밍의 방식에서 벗어나, 하나의 프로그램이 부품 즉 객체들의 조합으로 이뤄져 객체 간 유기적인 연결을 통해 실행되도록 하는 프로그래밍 패러다임입니다.&lt;/p&gt;
+&lt;p&gt;객체지향 프로그래밍은 추상화, 상속, 캡슐화, 다형성의 특징을 가지며, 이를 통해 유연하게 코드를 필요한 부분만 유지보수하는것이 가능해집니다.
+추상화는 객체들의 공통적인 특징을 추출하여, 하나의 추상적인 개념을 도출하여 객체를 만드는 것을 말합니다.
+상속은 객체간 부모-자식의 계층을 만듦으로서, 부모 객체가 가진 특징을 자식 객체에서 재사용 할 수 있게 만드는 특징입니다.
+캡슐화는 객체의 모든 부분을 노출하지 않고, 필요한 부분만 노출함으로서 내부 데이터를 보호하고 은닉할 수 있게 만드는 특징으로서, 접근제어자를 통해 구현합니다.
+다형성은 어떤 객체의 속성이나 특징이 객체의 정의에 따라 다양한 기능을 수행하는 것을 의미하며, 오버라이딩과 오버로딩을 통해 구현됩니다.&lt;/p&gt;
+&lt;p&gt;객체지향 설계원칙은 SOLID원칙이 대표적입니다. 이 원칙을 통해 유지보수가 쉽고 독립적인 객체를 설계 할 수 있습니다.
+단일책임원칙은 하나의 객체가 하나의 역할과 책임을 가져야하는 설계 원칙입니다.
+개방-폐쇄원칙은 객체의 확장은 개방적이어야하나, 속성을 변경하는 것에는 보수적이어야 한다는 설계원칙입니다.
+리스코프치환원칙은 자식은 언제나 부모를 대체 할 수 있어야 한다는 설계 원칙입니다.
+인터페이스분리원칙 객체가 자신이 사용하지 않는 속성은 가지고 있으면 안된다는 설계원칙으로서, 인터페이스를 통해 필요한 메소드를 상속받아 사용해야한다는 설계원칙입니다.
+의존관계역전원칙은 어떤 객체간 의존관계를 형성할 때, 변하기 쉬운것 보다는 변하기 어려운 추상적인 객체를 기준으로 삼아 의존관계를 형성해야한다는 특징입니다.&lt;/p&gt;
+&lt;h2&gt;REST API란 무엇인가요? (모두가 답변) 프로젝트에 REST API를 사용한 이유가 무엇인가요?&lt;/h2&gt;
+&lt;p&gt;REST란 REpresentaional State Transfer 의 약자이고 API는 Application Programming Interface의 약자입니다. 즉, 리소스 어떤 표현 상태에 맞게 전달하는 데 그것을 어떤 프로그래밍 규약에 맞게 전달하는 것을 의미합니다. REST API는 HTTP 메소드(GET,POST,PUT,DELETE)를 이용해서 상태를 표현하며, 리소스를 URI를 통해 정의하여 그에 맞는 리소스를 가져올 수 있도록 합니다. REST API 특징으로는 클라이언트-서버구조, HTTP를 사용하기에 캐싱, 무상태성을 지니고 있으며, 인터페이스 일관성으로 독립적인 플랫폼에서 사용되는 것이 아니라 여러 플랫폼에서 사용될 수 있으며, 계층화를 통해 다양한 보안 모듈들을 요청사이에 레이어로 추가할 수 있다는 특징이 있습니다.
+저희 프로젝트에 REST API를 사용한 이유는, 먼저 클라이언트-서버간 분리가 되어 있으며, 리소스를 기준으로 API문서를 작성하였고, 그걸 통해 협업을 원활하게 진행하기 위함입니다. 또한, 저희 API 중에 판매자, 유저, 관리자 페이지 모두에서 필요로 하는 리소스들이 있어서 해당 기능을 페이지나 권한에 관계없이 요청에 따라 일관성있는 데이터를 받아야 했기 때문에 REST API를 선택하게 되었습니다.&lt;/p&gt;
+&lt;h2&gt;REST API 말고 다른 비교할만한 것을 알고 있나요?&lt;/h2&gt;
+&lt;p&gt;SOAP는 xml문서를 전송하여, 그에 맞는 응답값을 요청하는 프로토콜입니다. POST만을 사용합니다. 엄격한 보안규약을 가지고 있고, 페이로드자체의 크기가 크기 때문에 많은 대역폭을 사용하여 요청-응답의 속도가 REST API에 비해 상대적으로 느리다고 합니다. 보안성이 훌륭하기 때문에 금융, 통신, 마케팅, 결제 시스템등에서 사용한다고 합니다.
+GraphQL은 Facebook에서 만든 프로토콜로, 하나의 엔드포인트에 클라이언트가 필요한 데이터에 대한 쿼리를 넘겨 필요한 데이터들을 가져오는 방법입니다. 불필요한 데이터를 요청하지 않고, 쿼리만 전달하여 필요한 데이터만 가져오기 때문에, 속도가 굉장히 빠르다고합니다. 다만, 복잡한 쿼리문이 필요되거나 많은 데이터를 요청해야할 경우 해당 방법이 좋지 않을 수 있다고 합니다.
+gRPC Google에서 개발한 프로토콜로서, 기존에 서버에 정의되있던 함수에 요청을 하여 응답을 받는 방식이 아닌, 클라이언트에서 호출한 API를 서버에서 동적으로 생성되게 함으로서, 조금 더 유연하게 리소스를 요청하고 반환받을 수 있는 방법이라고 합니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[웨이팅 캐치 프로젝트 과정 및 회고]]></title><description><![CDATA[0. 여는 글 K-Digital Training 내일배움캠프 스프링 과정은 프로젝트 기반 교육(Project Lead Educate)을 실행한다. 그 중 마지막 장식인…]]></description><link>https://mitoconcrete.github.io/waitingcatch/</link><guid isPermaLink="false">https://mitoconcrete.github.io/waitingcatch/</guid><pubDate>Tue, 14 Mar 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;0. 여는 글&lt;/h2&gt;
 &lt;p&gt;K-Digital Training 내일배움캠프 스프링 과정은 프로젝트 기반 교육(Project Lead Educate)을 실행한다. 그 중 마지막 장식인 5주간 진행되는 최종프로젝트가 어제부로 마무리가 되었고, 살짝 아련해져서 프로젝트 과정을 톺아볼겸 회고를 해보려고한다. 긴 기간동안 진행되었기 때문에, 모든일들을 다 적을 순없고 스프린트 별 인상깊었던 사건들 위주로 적어보려고 한다.&lt;/p&gt;
 &lt;h2&gt;1. 프로젝트 소개&lt;/h2&gt;
 &lt;p&gt;&apos;테X블X&apos; 이라는 서비스에서 많은 영감을 받은 서비스이다.
@@ -203,27 +223,7 @@ while [ $COUNT -le 90876 ]; do
         curl --location --request POST &apos;http://localhost:8080/api/general/seller-managements/dummy&apos;;
 done;
 echo 완료&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;기술을 갖고 있다는게 편하게 느껴지는 순간이었다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[✏️ 2023-03-27 Today I Learn]]></title><description><![CDATA[객체지향 프로그래밍(OOP…]]></description><link>https://mitoconcrete.github.io/23_03_27/</link><guid isPermaLink="false">https://mitoconcrete.github.io/23_03_27/</guid><pubDate>Fri, 03 Mar 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;객체지향 프로그래밍(OOP)에 대해 설명해주세요. 알고있는 원칙이나 키워드를 언급해주세요.&lt;/h2&gt;
-&lt;p&gt;객체지향 프로그래밍이란, 현실의 사물의 특징을 가진 객체를 만들고, 그 객체 간의 상호작용을 통해 현실을 모방한 새로운 세계를 만드는 프로그래밍 기법을 말한다.
-기존 프로그램의 순서대로 작성되던 절차지향 프로그래밍의 방식에서 벗어나, 하나의 프로그램이 부품 즉 객체들의 조합으로 이뤄져 객체 간 유기적인 연결을 통해 실행되도록 하는 프로그래밍 패러다임입니다.&lt;/p&gt;
-&lt;p&gt;객체지향 프로그래밍은 추상화, 상속, 캡슐화, 다형성의 특징을 가지며, 이를 통해 유연하게 코드를 필요한 부분만 유지보수하는것이 가능해집니다.
-추상화는 객체들의 공통적인 특징을 추출하여, 하나의 추상적인 개념을 도출하여 객체를 만드는 것을 말합니다.
-상속은 객체간 부모-자식의 계층을 만듦으로서, 부모 객체가 가진 특징을 자식 객체에서 재사용 할 수 있게 만드는 특징입니다.
-캡슐화는 객체의 모든 부분을 노출하지 않고, 필요한 부분만 노출함으로서 내부 데이터를 보호하고 은닉할 수 있게 만드는 특징으로서, 접근제어자를 통해 구현합니다.
-다형성은 어떤 객체의 속성이나 특징이 객체의 정의에 따라 다양한 기능을 수행하는 것을 의미하며, 오버라이딩과 오버로딩을 통해 구현됩니다.&lt;/p&gt;
-&lt;p&gt;객체지향 설계원칙은 SOLID원칙이 대표적입니다. 이 원칙을 통해 유지보수가 쉽고 독립적인 객체를 설계 할 수 있습니다.
-단일책임원칙은 하나의 객체가 하나의 역할과 책임을 가져야하는 설계 원칙입니다.
-개방-폐쇄원칙은 객체의 확장은 개방적이어야하나, 속성을 변경하는 것에는 보수적이어야 한다는 설계원칙입니다.
-리스코프치환원칙은 자식은 언제나 부모를 대체 할 수 있어야 한다는 설계 원칙입니다.
-인터페이스분리원칙 객체가 자신이 사용하지 않는 속성은 가지고 있으면 안된다는 설계원칙으로서, 인터페이스를 통해 필요한 메소드를 상속받아 사용해야한다는 설계원칙입니다.
-의존관계역전원칙은 어떤 객체간 의존관계를 형성할 때, 변하기 쉬운것 보다는 변하기 어려운 추상적인 객체를 기준으로 삼아 의존관계를 형성해야한다는 특징입니다.&lt;/p&gt;
-&lt;h2&gt;REST API란 무엇인가요? (모두가 답변) 프로젝트에 REST API를 사용한 이유가 무엇인가요?&lt;/h2&gt;
-&lt;p&gt;REST란 REpresentaional State Transfer 의 약자이고 API는 Application Programming Interface의 약자입니다. 즉, 리소스 어떤 표현 상태에 맞게 전달하는 데 그것을 어떤 프로그래밍 규약에 맞게 전달하는 것을 의미합니다. REST API는 HTTP 메소드(GET,POST,PUT,DELETE)를 이용해서 상태를 표현하며, 리소스를 URI를 통해 정의하여 그에 맞는 리소스를 가져올 수 있도록 합니다. REST API 특징으로는 클라이언트-서버구조, HTTP를 사용하기에 캐싱, 무상태성을 지니고 있으며, 인터페이스 일관성으로 독립적인 플랫폼에서 사용되는 것이 아니라 여러 플랫폼에서 사용될 수 있으며, 계층화를 통해 다양한 보안 모듈들을 요청사이에 레이어로 추가할 수 있다는 특징이 있습니다.
-저희 프로젝트에 REST API를 사용한 이유는, 먼저 클라이언트-서버간 분리가 되어 있으며, 리소스를 기준으로 API문서를 작성하였고, 그걸 통해 협업을 원활하게 진행하기 위함입니다. 또한, 저희 API 중에 판매자, 유저, 관리자 페이지 모두에서 필요로 하는 리소스들이 있어서 해당 기능을 페이지나 권한에 관계없이 요청에 따라 일관성있는 데이터를 받아야 했기 때문에 REST API를 선택하게 되었습니다.&lt;/p&gt;
-&lt;h2&gt;REST API 말고 다른 비교할만한 것을 알고 있나요?&lt;/h2&gt;
-&lt;p&gt;SOAP는 xml문서를 전송하여, 그에 맞는 응답값을 요청하는 프로토콜입니다. POST만을 사용합니다. 엄격한 보안규약을 가지고 있고, 페이로드자체의 크기가 크기 때문에 많은 대역폭을 사용하여 요청-응답의 속도가 REST API에 비해 상대적으로 느리다고 합니다. 보안성이 훌륭하기 때문에 금융, 통신, 마케팅, 결제 시스템등에서 사용한다고 합니다.
-GraphQL은 Facebook에서 만든 프로토콜로, 하나의 엔드포인트에 클라이언트가 필요한 데이터에 대한 쿼리를 넘겨 필요한 데이터들을 가져오는 방법입니다. 불필요한 데이터를 요청하지 않고, 쿼리만 전달하여 필요한 데이터만 가져오기 때문에, 속도가 굉장히 빠르다고합니다. 다만, 복잡한 쿼리문이 필요되거나 많은 데이터를 요청해야할 경우 해당 방법이 좋지 않을 수 있다고 합니다.
-gRPC Google에서 개발한 프로토콜로서, 기존에 서버에 정의되있던 함수에 요청을 하여 응답을 받는 방식이 아닌, 클라이언트에서 호출한 API를 서버에서 동적으로 생성되게 함으로서, 조금 더 유연하게 리소스를 요청하고 반환받을 수 있는 방법이라고 합니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[✏️ 2023-03-02 Today I Learn]]></title><description><![CDATA[CI 를 뚫어라..! 오늘 CI를 진행하는 중 그동안 잘 돌아갔던 테스트가 막히는 일이 발생했다. 로그인, 로그아웃, Oauth…]]></description><link>https://mitoconcrete.github.io/23_03_02/</link><guid isPermaLink="false">https://mitoconcrete.github.io/23_03_02/</guid><pubDate>Thu, 02 Mar 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;CI 를 뚫어라..!&lt;/h2&gt;
+&lt;p&gt;기술을 갖고 있다는게 편하게 느껴지는 순간이었다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[✏️ 2023-03-02 Today I Learn]]></title><description><![CDATA[CI 를 뚫어라..! 오늘 CI를 진행하는 중 그동안 잘 돌아갔던 테스트가 막히는 일이 발생했다. 로그인, 로그아웃, Oauth…]]></description><link>https://mitoconcrete.github.io/23_03_02/</link><guid isPermaLink="false">https://mitoconcrete.github.io/23_03_02/</guid><pubDate>Thu, 02 Mar 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;CI 를 뚫어라..!&lt;/h2&gt;
 &lt;p&gt;오늘 CI를 진행하는 중 그동안 잘 돌아갔던 테스트가 막히는 일이 발생했다.&lt;/p&gt;
 &lt;p&gt;로그인, 로그아웃, Oauth 테스트와 같이 레디스에서 토큰을 잘 가져오는지 테스트를 하는 로직들이 있었는데,&lt;/p&gt;
 &lt;p&gt;알고보니, 로컬에서 돌릴 때는 레디스가 켜져있으니, 테스트가 원활하게 돌아갔지만, 테스트환경에서는 레디스를 돌릴 수 없기 때문에 발생하는 일이라고 했다.
