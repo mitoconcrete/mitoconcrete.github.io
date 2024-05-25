@@ -189,7 +189,6 @@ const Header = ({ toggleTheme }) => {
 
   return (
     <HeaderWrapper isHidden={hidden}>
-      <ChannelTalkWidjet />
       <Inner>
         <BlogTitle>
           <Link to="/">{title}</Link>
